@@ -1,0 +1,12 @@
+localizedName: Dart
+description: Fires lightning while moving.
+commandLimit: 4
+health: 50
+speed: 4
+accel: 0.08
+drag: 0.01
+range: 48
+flying: true
+itemCapacity: 25
+mineTier: 1
+mineSpeed: 1
