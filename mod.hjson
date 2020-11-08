@@ -3,7 +3,7 @@ displayName: "Purple Air Units"
 author: "[#FCC21B]MEEP of Faith[] and [#A200FF]A5TR0spud"
 description:
   '''
-  Adds pruple "special" units for air units based around speed and energy.
+  Adds purple "special" units for air, based around speed and energy.
   '''
 version: 0.1
 minGameVersion: 112
