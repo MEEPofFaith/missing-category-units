@@ -5,7 +5,7 @@ speed: 4.9
 accel: 0.0225
 drag: 0.0175
 engineOffset: 10.75
-range: 160
+range: 60
 flying: true
 itemCapacity: 50
 mineTier: 2
@@ -23,10 +23,11 @@ weapons:[
     recoil: 3
     shake: 1
     rotate: true
+    top: false
     bullet:{
       type: LaserBulletType
       recoil: 0.25
-      length: 64
+      length: 72
       width: 10
       damage: 30
       colors:[665C9F66, BF92F9, FFFFFF]

@@ -16,8 +16,8 @@ weapons:[
   {
     name: arrow-weapon
     reload: 15
-    x: 3.1
-    y: 0.9
+    x: 3
+    y: -1
     shootY: 1
     rotate: false
     recoil: 1
@@ -26,8 +26,8 @@ weapons:[
       damage: 11
       backColor: 665C9F
       frontColor: BF92F9
-      speed: 3
-      lifetime: 60
+      speed: 4
+      lifetime: 40
     }
   }
 ]

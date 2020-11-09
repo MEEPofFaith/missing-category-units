@@ -5,7 +5,7 @@ speed: 4.9
 accel: 0.0225
 drag: 0.0175
 engineOffset: 10.5
-range: 160
+range: 84
 flying: true
 itemCapacity: 50
 mineTier: 2
@@ -61,7 +61,7 @@ weapons:[
     name: javelin-laser
     reload: 35
     x: 12
-    y: -7.25
+    y: -7
     shootY: 8.25
     recoil: 3
     shake: 1
