@@ -1,0 +1,12 @@
+localizedName: Javelin
+description: SHOOTS A GIANT FREAKIN' LANCER
+commandLimit: 10
+health: 300
+speed: 4.75
+accel: 0.0225
+drag: 0.0175
+range: 96
+flying: true
+itemCapacity: 35
+mineTier: 1
+mineSpeed: 1.25
