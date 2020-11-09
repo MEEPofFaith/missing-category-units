@@ -1,0 +1,12 @@
+localizedName: Spear
+description: Shoots lancers.
+commandLimit: 8
+health: 200
+speed: 4.9
+accel: 0.0225
+drag: 0.0175
+range: 80
+flying: true
+itemCapacity: 50
+mineTier: 2
+mineSpeed: 1.5
