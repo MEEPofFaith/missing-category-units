@@ -4,7 +4,7 @@ commandLimit: 4
 health: 100
 speed: 4.5
 accel: 0.015
-drag: 0.01
+drag: 0.015
 range: 64
 flying: true
 itemCapacity: 35
