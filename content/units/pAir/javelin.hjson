@@ -27,12 +27,10 @@ weapons:[
       type: ContinuousLaserBulletType
       recoil: 0.1
       length: 178
-      width: 16
+      width: 2
       damage: 63
+      lifetime: 64
       colors:[665C9F66, BF92F9, FFFFFF]
-      sideAngle: 45
-      sideLength: 48
-      sideWidth: 4
     }
   }
   {
