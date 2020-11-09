@@ -1,3 +1,3 @@
-const SpAirT2 = extendContent(UnitType, "javelin", {});
-SpAirT2.constructor = () => extend(MinerUnit, {});
-SpAirT2.defaultController = () => new FlyingAI();
+const SpAirT4 = extendContent(UnitType, "javelin", {});
+SpAirT4.constructor = () => extend(MinerUnit, {});
+SpAirT4.defaultController = () => new FlyingAI();
