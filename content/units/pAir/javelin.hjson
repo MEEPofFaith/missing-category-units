@@ -20,12 +20,12 @@ weapons:[
     y: -10
     mirror: false
    shootY: 8.25
-    recoil: 6
+    recoil: 4
     shake: 1
     rotate: true
     bullet:{
       type: LaserBulletType
-      recoil: 0.1
+      recoil: 0.3
       length: 200
       width: 18
       damage: 47
