@@ -12,13 +12,6 @@ itemCapacity: 50
 mineTier: 2
 mineSpeed: 1.5
 buildPower: 1.5
-engineOffset: 5.5
-weaponOffsetX: 4
-weapon: {
-  name: spear-laser
-  length: 1.5
-  reload: 4
-  alternate: false
-  bullet: lightning
-}
+shake: 0.3
+turnCursor: false
 "comment": "MEEEEEEEP HELP MEE AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA MY BRAIN IS MUSSSSHHHHHH"
