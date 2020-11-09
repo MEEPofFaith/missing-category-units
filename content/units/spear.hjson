@@ -12,6 +12,7 @@ itemCapacity: 50
 mineTier: 2
 mineSpeed: 1.5
 buildPower: 1.5
+engineOffset: 5.5
 weaponOffsetX: 4
 weapon: {
   name: spear-laser
@@ -20,3 +21,4 @@ weapon: {
   alternate: false
   bullet: lightning
 }
+"comment": "MEEEEEEEP HELP MEE AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA MY BRAIN IS MUSSSSHHHHHH"
