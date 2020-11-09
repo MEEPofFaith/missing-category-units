@@ -1,5 +1,5 @@
 localizedName: Arrow
-description: Fires lightning while moving.
+description: Fires lightning while moving. Shoots beams.
 commandLimit: 4
 health: 100
 speed: 4.5
