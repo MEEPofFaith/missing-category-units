@@ -1,7 +1,7 @@
 localizedName: Spear
 description: Shoots lancers.
 commandLimit: 8
-health: 200
+health: 250
 speed: 4.9
 accel: 0.0225
 drag: 0.0175
