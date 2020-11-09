@@ -1,0 +1,81 @@
+localizedName: Javelin
+description: Fires piercing laser beams that damage enemies and fires lightning while moving.
+health: 800
+speed: 4.9
+accel: 0.0225
+drag: 0.0175
+engineOffset: 10.5
+range: 160
+flying: true
+itemCapacity: 50
+mineTier: 2
+mineSpeed: 1.5
+buildSpeed: 1.5
+lowAltitude: true
+weapons:[
+  {
+    name: javelin-laser
+    reload: 25
+    x: 0
+    y: 7
+    mirror: false
+    shootY: 4
+    recoil: 3
+    shake: 1
+    rotate: true
+    bullet:{
+      type: LaserBulletType
+      recoil: 0.1
+      length: 96
+      width: 10
+      damage: 33
+      colors:[665C9F66, BF92F9, FFFFFF]
+      sideAngle: 45
+      sideLength: 32
+      sideWidth: 3
+    }
+  }
+  {
+    name: javelin-laser
+    reload: 55
+    x: 0
+    y: -10
+    mirror: false
+    shootY: 8.25
+    recoil: 3
+    shake: 1
+    rotate: true
+    bullet:{
+      type: LaserBulletType
+      recoil: 0.1
+      length: 146
+      width: 16
+      damage: 63
+      colors:[665C9F66, BF92F9, FFFFFF]
+      sideAngle: 45
+      sideLength: 48
+      sideWidth: 4
+    }
+  }
+  {
+    name: javelin-laser
+    reload: 35
+    x: 12
+    y: -7.25
+    shootY: 8.25
+    recoil: 3
+    shake: 1
+    rotate: true
+    bullet:{
+      type: LaserBulletType
+      recoil: 0.1
+      length: 96
+      width: 14
+      damage: 47
+      colors:[665C9F66, BF92F9, FFFFFF]
+      sideAngle: 45
+      sideLength: 36
+      sideWidth: 3
+    }
+  }
+]

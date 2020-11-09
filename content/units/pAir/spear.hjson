@@ -25,7 +25,7 @@ weapons:[
     rotate: true
     bullet:{
       type: LaserBulletType
-      recoil: 0.5
+      recoil: 0.25
       length: 64
       width: 10
       damage: 30
