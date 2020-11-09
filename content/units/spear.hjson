@@ -5,7 +5,7 @@ health: 250
 speed: 4.9
 accel: 0.0225
 drag: 0.0175
-engineOffset: 5.5
+engineOffset: 20
 range: 160
 flying: true
 itemCapacity: 50
