@@ -1,5 +1,5 @@
 localizedName: Spear
-description: Shoots lancers.
+description: Shoots a laser.
 commandLimit: 8
 health: 250
 speed: 4.9
