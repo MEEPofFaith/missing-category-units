@@ -1,9 +1,9 @@
 localizedName: Javelin
 description: Fires piercing laser beams that damage enemies and fires lightning while moving.
 health: 800
-speed: 4.9
-accel: 0.0225
-drag: 0.0175
+speed: 5
+accel: 0.023
+drag: 0.019
 engineOffset: 21
 range: 160
 flying: true
@@ -19,9 +19,9 @@ weapons:[
     x: 0
     y: -10
     mirror: false
-   shootY: 8.25
+    shootY: 8.25
     recoil: 4
-    shake: 1
+    shake: 3
     rotate: true
     bullet:{
       type: LaserBulletType
