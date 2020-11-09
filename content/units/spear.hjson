@@ -5,7 +5,8 @@ health: 250
 speed: 4.9
 accel: 0.0225
 drag: 0.0175
-range: 80
+engineOffset: 5.5
+range: 160
 flying: true
 itemCapacity: 50
 mineTier: 2
@@ -13,9 +14,9 @@ mineSpeed: 1.5
 buildPower: 1.5
 weaponOffsetX: 4
 weapon: {
-  name: arrow-weapon
+  name: spear-laser
   length: 1.5
   reload: 4
   alternate: false
-  bullet: beam
+  bullet: lightning
 }
