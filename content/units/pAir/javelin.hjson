@@ -24,9 +24,9 @@ weapons:[
     shake: 1
     rotate: true
     bullet:{
-      type: LaserBulletType
+      type: ContinuousLaserBulletType
       recoil: 0.1
-      length: 146
+      length: 178
       width: 16
       damage: 63
       colors:[665C9F66, BF92F9, FFFFFF]
