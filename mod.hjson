@@ -5,5 +5,5 @@ description:
   '''
   Adds purple "special" units for air, based around speed and energy.
   '''
-version: 0.1
+version: 0.1.1
 minGameVersion: 112
