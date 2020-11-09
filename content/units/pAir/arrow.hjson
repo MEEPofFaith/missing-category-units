@@ -5,6 +5,7 @@ health: 150
 speed: 4.5
 accel: 0.02
 drag: 0.015
+engineOffset: 6.28
 range: 64
 flying: true
 itemCapacity: 35
@@ -15,8 +16,8 @@ weapons:[
   {
     name: arrow-weapon
     reload: 15
-    x: 3
-    y: 0.75
+    x: 3.1
+    y: 0.9
     shootY: 1
     rotate: false
     recoil: 1
