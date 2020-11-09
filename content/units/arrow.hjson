@@ -2,7 +2,7 @@ localizedName: Arrow
 description: Fires lightning while moving.
 commandLimit: 4
 health: 100
-speed: 3
+speed: 4
 accel: 0.06
 drag: 0.01
 range: 64
