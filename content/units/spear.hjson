@@ -9,4 +9,3 @@ flying: true
 itemCapacity: 50
 mineTier: 2
 mineSpeed: 1.5
-hitsize: 30
