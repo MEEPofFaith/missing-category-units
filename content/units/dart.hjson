@@ -1,3 +1,4 @@
+type: flyingUnit
 localizedName: Dart
 description: Fires lightning while moving.
 commandLimit: 4
