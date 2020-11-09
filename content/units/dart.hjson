@@ -3,7 +3,7 @@ description: Fires lightning while moving.
 commandLimit: 4
 health: 50
 speed: 4
-accel: 0.08
+accel: 0.01
 drag: 0.01
 range: 48
 flying: true
