@@ -5,7 +5,7 @@ speed: 4.9
 accel: 0.0225
 drag: 0.0175
 engineOffset: 9.1
-range: 160
+range: 280
 flying: true
 itemCapacity: 50
 mineTier: 2
