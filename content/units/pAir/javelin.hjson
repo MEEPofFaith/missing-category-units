@@ -5,7 +5,7 @@ speed: 5
 accel: 0.023
 drag: 0.019
 engineOffset: 21
-engineSize: 3
+engineSize: 1.5
 range: 160
 flying: true
 itemCapacity: 50
