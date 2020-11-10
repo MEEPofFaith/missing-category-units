@@ -1,9 +1,17 @@
 const dartController = prov(() => {
-  var u = extend(FlyingAI, {
+  var dAI = extend(FlyingAI, {
+    updateTargeting(){
+      var ret = this.retarget();
+      if(ret){
+        this.target = this.findTarget(this.unit.x, this.unit.y, this.unit.range() * 2, this.unit.type.targetAir, this.unit.type.targetGround);
+      }
+      if(this.invalid(this.target)){
+        this.target = null;
+      }
+    },
     updateMovement(){
       if(this.target != null && this.command() == UnitCommand.attack){
-        this.moveTo(this.target, 0);
-        this.unit.lookAt(this.target);
+        this.attack(120);
       }
 
       if(this.target == null && this.command() == UnitCommand.attack && Vars.state.rules.waves && this.unit.team == Vars.state.rules.defaultTeam){
@@ -15,7 +23,7 @@ const dartController = prov(() => {
       }
     }
   });
-  return u;
+  return dAI;
 });//Custom AI needed because no weapons
 
 const SpAirT1 = extendContent(UnitType, "dart", {});
