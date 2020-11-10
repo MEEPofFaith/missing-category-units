@@ -1,7 +1,7 @@
 localizedName: Javelin
 description: Fires piercing laser beams that damage enemies.
-health: 800
-accel: 0.025
+health: 5000
+accel: 0.03
 drag: 0.01
 engineOffset: 21
 engineSize: 3
@@ -12,6 +12,7 @@ mineTier: 2
 mineSpeed: 1.5
 buildSpeed: 1.5
 lowAltitude: true
+hitSize: 52
 weapons:[
   {
     name: javelin-laser
