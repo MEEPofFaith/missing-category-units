@@ -1,8 +1,4 @@
+  
 const SNavT1 = extendContent(UnitType, "rana", {});
-SNavT1.constructor = () => extend(Unit, {});
+SNavT1.constructor = () => extend(BuilderMinerUnit, {});
 SNavT1.defaultController = () => new FlyingAI();
-
-//public static @EntityDef({Unitc.class, WaterMovec.class}) UnitType SNavT1;
-
-//Blocks.navalFactory.plans.add(new UnitFactory.UnitPlan(SNavT1, 60 * 25, ItemStack.with(Items.silicon, 45, Items.lead, 25, Items.titanium, 20)));
-Blocks.airFactory.plans.add(new UnitFactory.UnitPlan(SNavT1, 60 * 25, ItemStack.with(Items.silicon, 45, Items.lead, 20, Items.titanium, 25)));
