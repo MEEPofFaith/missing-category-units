@@ -7,8 +7,8 @@ Specialize in speed and energy.
 Dart -> Arrow -> Spear -> Javelin -> Harpoon
 
 ### Support Naval
-Specialize in healing and unit factories.
-Possible Names:
+Specialize in healing and unit factories. \n
+Possible Names: \n
 Rana -> Phylax -> Dalmatina -> Temporaria -> Variegata (amphibians of italy scientific names)
 
 ### Special Naval
