@@ -1,18 +1,9 @@
 localizedName: Rana
 description: Bada-bing bada-boom
-commandLimit: 4
-health: 100
+commandLimit: 6
 speed: 1.2
-range: 48
-itemCapacity: 25
+health: 260
+range: 432
+itemCapacity: 30
 faceTarget: false
 rotateShooting: false
-canDrown: false
-trailLength: 3
-trailX: 4
-trailY: -3 
-trailScl: 1
-
-research: {
-  parent: risso
-}
