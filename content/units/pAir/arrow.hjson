@@ -5,13 +5,13 @@ health: 300
 speed: 4.5
 accel: 0.03666
 drag: 0.01
-buildSpeed: 0.6
+buildSpeed: 0.25
 engineOffset: 6.28
 range: 64
 flying: true
 itemCapacity: 35
 mineTier: 1
-mineSpeed: 1.25
+mineSpeed: 1.5
 lowAltitude: true
 hitSize: 5
 weapons:[
