@@ -1,5 +1,5 @@
 localizedName: Javelin
-description: Fires piercing laser beams that damage enemies.
+description: Fires piercing laser beams that damage enemies and fires lightning while moving.
 health: 5000
 speed: 5.5
 accel: 0.03
@@ -17,7 +17,7 @@ hitSize: 46
 weapons:[
   {
     name: arrow-weapon
-    reload: 11
+    reload: 13
     x: 4.5
     y: 11
     shootY: 1
@@ -25,7 +25,7 @@ weapons:[
     rotate: true
     bullet:{
       type: LaserBoltBulletType
-      damage: 15
+      damage: 18
       backColor: 665C9F
       frontColor: BF92F9
       speed: 4.5
@@ -34,15 +34,16 @@ weapons:[
   }
   {
     name: arrow-weapon
-    reload: 17
-    x: 16
+    reload: 13
+    x: -16
     y: -7
     shootY: 1
     recoil: 1
     rotate: true
+    flipSprite: true
     bullet:{
       type: LaserBoltBulletType
-      damage: 25
+      damage: 21
       backColor: 665C9F
       frontColor: BF92F9
       speed: 5.5
