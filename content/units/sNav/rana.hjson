@@ -16,5 +16,5 @@ trailY: -3
 trailScl: 1
 
 research: {
-  parent: navalFactory
+  parent: risso
 }
