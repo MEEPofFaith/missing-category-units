@@ -52,28 +52,6 @@ weapons:[
   }
   {
     name: spear-laser
-    reload: 25
-    x: 8.5
-    y: 6
-    shootY: 8.25
-    recoil: 3
-    shake: 1
-    rotate: true
-    shootSound: laser
-    bullet:{
-      type: LaserBulletType
-      recoil: 0.1
-      length: 96
-      width: 14
-      damage: 39
-      colors:[665C9F66, BF92F9, FFFFFF]
-      sideAngle: 45
-      sideLength: 62
-      sideWidth: 1
-    }
-  }
-  {
-    name: spear-laser
     reload: 37.5
     x: 8.75
     y: -6
@@ -108,8 +86,8 @@ weapons:[
     bullet:{
       type: LaserBulletType
       recoil: 0.4
-      length: 160
-      width: 18
+      length: 180
+      width: 22
       damage: 53
       colors:[665C9F66, BF92F9, FFFFFF]
       sideAngle: 45
