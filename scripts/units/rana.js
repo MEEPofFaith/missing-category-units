@@ -1,4 +1,4 @@
-const SNavT1 = extendContent(UnitType, "rana", {});
+const SNavT1 = extendContent(WaterMoveUnitType, "rana", {});
 SNavT1.constructor = () => extend(Unit, {});
 SNavT1.defaultController = () => new GroundAI();
 
