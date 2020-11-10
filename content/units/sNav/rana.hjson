@@ -1,7 +1,7 @@
 localizedName: Rana
 description: Bada-bing bada-boom
 commandLimit: 4
-health: 100
+health: 260
 engineOffset: 0
 engineSize: 0.1
 range: 432
