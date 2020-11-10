@@ -3,7 +3,8 @@ description: Bada-bing bada-boom
 commandLimit: 4
 health: 100
 speed: 1.2
-engineOffset: 5.5
+engineOffset: 0
+engineSize: 0
 range: 48
 flying: true
 itemCapacity: 25
