@@ -9,4 +9,3 @@ flying: true
 itemCapacity: 25
 faceTarget: false
 rotateShooting: false
-canDrown: false
