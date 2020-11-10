@@ -1,6 +1,6 @@
 const SNavT1 = extendContent(UnitType, "rana", {});
 SNavT1.constructor = () => extend(Unit, {});
-SNavT1.defaultController = () => new GroundAI();
+SNavT1.defaultController = () => new FlyingAI();
 
 //public static @EntityDef({Unitc.class, WaterMovec.class}) UnitType SNavT1;
 
