@@ -4,7 +4,7 @@ health: 5000
 speed: 5.5
 accel: 0.03
 drag: 0.013
-engineOffset: 22
+engineOffset: 23
 engineSize: 7
 range: 84
 flying: true
@@ -16,46 +16,104 @@ lowAltitude: true
 hitSize: 46
 weapons:[
   {
-    name: javelin-laser
-    reload: 50
-    x: 0
-    y: 10
-    mirror: false
-    shootY: 8.25
-    recoil: 4
-    shake: 3
+    name: arrow-weapon
+    reload: 11
+    x: 4.5
+    y: 11
+    shootY: 1
+    recoil: 1
     rotate: true
     bullet:{
-      type: LaserBulletType
-      recoil: 0.3
-      length: 160
-      width: 18
-      damage: 62
-      colors:[665C9F66, BF92F9, FFFFFF]
-      sideAngle: 45
-      sideLength: 70
-      sideWidth: 1.5
+      type: LaserBoltBulletType
+      damage: 15
+      backColor: 665C9F
+      frontColor: BF92F9
+      speed: 4.5
+      lifetime: 50
     }
   }
   {
-    name: javelin-laser
-    reload: 25
-    x: 12
+    name: arrow-weapon
+    reload: 17
+    x: 16
     y: -7
+    shootY: 1
+    recoil: 1
+    rotate: true
+    bullet:{
+      type: LaserBoltBulletType
+      damage: 25
+      backColor: 665C9F
+      frontColor: BF92F9
+      speed: 5.5
+      lifetime: 50
+    }
+  }
+  {
+    name: spear-laser
+    reload: 25
+    x: 8.5
+    y: 6
     shootY: 8.25
     recoil: 3
     shake: 1
     rotate: true
+    shootSound: laser
     bullet:{
       type: LaserBulletType
       recoil: 0.1
       length: 96
       width: 14
-      damage: 52
+      damage: 39
       colors:[665C9F66, BF92F9, FFFFFF]
       sideAngle: 45
       sideLength: 62
       sideWidth: 1
+    }
+  }
+  {
+    name: spear-laser
+    reload: 37.5
+    x: 8.75
+    y: -6
+    shootY: 8.25
+    recoil: 3
+    shake: 1
+    rotate: true
+    shootSound: laser
+    bullet:{
+      type: LaserBulletType
+      recoil: 0.2
+      length: 127
+      width: 14
+      damage: 42
+      colors:[665C9F66, BF92F9, FFFFFF]
+      sideAngle: 45
+      sideLength: 62
+      sideWidth: 1
+    }
+  }
+  {
+    name: javelin-laser
+    reload: 50
+    x: 0
+    y: -15
+    mirror: false
+    shootY: 8.25
+    recoil: 4
+    shake: 3
+    rotate: true
+    shootSound: laser
+    bullet:{
+      type: LaserBulletType
+      recoil: 0.4
+      length: 160
+      width: 18
+      damage: 53
+      colors:[665C9F66, BF92F9, FFFFFF]
+      sideAngle: 45
+      sideLength: 70
+      sideWidth: 1.5
     }
   }
 ]
