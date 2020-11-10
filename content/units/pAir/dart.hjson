@@ -12,6 +12,8 @@ flying: true
 itemCapacity: 25
 mineTier: 1
 mineSpeed: 1
+targetGround: true
+targetAir: true
 
 research: {
   parent: flare
