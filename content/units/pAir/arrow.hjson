@@ -33,3 +33,7 @@ weapons:[
     }
   }
 ]
+
+research: {
+  parent: dart
+}

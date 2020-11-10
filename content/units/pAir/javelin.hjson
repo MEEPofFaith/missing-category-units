@@ -118,3 +118,7 @@ weapons:[
     }
   }
 ]
+
+research: {
+  parent: spear
+}

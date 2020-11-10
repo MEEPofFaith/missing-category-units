@@ -16,7 +16,7 @@ const dartController = prov(() => {
     }
   });
   return u;
-});
+});//Custom AI needed because no weapons
 
 const SpAirT1 = extendContent(UnitType, "dart", {});
 SpAirT1.constructor = () => extend(MinerUnit, {});

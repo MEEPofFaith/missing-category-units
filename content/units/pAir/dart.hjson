@@ -12,3 +12,7 @@ flying: true
 itemCapacity: 25
 mineTier: 1
 mineSpeed: 1
+
+research: {
+  parent: flare
+}
