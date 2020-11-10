@@ -11,7 +11,7 @@ flying: true
 itemCapacity: 50
 mineTier: 2
 mineSpeed: 2
-buildSpeed: 0.9
+buildSpeed: 0.75
 lowAltitude: true
 hitSize: 46
 weapons:[
