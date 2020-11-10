@@ -1,0 +1,13 @@
+localizedName: Rana
+description: Bada-bing bada-boom
+commandLimit: 4
+health: 100
+speed: 1.2
+engineOffset: 5.5
+range: 48
+flying: false
+itemCapacity: 25
+
+research: {
+  parent: naval-factory
+}
