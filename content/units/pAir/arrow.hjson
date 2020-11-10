@@ -26,7 +26,7 @@ weapons:[
     top: false
     bullet:{
       type: LaserBoltBulletType
-      damage: 11
+      damage: 19
       backColor: 665C9F
       frontColor: BF92F9
       speed: 4

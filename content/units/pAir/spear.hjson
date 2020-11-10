@@ -29,7 +29,7 @@ weapons:[
       recoil: 0.25
       length: 72
       width: 10
-      damage: 30
+      damage: 36
       colors:[665C9F66, BF92F9, FFFFFF]
       sideAngle: 45
       sideLength: 32

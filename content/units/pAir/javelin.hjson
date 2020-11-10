@@ -13,11 +13,11 @@ mineTier: 2
 mineSpeed: 1.5
 buildSpeed: 1.5
 lowAltitude: true
-hitSize: 52
+hitSize: 46
 weapons:[
   {
     name: javelin-laser
-    reload: 55
+    reload: 50
     x: 0
     y: 10
     mirror: false
@@ -28,9 +28,9 @@ weapons:[
     bullet:{
       type: LaserBulletType
       recoil: 0.3
-      length: 200
+      length: 160
       width: 18
-      damage: 47
+      damage: 62
       colors:[665C9F66, BF92F9, FFFFFF]
       sideAngle: 45
       sideLength: 70
@@ -39,7 +39,7 @@ weapons:[
   }
   {
     name: javelin-laser
-    reload: 35
+    reload: 25
     x: 12
     y: -7
     shootY: 8.25
@@ -51,7 +51,7 @@ weapons:[
       recoil: 0.1
       length: 96
       width: 14
-      damage: 47
+      damage: 52
       colors:[665C9F66, BF92F9, FFFFFF]
       sideAngle: 45
       sideLength: 62
