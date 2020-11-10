@@ -9,5 +9,5 @@ flying: false
 itemCapacity: 25
 
 research: {
-  parent: risso
+  parent: navalFactory
 }
