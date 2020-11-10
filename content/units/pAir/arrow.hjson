@@ -4,7 +4,7 @@ commandLimit: 6
 health: 300
 speed: 4.5
 accel: 0.03666
-drag: 0.01
+drag: 0.011
 buildSpeed: 1.5
 engineOffset: 6.28
 range: 64

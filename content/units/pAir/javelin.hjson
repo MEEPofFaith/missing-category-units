@@ -1,11 +1,12 @@
 localizedName: Javelin
 description: Fires piercing laser beams that damage enemies.
 health: 5000
+speed: 5.5
 accel: 0.03
-drag: 0.01
+drag: 0.013
 engineOffset: 21
 engineSize: 3
-range: 160
+range: 84
 flying: true
 itemCapacity: 50
 mineTier: 2
@@ -32,8 +33,8 @@ weapons:[
       damage: 47
       colors:[665C9F66, BF92F9, FFFFFF]
       sideAngle: 45
-      sideLength: 48
-      sideWidth: 4
+      sideLength: 70
+      sideWidth: 1.5
     }
   }
   {
@@ -53,8 +54,8 @@ weapons:[
       damage: 47
       colors:[665C9F66, BF92F9, FFFFFF]
       sideAngle: 45
-      sideLength: 36
-      sideWidth: 3
+      sideLength: 62
+      sideWidth: 1
     }
   }
 ]

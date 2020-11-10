@@ -1,9 +1,9 @@
 localizedName: Spear
 description: Fires piercing laser beams that damage enemies and fires lightning while moving.
 health: 600
-speed: 4.9
+speed: 5
 accel: 0.03333
-drag: 0.01
+drag: 0.012
 engineOffset: 10.75
 range: 60
 flying: true
@@ -24,7 +24,6 @@ weapons:[
     recoil: 3
     shake: 1
     rotate: true
-    top: false
     bullet:{
       type: LaserBulletType
       recoil: 0.25
@@ -33,8 +32,8 @@ weapons:[
       damage: 30
       colors:[665C9F66, BF92F9, FFFFFF]
       sideAngle: 45
-      sideLength: 24
-      sideWidth: 2.5
+      sideLength: 32
+      sideWidth: 1
     }
   }
 ]
