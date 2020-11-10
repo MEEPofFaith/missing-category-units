@@ -1,5 +1,5 @@
 localizedName: Javelin
-description: Fires piercing laser beams that damage enemies and fires lightning while moving.
+description: Fires piercing laser beams that damage enemies.
 health: 5000
 speed: 5.5
 accel: 0.03
