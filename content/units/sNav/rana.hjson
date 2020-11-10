@@ -7,6 +7,13 @@ engineOffset: 5.5
 range: 48
 flying: false
 itemCapacity: 25
+faceTarget: false
+rotateShooting: false
+canDrown: false
+trailLength: 3
+trailX: 4
+trailY: -3 
+trailScl: 1
 
 research: {
   parent: navalFactory
