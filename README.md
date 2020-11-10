@@ -3,6 +3,7 @@ This mod aims to fill in the gaps of the categories not covered by the vanilla u
 
 ### Special Air
 Specialze in speed and energy.
+
 Dart -> Arrow -> Spear -> Javelin -> Harpoon
 
 ### Support Naval
