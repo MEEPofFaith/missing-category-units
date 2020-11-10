@@ -2,11 +2,10 @@ localizedName: Rana
 description: Bada-bing bada-boom
 commandLimit: 4
 health: 100
-speed: 1.2
 engineOffset: 0
 engineSize: 0.1
-range: 48
+range: 432
 flying: true
-itemCapacity: 25
+itemCapacity: 30
 faceTarget: false
 rotateShooting: false
