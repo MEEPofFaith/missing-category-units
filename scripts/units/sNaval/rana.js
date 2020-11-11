@@ -1,52 +1,42 @@
-/*var range = 32; //in tiles
+var range = 32; //in tiles
 
 const ranaController = prov(() => {
-  var rAI = extend(RepairAI, {
+  var rAI = extend(GroundAI, {
     setEffectsC(){
-      this._fireLoc = null;
-      this._targetPos = null;
+      this._fireFound = false;
+      this._targLoc = null;
     },
     updateMovement(){
-      if(this._fireLoc != null){
-        this._targetPos = this._fireLoc;
-      }else if(this.target != null){
-        this._targetPos =  Point2.pack(this.target.x, this.target.y);
-      }else if(this.target == null){
-        this.unit.controlWeapons(false);
-        this._targetPos = null;
-      }
-      
-      if(this._targetPos != null){
+      if(this._fireFound){
         var shoot = false;
         
-        if(this.target.within(this.unit, this.unit.range())){
-          this.unit.aim(this._targetPos);
+        if(this._targLoc.within(this.unit, this.unit.range())){
+          this.unit.aim(this._targLoc);
           shoot = true;
-        }else if(!this.target.within(this.unit, this.unit.range() * 0.86)){
-          //this.pathfind(Vars.pathfinder.positionTarget(this._targetPos));
-          //this.pathfind(Pathfinder.PositionTarget.(this._targetPos));
-          this.pathfind(this._targetPos);
         }
-
+        
         this.unit.controlWeapons(shoot);
+      }else{
+        this.super$updateMovement();
       }
     },
     updateTargeting(){
       for(var x = -range; x <= range; x++){
         for(var y = -range; y <= range; y++){
-          var other = Vars.world.tileWorld(x + Mathf.round(this.unit.x), y + Mathf.round(this.unit.y));
+          var xLoc = x + Mathf.round(this.unit.x / Vars.tilesize);
+          var yLoc = y + Mathf.round(this.unit.y / Vars.tilesize);
+          var other = Vars.world.tileWorld(xLoc, yLoc);
           
-          if(other != null && Fires.has(x + Mathf.round(this.unit.x), y + Mathf.round(this.unit.y)) && (other.build == null || other.team() == this.unit.team)){
-            this._fireLoc = Fires.get(x + Mathf.round(this.unit.x), y + Mathf.round(this.unit.y));
+          if(other != null && Fires.has(xLoc, yLoc) && (other.build == null || other.team() == this.unit.team)){
+            this._targLoc = Fires.get(xLoc, yLoc);
+            this._fireFound = true;
             return;
           }else{
-            this._fireLoc = null;
+            this._fireFound = false;
+            this._targLoc = null;
+            this.super$updateTargeting();
           }
         }
-      }
-      
-      if(this._fireLoc == null){
-        this.super$updateTargeting();
       }
     }
   });
@@ -54,11 +44,11 @@ const ranaController = prov(() => {
   
   return rAI;
 });
-*/
+
 const SuNavT1 = extendContent(UnitType, "rana", {});
 SuNavT1.constructor = () => extend(UnitWaterMove, {});
-//SuNavT1.defaultController = ranaController;
-SuNavT1.defaultController = () => new GroundAI();
+SuNavT1.defaultController = ranaController;
+//SuNavT1.defaultController = () => new GroundAI();
 
 SuNavT1.abilities.add(new RepairFieldAbility(10, 60 * 5, 24));
 SuNavT1.abilities.add(new ShieldRegenFieldAbility(40, 50, 60 * 8, 24));

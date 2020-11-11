@@ -1,10 +1,10 @@
 localizedName: Rana
-description: Sprays water that knocks back enemies.
+description: Sprays water that knocks back enemies and puts out fires.
 commandLimit: 6
 speed: 1.2
 health: 260
 sheild: 20
-range: 40
+range: 200
 itemCapacity: 30
 rotateShooting: false
 
@@ -26,6 +26,7 @@ weapons:[
       damage: 1
       healPercent: 1
       collidesTeam: true
+      lifetime: 60
     }
   }
 ]
