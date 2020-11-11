@@ -24,7 +24,7 @@ weapons:[
       type: LiquidBulletType
       liquid: water
       damage: 1
-      healPercent: 3
+      healPercent: 1
       collidesTeam: true
     }
   }
