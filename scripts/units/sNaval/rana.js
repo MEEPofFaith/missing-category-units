@@ -1,4 +1,4 @@
-/*var range = 32; //in tiles
+var range = 32; //in tiles
 
 const ranaController = prov(() => {
   var rAI = extend(RepairAI, {
@@ -53,7 +53,7 @@ const ranaController = prov(() => {
   rAI.setEffectsC();
   
   return rAI;
-});*/
+});
 
 const SuNavT1 = extendContent(UnitType, "rana", {});
 SuNavT1.constructor = () => extend(UnitWaterMove, {});
