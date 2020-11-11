@@ -28,6 +28,7 @@ weapons:[
       damage: 1
       canHeal: true
       healPercent: 3
+      collidesTeam: true
     }
   }
 ]
