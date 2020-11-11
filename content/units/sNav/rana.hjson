@@ -7,8 +7,6 @@ sheild: 20
 range: 40
 itemCapacity: 30
 rotateShooting: false
-canHeal: true
-singleTarget: true
 
 weapons:[
   {
