@@ -3,10 +3,17 @@ description: Sprays water that knocks back enemies.
 commandLimit: 6
 speed: 1.2
 health: 260
+sheild: 20
 range: 432
 itemCapacity: 30
 rotateShooting: false
-
+trailLength: 3
+trailX: 4
+trailY: -3
+trailScl: 1
+canHeal: true
+singleTarget: true
+    
 weapons:[
   {
     name: rana-wave
