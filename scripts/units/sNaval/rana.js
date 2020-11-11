@@ -16,12 +16,12 @@ const ranaController = prov(() => {
         }
         
         this.unit.controlWeapons(shoot);
-      }else{
+      }else if(!this._fireFound){
         this.super$updateMovement();
       }
     },
     updateTargeting(){
-      if(this.retarget()){
+      if(this.timer.get(this.timerTarget2, 40)){
         for(var x = -range; x <= range; x++){
           for(var y = -range; y <= range; y++){
             var xLoc = x + Mathf.round(this.unit.x / Vars.tilesize);
@@ -34,7 +34,6 @@ const ranaController = prov(() => {
               return;
             }else{
               this._fireFound = false;
-              this._fireLoc = null;
             }
           }
         }
