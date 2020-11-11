@@ -7,7 +7,13 @@ sheild: 20
 range: 432
 itemCapacity: 30
 rotateShooting: false
-
+trailLength: 3
+trailX: 4
+trailY: -3
+trailScl: 1
+canHeal: true
+singleTarget: true
+    
 weapons:[
   {
     name: rana-wave
