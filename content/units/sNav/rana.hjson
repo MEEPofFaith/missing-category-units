@@ -28,9 +28,9 @@ weapons:[
       type: LiquidBulletType
       liquid: water
       damage: 1
-      lifetime: 100
+      lifetime: 60
       inaccuracy: 7
-      shootSound: Sounds.spray
+      shootSound: Sounds.wave
     }
   }
 ]
