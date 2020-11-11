@@ -1,9 +1,28 @@
 localizedName: Rana
-description: Bada-bing bada-boom
+description: Sprays water that knocks back enemies.
 commandLimit: 6
 speed: 1.2
 health: 260
 range: 432
 itemCapacity: 30
-faceTarget: false
 rotateShooting: false
+
+weapons:[
+  {
+    name: rana-wave
+    mirror: false
+    x: 0
+    y: -2
+    shootY: 1
+    reload: 5
+    rotate: true
+    bullet:{
+      type: LiquidBulletType
+      liquid: water
+    }
+  }
+]
+
+research: {
+  parent: risso
+}

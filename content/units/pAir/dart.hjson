@@ -14,6 +14,7 @@ mineTier: 1
 mineSpeed: 1
 targetGround: true
 targetAir: true
+rotateShooting: false
 
 research: {
   parent: flare

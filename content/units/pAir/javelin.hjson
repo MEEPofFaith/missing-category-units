@@ -15,6 +15,8 @@ buildSpeed: 0.75
 lowAltitude: true
 hitSize: 46
 armor: 3
+rotateShooting: false
+
 weapons:[
   {
     name: arrow-weapon
