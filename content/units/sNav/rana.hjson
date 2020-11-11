@@ -22,7 +22,7 @@ weapons:[
     y: -4
     shootY: 8
     recoil: 0
-    reload: 3
+    reload: 3.5
     rotate: true
     inaccuracy: 7
     shootSound: spray
