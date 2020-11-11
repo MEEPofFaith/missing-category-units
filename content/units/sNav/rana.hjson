@@ -22,12 +22,15 @@ weapons:[
     y: -2
     recoil: 0.5
     shootY: 1
-    reload: 5
+    reload: 4
     rotate: true
     bullet:{
       type: LiquidBulletType
       liquid: water
       damage: 1
+      lifetime: 100
+      inaccuracy: 7
+      shootSound: Sounds.spray
     }
   }
 ]
