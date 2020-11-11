@@ -1,17 +1,17 @@
-var range = 32; //in tiles
+var range = 20; //in tiles
 
 const ranaController = prov(() => {
   var rAI = extend(GroundAI, {
     setEffectsC(){
       this._fireFound = false;
-      this._targLoc = null;
+      this._fireLoc = null;
     },
     updateMovement(){
       if(this._fireFound){
         var shoot = false;
         
-        if(this._targLoc.within(this.unit, this.unit.range())){
-          this.unit.aim(this._targLoc);
+        if(this._fireLoc.within(this.unit, this.unit.range())){
+          this.unit.aim(this._fireLoc);
           shoot = true;
         }
         
@@ -28,12 +28,12 @@ const ranaController = prov(() => {
           var other = Vars.world.tileWorld(xLoc, yLoc);
           
           if(other != null && Fires.has(xLoc, yLoc) && (other.build == null || other.team() == this.unit.team)){
-            this._targLoc = Fires.get(xLoc, yLoc);
+            this._fireLoc = Fires.get(xLoc, yLoc);
             this._fireFound = true;
             return;
           }else{
             this._fireFound = false;
-            this._targLoc = null;
+            this._fireLoc = null;
             this.super$updateTargeting();
           }
         }
