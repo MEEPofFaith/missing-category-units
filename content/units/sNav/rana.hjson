@@ -20,9 +20,9 @@ weapons:[
     mirror: false
     x: 0
     y: -4
-    shootY: 8
+    shootY: 6
     recoil: 0
-    reload: 3.5
+    reload: 3
     rotate: true
     inaccuracy: 7
     shootSound: spray
