@@ -27,7 +27,11 @@ const dartController = prov(() => {
 });//Custom AI needed because no weapons
 
 const SpAirT1 = extendContent(UnitType, "dart", {});
-SpAirT1.constructor = () => extend(UnitBuilder, {});
+
+    //air + building + mining
+    //public static @EntityDef({Unitc.class, Builderc.class}) UnitType poly;
+
+SpAirT1.constructor = () => extend(BuilderUnit, {});
 SpAirT1.defaultController = dartController;
 SpAirT1.abilities.add(new MoveLightningAbility(15, 8, 0.15, 1, 4, Color.valueOf("#bf92f9")));
 
