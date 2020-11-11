@@ -21,22 +21,27 @@ const ranaController = prov(() => {
       }
     },
     updateTargeting(){
-      for(var x = -range; x <= range; x++){
-        for(var y = -range; y <= range; y++){
-          var xLoc = x + Mathf.round(this.unit.x / Vars.tilesize);
-          var yLoc = y + Mathf.round(this.unit.y / Vars.tilesize);
-          var other = Vars.world.tileWorld(xLoc, yLoc);
-          
-          if(other != null && Fires.has(xLoc, yLoc) && (other.build == null || other.team() == this.unit.team)){
-            this._fireLoc = Fires.get(xLoc, yLoc);
-            this._fireFound = true;
-            return;
-          }else{
-            this._fireFound = false;
-            this._fireLoc = null;
-            this.super$updateTargeting();
+      if(this.retarget()){
+        for(var x = -range; x <= range; x++){
+          for(var y = -range; y <= range; y++){
+            var xLoc = x + Mathf.round(this.unit.x / Vars.tilesize);
+            var yLoc = y + Mathf.round(this.unit.y / Vars.tilesize);
+            var other = Vars.world.tileWorld(xLoc, yLoc);
+            
+            if(other != null && Fires.has(xLoc, yLoc) && (other.build == null || other.team() == this.unit.team)){
+              this._fireLoc = Fires.get(xLoc, yLoc);
+              this._fireFound = true;
+              return;
+            }else{
+              this._fireFound = false;
+              this._fireLoc = null;
+            }
           }
         }
+      }
+      
+      if(!this._fireFound){
+        this.super$updateTargeting();
       }
     }
   });
