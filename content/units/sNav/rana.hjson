@@ -22,7 +22,6 @@ weapons:[
     y: -4
     shootY: 4
     recoil: 0
-    restitution: 0.5
     reload: 2
     rotate: true
     inaccuracy: 7
