@@ -1,7 +1,7 @@
 localizedName: Arrow
 description: Fires laser bolts that damage enemies and fires lightning while moving.
 commandLimit: 6
-health: 300
+health: 250
 speed: 4.5
 accel: 0.03666
 drag: 0.011
@@ -16,6 +16,7 @@ lowAltitude: true
 hitSize: 5
 targetGround: true
 targetAir: true
+armor: 1
 weapons:[
   {
     name: arrow-weapon

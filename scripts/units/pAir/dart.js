@@ -3,7 +3,7 @@ const dartController = prov(() => {
     updateTargeting(){
       var ret = this.retarget();
       if(ret){
-        this.target = this.findTarget(this.unit.x, this.unit.y, this.unit.range() * 2, this.unit.type.targetAir, this.unit.type.targetGround);
+        this.target = this.findTarget(this.unit.x, this.unit.y, this.unit.range(), this.unit.type.targetAir, this.unit.type.targetGround);
       }
       if(this.invalid(this.target)){
         this.target = null;

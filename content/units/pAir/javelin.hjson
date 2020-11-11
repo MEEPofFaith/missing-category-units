@@ -1,6 +1,6 @@
 localizedName: Javelin
-description: Barranges enemies with laser bolts and piercing laser beams.
-health: 5000
+description: Barrages enemies with laser bolts and piercing laser beams.
+health: 4250
 speed: 5.5
 accel: 0.03
 drag: 0.013
@@ -14,6 +14,7 @@ mineSpeed: 2
 buildSpeed: 0.75
 lowAltitude: true
 hitSize: 46
+armor: 3
 weapons:[
   {
     name: arrow-weapon
