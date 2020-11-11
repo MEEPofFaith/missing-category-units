@@ -8,8 +8,7 @@ Dart -> Arrow -> Spear -> Javelin -> Harpoon
 
 ### Support Naval
 Specialize in healing and unit factories. 
-Possible Names: 
-Rana -> Phylax -> Dalmatina -> Temporaria -> Variegata (amphibians of italy scientific names, because why not)
+rana -> renidae -> protidae -> renigata -> tempolax
 
 ### Special Naval
 ????

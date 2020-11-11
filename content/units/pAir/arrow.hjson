@@ -2,9 +2,9 @@ localizedName: Arrow
 description: Fires laser bolts that damage enemies and fires lightning while moving.
 commandLimit: 6
 health: 250
-speed: 4.5
-accel: 0.03666
-drag: 0.011
+speed: 3.8
+accel: 0.015
+drag: 0.0075
 engineOffset: 6
 range: 64
 flying: true

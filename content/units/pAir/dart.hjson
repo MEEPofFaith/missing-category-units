@@ -2,9 +2,9 @@ localizedName: Dart
 description: Fires lightning while moving.
 commandLimit: 4
 health: 50
-speed: 4
-accel: 0.04
-drag: 0.01
+speed: 3.5
+accel: 0.01
+drag: 0.005
 engineOffset: 6
 engineSize: 2
 range: 48
