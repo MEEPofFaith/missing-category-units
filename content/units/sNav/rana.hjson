@@ -23,7 +23,7 @@ weapons:[
     shootY: 4
     recoil: 0.5
     restitution: 0.01
-    reload: 4
+    reload: 2
     rotate: true
     bullet:{
       type: LiquidBulletType
