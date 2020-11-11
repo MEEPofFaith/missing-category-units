@@ -24,6 +24,7 @@ weapons:[
     recoil: 0
     reload: 2.5
     rotate: true
+    shootSound: spray
     bullet:{
       type: LiquidBulletType
       liquid: water
