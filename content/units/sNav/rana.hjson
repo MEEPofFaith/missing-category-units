@@ -7,10 +7,6 @@ sheild: 20
 range: 40
 itemCapacity: 30
 rotateShooting: false
-trailLength: 3
-trailX: 4
-trailY: -3
-trailScl: 1
 canHeal: true
 singleTarget: true
 
@@ -20,9 +16,9 @@ weapons:[
     mirror: false
     x: 0
     y: -4
-    shootY: 4
+    shootY: 6
     recoil: 0
-    reload: 2
+    reload: 3
     rotate: true
     inaccuracy: 7
     shootSound: spray
