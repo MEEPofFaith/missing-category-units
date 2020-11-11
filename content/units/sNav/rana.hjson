@@ -20,11 +20,13 @@ weapons:[
     rotate: true
     inaccuracy: 7
     shootSound: spray
+    canHeal: true
+    healPercent: 3
     bullet:{
       type: LiquidBulletType
       liquid: water
       damage: 1
-      lifetime: 60
+      canHeal: true
       healPercent: 3
     }
   }
