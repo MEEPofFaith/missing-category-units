@@ -21,14 +21,17 @@ weapons:[
     x: 0
     y: -4
     shootY: 4
-    reload: 2
     recoil: 0.5
     restitution: 0.04
+    reload: 4
     rotate: true
     bullet:{
       type: LiquidBulletType
       liquid: water
       damage: 1
+      lifetime: 60
+      inaccuracy: 7
+      shootSound: Sounds.wave
     }
   }
 ]
