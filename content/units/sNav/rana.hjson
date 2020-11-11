@@ -20,13 +20,10 @@ weapons:[
     rotate: true
     inaccuracy: 7
     shootSound: spray
-    canHeal: true
-    healPercent: 3
     bullet:{
       type: LiquidBulletType
       liquid: water
       damage: 1
-      canHeal: true
       healPercent: 3
       collidesTeam: true
     }
