@@ -25,6 +25,7 @@ weapons:[
       liquid: water
       damage: 1
       lifetime: 60
+      healPercent: 3
     }
   }
 ]
