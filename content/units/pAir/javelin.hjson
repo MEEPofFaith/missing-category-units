@@ -36,8 +36,7 @@ weapons:[
       shootEffect: shootSmall
       hitColor: BF92F9
       despawnEffect: none
-      backColor: 665C9F
-      frontColor: BF92F9
+      color: BF92F9
       lifetime: 30
       knockback: -1
     }
@@ -60,8 +59,7 @@ weapons:[
       shootEffect: shootSmall
       hitColor: BF92F9
       despawnEffect: none
-      backColor: 665C9F
-      frontColor: BF92F9
+      color: BF92F9
       lifetime: 30
       knockback: -1
     }
@@ -84,8 +82,7 @@ weapons:[
       shootEffect: shootSmall
       hitColor: BF92F9
       despawnEffect: none
-      backColor: 665C9F
-      frontColor: BF92F9
+      color: BF92F9
       lifetime: 30
       knockback: -1
     }
@@ -108,8 +105,7 @@ weapons:[
       shootEffect: shootSmall
       hitColor: BF92F9
       despawnEffect: none
-      backColor: 665C9F
-      frontColor: BF92F9
+      color: BF92F9
       lifetime: 30
       knockback: -1
     }
