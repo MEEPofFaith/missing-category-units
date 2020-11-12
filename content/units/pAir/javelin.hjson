@@ -29,7 +29,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 104
+      length: 78
       width: 0.55
       sapStrength: 0.8
       damage: 17
@@ -52,7 +52,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 128
+      length: 78
       width: 0.55
       sapStrength: 1.1
       damage: 25
@@ -66,16 +66,16 @@ weapons:[
   }
   {
     name: arrow-weapon
-    reload: 19
-    x: 8.5
-    y: 6.75
+    reload: 16
+    x: 10.5
+    y: 9
     shootY: 1
     recoil: 1
     rotate: true
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 113
+      length: 78
       width: 0.55
       sapStrength: 1
       damage: 22
