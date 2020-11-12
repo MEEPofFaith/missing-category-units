@@ -10,7 +10,7 @@ range: 84
 flying: true
 itemCapacity: 50
 mineTier: 2
-mineSpeed: 2
+mineSpeed: 1.75
 buildSpeed: 0.75
 lowAltitude: true
 hitSize: 46
@@ -26,6 +26,7 @@ weapons:[
     shootY: 1
     recoil: 1
     rotate: true
+    shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
       damage: 17
@@ -43,6 +44,7 @@ weapons:[
     shootY: 1
     recoil: 1
     rotate: true
+    shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
       damage: 32
@@ -60,6 +62,7 @@ weapons:[
     shootY: 1
     recoil: 1
     rotate: true
+    shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
       damage: 20
@@ -77,6 +80,7 @@ weapons:[
     shootY: 1
     recoil: 1
     rotate: true
+    shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
       damage: 14

@@ -18,7 +18,7 @@ const javelinController = prov(() => {
 });//Custom AI needed because no weapons
 
 const SpAirT4 = extendContent(UnitType, "javelin", {});
-SpAirT4.constructor = () => extend(BuilderMinerUnit, {});
+SpAirT4.constructor = () => extend(BuilderUnit, {});
 SpAirT4.defaultController = javelinController;
 SpAirT4.abilities.add(new MoveLightningAbility(58, 20, 0.25, 1.3, 5.5, Color.valueOf("#bf92f9")));
 //MEEP yes

@@ -10,7 +10,7 @@ const ranaController = prov(() => {
       if(this._fireFound){
         var shoot = false;
         
-        if(this._fireLoc.within(this.unit, this.unit.range())){
+        if(this.unit.inRange(this._fireLoc)){
           this.unit.aim(this._fireLoc);
           shoot = true;
         }

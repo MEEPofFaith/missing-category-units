@@ -11,7 +11,7 @@ range: 48
 flying: true
 itemCapacity: 25
 mineTier: 1
-mineSpeed: 1
+mineSpeed: 0.75
 targetGround: true
 targetAir: true
 rotateShooting: false

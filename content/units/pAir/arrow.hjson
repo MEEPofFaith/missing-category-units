@@ -10,13 +10,14 @@ range: 64
 flying: true
 itemCapacity: 35
 mineTier: 1
-mineSpeed: 1.5
+mineSpeed: 1.25
 buildSpeed: 0.4
 lowAltitude: true
 hitSize: 5
 targetGround: true
 targetAir: true
 armor: 1
+
 weapons:[
   {
     name: arrow-weapon
@@ -27,6 +28,7 @@ weapons:[
     rotate: false
     recoil: 1
     top: false
+    shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
       damage: 19
