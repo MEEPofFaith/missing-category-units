@@ -29,7 +29,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 104
+      length: 78
       width: 0.55
       sapStrength: 0.7
       damage: 17
@@ -52,7 +52,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 128
+      length: 78
       width: 0.55
       sapStrength: 0.7
       damage: 17
@@ -75,7 +75,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 113
+      length: 78
       width: 0.55
       sapStrength: 0.7
       damage: 17
@@ -83,28 +83,6 @@ weapons:[
       color: BF92F9
       hitColor: BF92F9
       despawnEffect: none
-      lifetime: 30
-      knockback: -1
-    }
-  }
-  {
-    name: arrow-weapon
-    reload: 10
-    x: 12.5
-    y: 9.75
-    shootY: 1
-    recoil: 1
-    rotate: true
-    shootSound: lasershoot
-    bullet:{
-      type: SapBulletType
-      length: 108
-      width: 0.55
-      sapStrength: 0.7
-      damage: 17
-      shootEffect: shootSmall
-      color: BF92F9
-      hitColor: BF92F9
       lifetime: 30
       knockback: -1
     }
