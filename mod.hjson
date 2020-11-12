@@ -10,5 +10,5 @@ description:
   Adds units for missing categories of units,
   Special (Purple) Air, Support (Green) Naval, and Special (Purple) Naval.
   '''
-version: 0.1.3
+version: 0.1.5
 minGameVersion: 112
