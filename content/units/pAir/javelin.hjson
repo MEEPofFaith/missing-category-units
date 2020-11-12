@@ -67,8 +67,8 @@ weapons:[
   {
     name: arrow-weapon
     reload: 16
-    x: 8.5
-    y: 6.75
+    x: 9.5
+    y: 10
     shootY: 1
     recoil: 1
     rotate: true
