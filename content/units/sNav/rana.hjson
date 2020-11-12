@@ -12,9 +12,6 @@ itemCapacity: 30
 hitsize: 9
 rotateShooting: false
 trailLength: 20
-mineTier: 3
-mineSpeed: 3
-buildSpeed: 2
 
 weapons:[
   {
