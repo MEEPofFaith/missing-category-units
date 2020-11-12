@@ -33,6 +33,6 @@ const SpAirT1 = extendContent(UnitType, "dart", {});
 
 SpAirT1.constructor = () => extend(UnitEntity, {});
 SpAirT1.defaultController = dartController;
-SpAirT1.abilities.add(new MoveLightningAbility(15, 8, 0.15, 1, 4, Color.valueOf("#bf92f9")));
+SpAirT1.abilities.add(new MoveLightningAbility(15, 8, 0.15, 1, 3.5, Color.valueOf("#bf92f9")));
 
 Blocks.airFactory.plans.add(new UnitFactory.UnitPlan(SpAirT1, 60 * 25, ItemStack.with(Items.silicon, 45, Items.copper, 20, Items.lead, 25)));
