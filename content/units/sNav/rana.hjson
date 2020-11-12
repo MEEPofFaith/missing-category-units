@@ -8,6 +8,8 @@ range: 200
 itemCapacity: 30
 rotateShooting: false
 trailLength: 20
+mineTier: 3
+mineSpeed: 3
 
 weapons:[
   {

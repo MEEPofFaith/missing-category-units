@@ -1,4 +1,4 @@
-var range = 20; //in tiles
+var range = 20; //Fire detection range in tiles.
 
 const ranaController = prov(() => {
   var rAI = extend(GroundAI, {
