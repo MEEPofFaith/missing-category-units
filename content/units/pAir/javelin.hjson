@@ -105,7 +105,6 @@ weapons:[
       shootEffect: shootSmall
       color: BF92F9
       hitColor: BF92F9
-      despawnEffect: none
       lifetime: 30
       knockback: -1
     }
