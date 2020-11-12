@@ -28,12 +28,18 @@ weapons:[
     rotate: true
     shootSound: lasershoot
     bullet:{
-      type: LaserBoltBulletType
+      type: SapBulletType
+      length: 55
+      width: 0.55
+      sapStrength: 0.7
       damage: 17
+      shootEffect: shootSmall
+      hitColor: BF92F9
+      despawnEffect: none
       backColor: 665C9F
       frontColor: BF92F9
-      speed: 4.5
-      lifetime: 50
+      lifetime: 30
+      knockback: -1
     }
   }
   {
@@ -46,12 +52,18 @@ weapons:[
     rotate: true
     shootSound: lasershoot
     bullet:{
-      type: LaserBoltBulletType
-      damage: 32
+      type: SapBulletType
+      length: 55
+      width: 0.55
+      sapStrength: 0.7
+      damage: 17
+      shootEffect: shootSmall
+      hitColor: BF92F9
+      despawnEffect: none
       backColor: 665C9F
       frontColor: BF92F9
-      speed: 5.5
-      lifetime: 50
+      lifetime: 30
+      knockback: -1
     }
   }
   {
@@ -64,12 +76,18 @@ weapons:[
     rotate: true
     shootSound: lasershoot
     bullet:{
-      type: LaserBoltBulletType
-      damage: 20
+      type: SapBulletType
+      length: 55
+      width: 0.55
+      sapStrength: 0.7
+      damage: 17
+      shootEffect: shootSmall
+      hitColor: BF92F9
+      despawnEffect: none
       backColor: 665C9F
       frontColor: BF92F9
-      speed: 5.5
-      lifetime: 50
+      lifetime: 30
+      knockback: -1
     }
   }
   {
@@ -82,12 +100,18 @@ weapons:[
     rotate: true
     shootSound: lasershoot
     bullet:{
-      type: LaserBoltBulletType
-      damage: 14
+      type: SapBulletType
+      length: 55
+      width: 0.55
+      sapStrength: 0.7
+      damage: 17
+      shootEffect: shootSmall
+      hitColor: BF92F9
+      despawnEffect: none
       backColor: 665C9F
       frontColor: BF92F9
-      speed: 5.5
-      lifetime: 50
+      lifetime: 30
+      knockback: -1
     }
   }
   {
