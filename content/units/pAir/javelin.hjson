@@ -29,7 +29,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 55
+      length: 104
       width: 0.55
       sapStrength: 0.7
       damage: 17
@@ -52,7 +52,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 55
+      length: 128
       width: 0.55
       sapStrength: 0.7
       damage: 17
@@ -75,7 +75,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 55
+      length: 113
       width: 0.55
       sapStrength: 0.7
       damage: 17
@@ -98,7 +98,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 55
+      length: 108
       width: 0.55
       sapStrength: 0.7
       damage: 17
