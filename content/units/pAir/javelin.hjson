@@ -20,7 +20,7 @@ rotateShooting: false
 weapons:[
   {
     name: arrow-weapon
-    reload: 13
+    reload: 10
     x: 4.5
     y: 11
     shootY: 1
@@ -31,19 +31,19 @@ weapons:[
       type: SapBulletType
       length: 104
       width: 0.55
-      sapStrength: 0.7
+      sapStrength: 0.8
       damage: 17
       shootEffect: shootSmall
       color: BF92F9
       hitColor: BF92F9
       despawnEffect: none
       lifetime: 30
-      knockback: -1
+      knockback: -3
     }
   }
   {
     name: arrow-weapon
-    reload: 19
+    reload: 23
     x: 16
     y: -7
     shootY: 1
@@ -54,19 +54,19 @@ weapons:[
       type: SapBulletType
       length: 128
       width: 0.55
-      sapStrength: 0.7
-      damage: 17
+      sapStrength: 1.1
+      damage: 25
       shootEffect: shootSmall
       color: BF92F9
       hitColor: BF92F9
       despawnEffect: none
       lifetime: 30
-      knockback: -1
+      knockback: -3
     }
   }
   {
     name: arrow-weapon
-    reload: 16
+    reload: 19
     x: 8.5
     y: 6.75
     shootY: 1
@@ -77,19 +77,19 @@ weapons:[
       type: SapBulletType
       length: 113
       width: 0.55
-      sapStrength: 0.7
-      damage: 17
+      sapStrength: 1
+      damage: 22
       shootEffect: shootSmall
       color: BF92F9
       hitColor: BF92F9
       despawnEffect: none
       lifetime: 30
-      knockback: -1
+      knockback: -3
     }
   }
   {
     name: arrow-weapon
-    reload: 10
+    reload: 14
     x: 12.5
     y: 9.75
     shootY: 1
@@ -100,13 +100,13 @@ weapons:[
       type: SapBulletType
       length: 108
       width: 0.55
-      sapStrength: 0.7
-      damage: 17
+      sapStrength: 0.9
+      damage: 19
       shootEffect: shootSmall
       color: BF92F9
       hitColor: BF92F9
       lifetime: 30
-      knockback: -1
+      knockback: -3
     }
   }
   {
