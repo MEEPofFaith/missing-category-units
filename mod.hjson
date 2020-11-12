@@ -1,6 +1,10 @@
 name: purple-air
 displayName: "Missing Category Units"
-author: "[#FCC21B]MEEP of Faith[] and [#A200FF]A5TR0spud"
+author: 
+  '''
+  Scripting: [#FCC21B]MEEP of Faith[]
+  Spriting: [#A200FF]A5TR0spud
+  '''
 description:
   '''
   Adds units for missing categories of units,
