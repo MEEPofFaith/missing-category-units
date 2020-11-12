@@ -43,23 +43,22 @@ weapons:[
   }
   {
     name: arrow-weapon
-    reload: 23
-    x: 16
-    y: -7
+    reload: 14
+    x: 12.5
+    y: 9.75
     shootY: 1
     recoil: 1
     rotate: true
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 128
+      length: 108
       width: 0.55
-      sapStrength: 1.1
-      damage: 25
+      sapStrength: 0.9
+      damage: 19
       shootEffect: shootSmall
       color: BF92F9
       hitColor: BF92F9
-      despawnEffect: none
       lifetime: 30
       knockback: -3
     }
@@ -89,22 +88,23 @@ weapons:[
   }
   {
     name: arrow-weapon
-    reload: 14
-    x: 12.5
-    y: 9.75
+    reload: 23
+    x: 16
+    y: -7
     shootY: 1
     recoil: 1
     rotate: true
     shootSound: lasershoot
     bullet:{
       type: SapBulletType
-      length: 108
+      length: 128
       width: 0.55
-      sapStrength: 0.9
-      damage: 19
+      sapStrength: 1.1
+      damage: 25
       shootEffect: shootSmall
       color: BF92F9
       hitColor: BF92F9
+      despawnEffect: none
       lifetime: 30
       knockback: -3
     }
