@@ -34,10 +34,9 @@ weapons:[
       sapStrength: 0.7
       damage: 17
       shootEffect: shootSmall
+      color: BF92F9
       hitColor: BF92F9
       despawnEffect: none
-      backColor: 665C9F
-      frontColor: BF92F9
       lifetime: 30
       knockback: -1
     }
@@ -58,10 +57,9 @@ weapons:[
       sapStrength: 0.7
       damage: 17
       shootEffect: shootSmall
+      color: BF92F9
       hitColor: BF92F9
       despawnEffect: none
-      backColor: 665C9F
-      frontColor: BF92F9
       lifetime: 30
       knockback: -1
     }
@@ -82,10 +80,9 @@ weapons:[
       sapStrength: 0.7
       damage: 17
       shootEffect: shootSmall
+      color: BF92F9
       hitColor: BF92F9
       despawnEffect: none
-      backColor: 665C9F
-      frontColor: BF92F9
       lifetime: 30
       knockback: -1
     }
@@ -106,10 +103,9 @@ weapons:[
       sapStrength: 0.7
       damage: 17
       shootEffect: shootSmall
+      color: BF92F9
       hitColor: BF92F9
       despawnEffect: none
-      backColor: 665C9F
-      frontColor: BF92F9
       lifetime: 30
       knockback: -1
     }
