@@ -15,12 +15,11 @@ trailLength: 20
 
 weapons:[
   {
-    name: arrow-weapon
+    name: renidae-weapon
     reload: 15
     x: 3
     y: -1
     shootY: 1
-    rotate: false
     recoil: 1
     top: false
     shootSound: lasershoot
