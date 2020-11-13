@@ -18,10 +18,7 @@ const javelinController = prov(() => {
 });//Custom AI needed because no weapons
 
 const SpAirT4 = extendContent(UnitType, "javelin", {});
-SpAirT4.constructor = () => {
-  const unit = extend(BuilderUnit, {});
-  return unit;
-}
+SpAirT4.constructor = () => extend(BuilderUnit, {});
 SpAirT4.defaultController = javelinController;
 SpAirT4.abilities.add(new MoveLightningAbility(58, 20, 0.25, 0.7, 4.5, Color.valueOf("#bf92f9")));
 SpAirT4.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 8, 60 * 8.75, 64));

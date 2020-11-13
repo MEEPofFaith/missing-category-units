@@ -9,6 +9,8 @@ description:
   '''
   Adds units for missing categories of units,
   Special (Purple) Air, Support (Green) Naval, and Special (Purple) Naval.
+  
+  [black]Note: Android 7 or below will not be able to run this mod.
   '''
 version: 0.1.5
 minGameVersion: 113

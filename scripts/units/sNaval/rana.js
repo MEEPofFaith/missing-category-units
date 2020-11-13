@@ -50,13 +50,8 @@ const ranaController = prov(() => {
 });
 
 const SuNavT1 = extendContent(UnitType, "rana", {});
-SuNavT1.constructor = () => {
-  const unit = extend(UnitWaterMove, {});
-  return unit;
-}
+SuNavT1.constructor = () => extend(UnitWaterMove, {});
 SuNavT1.defaultController = ranaController;
-//SuNavT1.defaultController = () => new GroundAI();
-
 SuNavT1.abilities.add(new RepairFieldAbility(10, 60 * 5, 24));
 SuNavT1.abilities.add(new ShieldRegenFieldAbility(40, 50, 60 * 8, 24));
 
