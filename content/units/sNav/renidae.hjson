@@ -17,7 +17,7 @@ weapons:[
   {
     name: renidae-weapon
     reload: 15
-    x: 5
+    x: 6
     y: 1.5
     shootY: 1
     recoil: 1
