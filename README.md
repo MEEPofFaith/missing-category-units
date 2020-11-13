@@ -12,4 +12,4 @@ Specialize in healing and unit factories.
 Rana -> Renidae -> Protidae -> Renigata -> Tempolax
 
 ### Special Naval
-????
+Possibly snipers. T2, 4, and 5 will probably sap.
