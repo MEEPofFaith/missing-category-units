@@ -13,6 +13,24 @@ hitsize: 9
 rotateShooting: false
 trailLength: 20
 
+weapons:[
+  {
+    name: renidae-weapon
+    reload: 15
+    x: 3
+    y: 3
+    shootY: 1
+    rotate: false
+    recoil: 1
+    top: false
+    shootSound: lasershoot
+    bullet:{
+      type: healBullet
+      shootSound: lasershoot
+    }
+  }
+]
+
 research: {
   parent: rana
 }
