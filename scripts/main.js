@@ -4,3 +4,4 @@ require("units/pAir/spear")
 require("units/pAir/javelin")
 
 require("units/sNaval/rana")
+require("units/sNaval/renidae")
