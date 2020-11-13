@@ -1,8 +1,9 @@
 const SuNavT2 = extendContent(UnitType, "renidae", {});
 SuNavT2.constructor = () => {
-  const unit = extend(BuilderUnit, {});
+  const unit = extend(UnitWaterMove, {});
   return unit;
 }
+
 SuNavT2.abilities.add(new MoveLightningAbility(27, 12, 0.15, 0.9, 4, Color.valueOf("#bf92f9")));
 SuNavT2.ammoType = AmmoTypes.powerLow;
 
