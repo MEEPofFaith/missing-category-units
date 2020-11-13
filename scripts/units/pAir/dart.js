@@ -27,10 +27,6 @@ const dartController = prov(() => {
 });//Custom AI needed because no weapons
 
 const SpAirT1 = extendContent(UnitType, "dart", {});
-
-    //air + building + mining
-    //public static @EntityDef({Unitc.class, Builderc.class}) UnitType poly;
-
 SpAirT1.constructor = () => {
   const unit = extend(UnitEntity, {});
   return unit;

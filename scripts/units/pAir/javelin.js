@@ -24,7 +24,6 @@ SpAirT4.constructor = () => {
 }
 SpAirT4.defaultController = javelinController;
 SpAirT4.abilities.add(new MoveLightningAbility(58, 20, 0.25, 0.7, 4.5, Color.valueOf("#bf92f9")));
-//MEEP yes
 SpAirT4.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 8, 60 * 8.75, 64));
 SpAirT4.ammoType = AmmoTypes.powerHigh;
 
