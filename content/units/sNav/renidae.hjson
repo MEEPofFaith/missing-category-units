@@ -1,7 +1,7 @@
 localizedName: Renidae
 description: Fires laser bolts that damage enemies. Constructs mono units.
-commandLimit: 6
-speed: 1.1
+commandLimit: 8
+speed: 0.9
 drag: 0.13
 accel: 0.4
 rotateSpeed: 3.5
