@@ -7,7 +7,7 @@ Specialize in speed and energy.
 Dart -> Arrow -> Spear -> Javelin -> Harpoon
 
 ### Support Naval
-Specialize in healing and unit factories. (T2 might produce monos, T5 might produce polys.)
+Specialize in healing and unit factories. (T2 might produce monos, T5 might produce polys, T4 might make a flare.)
 
 Rana -> Renidae -> Protidae -> Renigata -> Tempolax
 
