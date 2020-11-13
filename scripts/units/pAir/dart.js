@@ -31,7 +31,10 @@ const SpAirT1 = extendContent(UnitType, "dart", {});
     //air + building + mining
     //public static @EntityDef({Unitc.class, Builderc.class}) UnitType poly;
 
-SpAirT1.constructor = () => extend(UnitEntity, {});
+SpAirT1.constructor = () => {
+  const unit = extend(UnitEntity, {});
+  return unit;
+}
 SpAirT1.defaultController = dartController;
 SpAirT1.abilities.add(new MoveLightningAbility(15, 8, 0.15, 1, 3.5, Color.valueOf("#bf92f9")));
 

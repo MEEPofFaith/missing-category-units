@@ -50,7 +50,10 @@ const ranaController = prov(() => {
 });
 
 const SuNavT1 = extendContent(UnitType, "rana", {});
-SuNavT1.constructor = () => extend(UnitWaterMove, {});
+SuNavT1.constructor = () => {
+  const unit = extend(UnitWaterMove, {});
+  return unit;
+}
 SuNavT1.defaultController = ranaController;
 //SuNavT1.defaultController = () => new GroundAI();
 
