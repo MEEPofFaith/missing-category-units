@@ -14,5 +14,5 @@ rotateShooting: false
 trailLength: 20
 
 research: {
-  parent: purple-air-units-rana
+  parent: rana
 }
