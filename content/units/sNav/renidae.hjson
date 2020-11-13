@@ -17,10 +17,11 @@ weapons:[
   {
     name: renidae-weapon
     reload: 15
-    x: 3
-    y: -1
+    x: 6
+    y: 3
     shootY: 1
     recoil: 1
+    rotate: true
     top: false
     shootSound: lasershoot
     bullet:{
