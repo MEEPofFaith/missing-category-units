@@ -4,7 +4,7 @@ SuNavT2.constructor = () => {
   return unit;
 }
 
-SuNavT2.abilities.add(new MoveLightningAbility(27, 12, 0.15, 0.9, 4, Color.valueOf("#bf92f9")));
+SuNavT2.abilities.add(new UnitSpawnAbility(mono, spawnTime, 0, 0));
 SuNavT2.ammoType = AmmoTypes.powerLow;
 
 var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-rana"), Vars.content.getByName(ContentType.unit, "purple-air-renidae")]);
