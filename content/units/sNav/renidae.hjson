@@ -22,14 +22,15 @@ weapons:[
     shootY: 1
     recoil: 1
     rotate: true
+    top: true
     shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
       damage: 19
       healPercent: 3
       collidesTeam: true
-      backColor: Pal.heal
-      frontColor: Color.white
+      backColor: heal
+      frontColor: white
       speed: 4
       lifetime: 40
     }
