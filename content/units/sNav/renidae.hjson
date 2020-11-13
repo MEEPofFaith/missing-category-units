@@ -15,18 +15,24 @@ trailLength: 20
 
 weapons:[
   {
-    name: renidae-weapon
+    name: arrow-weapon
     reload: 15
     x: 3
-    y: 3
+    y: -1
     shootY: 1
     rotate: false
     recoil: 1
     top: false
     shootSound: lasershoot
     bullet:{
-      type: healBullet
-      shootSound: lasershoot
+      type: LaserBoltBulletType
+      damage: 19
+      healPercent: 3
+      collidesTeam: true
+      backColor: Pal.heal
+      frontColor: Color.white
+      speed: 4
+      lifetime: 40
     }
   }
 ]
