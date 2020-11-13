@@ -5,7 +5,7 @@ speed: 0.9
 drag: 0.13
 accel: 0.4
 rotateSpeed: 3.5
-health: 260
+health: 640
 sheild: 20
 range: 200
 itemCapacity: 30
@@ -17,12 +17,11 @@ weapons:[
   {
     name: renidae-weapon
     reload: 15
-    x: 6
-    y: 3
+    x: 5
+    y: 1.5
     shootY: 1
     recoil: 1
     rotate: true
-    top: false
     shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
