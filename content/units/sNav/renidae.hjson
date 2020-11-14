@@ -21,18 +21,42 @@ weapons:[
   {
     name: renidae-weapon
     reload: 11
-    x: 6
-    y: 1.5
+    x: 6.75
+    y: 1.625
     shootX: -0.625
     shootY: 2.75
     recoil: 1
     rotate: true
     top: true
     shootSound: lasershoot
+    inaccuracy: 1
     bullet:{
       type: LaserBoltBulletType
-      damage: 14
-      healPercent: 2
+      damage: 7
+      healPercent: 1
+      collidesTeam: true
+      backColor: 98ffa9
+      frontColor: ffffff
+      speed: 5.5
+      lifetime: 40
+    }
+  }
+  {
+    name: renidae-weapon
+    reload: 11
+    x: 5.5
+    y: -7.375
+    shootX: -0.625
+    shootY: 2.75
+    recoil: 1
+    rotate: true
+    top: true
+    shootSound: lasershoot
+    inaccuracy: 1
+    bullet:{
+      type: LaserBoltBulletType
+      damage: 7
+      healPercent: 1
       collidesTeam: true
       backColor: 98ffa9
       frontColor: ffffff
