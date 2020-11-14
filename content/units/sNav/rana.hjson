@@ -11,6 +11,7 @@ range: 200
 itemCapacity: 30
 hitsize: 9
 rotateShooting: false
+trailLength: 20
 trailX: 3.5
 trailY: -8
 
