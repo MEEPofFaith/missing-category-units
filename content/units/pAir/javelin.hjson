@@ -119,6 +119,7 @@ weapons:[
     shake: 1
     rotate: true
     shootSound: laser
+    rotateSpeed: 5
     bullet:{
       type: LaserBulletType
       recoil: 0.2
@@ -142,6 +143,7 @@ weapons:[
     shake: 3
     rotate: true
     shootSound: laser
+    rotateSpeed: 2
     bullet:{
       type: LaserBulletType
       recoil: 0.4

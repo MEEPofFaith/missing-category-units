@@ -29,6 +29,7 @@ weapons:[
     shake: 1
     rotate: true
     shootSound: laser
+    rotateSpeed: 5
     bullet:{
       type: LaserBulletType
       recoil: 0.25
