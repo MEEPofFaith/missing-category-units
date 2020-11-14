@@ -1,5 +1,5 @@
 localizedName: Renidae
-description: Fires laser bolts that damage enemies. Constructs mono units.
+description: Fires laser bolts that damage enemies and heals blocks. Stops to heal damaged blocks. Constructs mono units.
 commandLimit: 8
 speed: 0.9
 drag: 0.13
@@ -23,7 +23,8 @@ weapons:[
     reload: 11
     x: 6
     y: 1.5
-    shootY: 1
+    shootX: -0.625
+    shootY: 2.75
     recoil: 1
     rotate: true
     top: true
@@ -35,7 +36,7 @@ weapons:[
       collidesTeam: true
       backColor: 98ffa9
       frontColor: ffffff
-      speed: 4
+      speed: 5.5
       lifetime: 40
     }
   }
