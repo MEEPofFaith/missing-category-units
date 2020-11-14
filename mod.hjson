@@ -3,7 +3,7 @@ displayName: "Missing Category Units"
 author: 
   '''
   Scripting: [#FCC21B]MEEP of Faith[]
-  Spriting: [#A200FF]A5TR0spud
+  Spriting: [#A200FF]A5TR0spud[]
   '''
 description:
   '''
@@ -12,5 +12,5 @@ description:
   
   [black]Note: Android 7 or below will not be able to run this mod.
   '''
-version: 0.1.5
+version: 0.1.7
 minGameVersion: 113
