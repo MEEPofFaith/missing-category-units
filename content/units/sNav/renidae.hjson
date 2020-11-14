@@ -11,12 +11,14 @@ range: 200
 itemCapacity: 30
 hitsize: 9
 rotateShooting: false
-trailLength: 20
+trailLength: 6
+trailX: 5.25
+trailY: 10.5
 
 weapons:[
   {
     name: renidae-weapon
-    reload: 15
+    reload: 8
     x: 6
     y: 1.5
     shootY: 1
@@ -26,11 +28,11 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
-      damage: 19
-      healPercent: 3
+      damage: 11
+      healPercent: 2
       collidesTeam: true
-      backColor: heal
-      frontColor: white
+      backColor: 98ffa9
+      frontColor: ffffff
       speed: 4
       lifetime: 40
     }
