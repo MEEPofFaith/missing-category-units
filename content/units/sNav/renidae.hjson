@@ -30,7 +30,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
-      damage: 11
+      damage: 14
       healPercent: 2
       collidesTeam: true
       backColor: 98ffa9
