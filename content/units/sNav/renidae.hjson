@@ -15,6 +15,7 @@ trailLength: 20
 trailX: 5.375
 trailY: -10.5
 trailScl: 1.6
+rippleScale: 1.5
 
 weapons:[
   {
