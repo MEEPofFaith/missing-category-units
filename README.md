@@ -12,8 +12,8 @@ Specialize in healing and unit factories. (T2 might produce monos, T5 might prod
 Rana -> Renidae -> Protidae -> Renigata -> Tempolax
 
 ### Special Naval
-Possibly snipers. T2, 4, and 5 will probably sap. Maybe a unit factory T3 that produces dart. T5 will definetely produce dart. SUBMARINES???
+Possibly snipers. T2, 4, and 5 will probably sap. Maybe a unit factory T3 that produces dart. T5 will definetely produce dart. 
 
 
 ### Blue units?
-Notice how there's room for four types of units in each factory. I think possibly a blue unit. Not sure what the theme would be though.
+Notice how there's room for four types of units in each factory. I think possibly a blue unit. Not sure what the theme would be though. stealth? tank? melee?
