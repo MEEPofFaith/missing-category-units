@@ -15,11 +15,12 @@ trailLength: 15
 trailScl: 1.25
 trailX: 5.25
 trailY: -10.5
+rippleScale: 1.5
 
 weapons:[
   {
     name: renidae-weapon
-    reload: 8
+    reload: 12
     x: 6
     y: 1.5
     shootY: 1
