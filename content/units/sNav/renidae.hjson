@@ -6,9 +6,9 @@ drag: 0.13
 accel: 0.4
 rotateSpeed: 3.5
 health: 640
-sheild: 20
+sheild: 60
 range: 200
-itemCapacity: 30
+itemCapacity: 40
 hitsize: 9
 rotateShooting: false
 trailLength: 6
