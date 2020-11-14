@@ -9,7 +9,7 @@ health: 260
 sheild: 20
 range: 200
 itemCapacity: 30
-hitsize: 9
+hitSize: 9
 rotateShooting: false
 trailLength: 20
 trailX: 3.5
