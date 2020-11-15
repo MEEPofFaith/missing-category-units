@@ -1,21 +1,21 @@
 localizedName: Harpoon
 description: Barrages enemies with laser bolts and piercing laser beams.
-health: 4250
+health: 8500
 speed: 4.5
 accel: 0.02
 drag: 0.017
-engineOffset: 23
-engineSize: 7
+engineOffset: 35
+engineSize: 9
 range: 84
 flying: true
 itemCapacity: 50
 mineTier: 2
-mineSpeed: 1.75
-buildSpeed: 0.75
-lowAltitude: true
-hitSize: 30
-armor: 3
-rotateShooting: false
+mineSpeed: 2
+buildSpeed: 0.8
+lowAltitude: false
+hitSize: 55
+armor: 20
+rotateShooting: true
 
 weapons:[
   {
