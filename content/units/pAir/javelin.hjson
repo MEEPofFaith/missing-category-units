@@ -20,47 +20,20 @@ rotateShooting: false
 weapons:[
   {
     name: arrow-weapon
-    reload: 10
+    reload: 15
     x: 4.5
     y: 11
     shootY: 1
-    recoil: 1
     rotate: true
+    recoil: 1
     shootSound: lasershoot
     bullet:{
-      type: SapBulletType
-      length: 104
-      width: 0.55
-      sapStrength: 0.8
-      damage: 17
-      shootEffect: shootSmall
-      color: a9d8ff
-      hitColor: a9d8ff
-      despawnEffect: none
-      lifetime: 30
-      knockback: -3
-    }
-  }
-  {
-    name: arrow-weapon
-    reload: 14
-    x: 12.5
-    y: 9.75
-    shootY: 1
-    recoil: 1
-    rotate: true
-    shootSound: lasershoot
-    bullet:{
-      type: SapBulletType
-      length: 108
-      width: 0.55
-      sapStrength: 0.9
+      type: LaserBoltBulletType
       damage: 19
-      shootEffect: shootSmall
-      color: a9d8ff
-      hitColor: a9d8ff
-      lifetime: 30
-      knockback: -3
+      backColor: a9d8ff
+      frontColor: ffffff
+      speed: 4
+      lifetime: 40
     }
   }
   {
@@ -69,21 +42,16 @@ weapons:[
     x: 8.5
     y: 6.75
     shootY: 1
-    recoil: 1
     rotate: true
+    recoil: 1
     shootSound: lasershoot
     bullet:{
-      type: SapBulletType
-      length: 113
-      width: 0.55
-      sapStrength: 1
-      damage: 22
-      shootEffect: shootSmall
-      color: a9d8ff
-      hitColor: a9d8ff
-      despawnEffect: none
-      lifetime: 30
-      knockback: -3
+      type: LaserBoltBulletType
+      damage: 19
+      backColor: a9d8ff
+      frontColor: ffffff
+      speed: 4
+      lifetime: 40
     }
   }
   {
@@ -92,21 +60,16 @@ weapons:[
     x: 16
     y: -7
     shootY: 1
-    recoil: 1
     rotate: true
+    recoil: 1
     shootSound: lasershoot
     bullet:{
-      type: SapBulletType
-      length: 128
-      width: 0.55
-      sapStrength: 1.1
-      damage: 25
-      shootEffect: shootSmall
-      color: a9d8ff
-      hitColor: a9d8ff
-      despawnEffect: none
-      lifetime: 30
-      knockback: -3
+      type: LaserBoltBulletType
+      damage: 19
+      backColor: a9d8ff
+      frontColor: ffffff
+      speed: 4
+      lifetime: 40
     }
   }
   {
