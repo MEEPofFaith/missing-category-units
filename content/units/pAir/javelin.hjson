@@ -34,8 +34,8 @@ weapons:[
       sapStrength: 0.8
       damage: 17
       shootEffect: shootSmall
-      color: BF92F9
-      hitColor: BF92F9
+      color: a9d8ff
+      hitColor: a9d8ff
       despawnEffect: none
       lifetime: 30
       knockback: -3
@@ -57,8 +57,8 @@ weapons:[
       sapStrength: 0.9
       damage: 19
       shootEffect: shootSmall
-      color: BF92F9
-      hitColor: BF92F9
+      color: a9d8ff
+      hitColor: a9d8ff
       lifetime: 30
       knockback: -3
     }
@@ -79,8 +79,8 @@ weapons:[
       sapStrength: 1
       damage: 22
       shootEffect: shootSmall
-      color: BF92F9
-      hitColor: BF92F9
+      color: a9d8ff
+      hitColor: a9d8ff
       despawnEffect: none
       lifetime: 30
       knockback: -3
@@ -102,8 +102,8 @@ weapons:[
       sapStrength: 1.1
       damage: 25
       shootEffect: shootSmall
-      color: BF92F9
-      hitColor: BF92F9
+      color: a9d8ff
+      hitColor: a9d8ff
       despawnEffect: none
       lifetime: 30
       knockback: -3
@@ -126,7 +126,7 @@ weapons:[
       length: 127
       width: 14
       damage: 42
-      colors:[665C9F66, BF92F9, FFFFFF]
+      colors:[8aa3f466, a9d8ff, FFFFFF]
       sideAngle: 45
       sideLength: 62
       sideWidth: 1
@@ -150,7 +150,7 @@ weapons:[
       length: 180
       width: 22
       damage: 53
-      colors:[665C9F66, BF92F9, FFFFFF]
+      colors:[8aa3f466, a9d8ff, FFFFFF]
       sideAngle: 45
       sideLength: 70
       sideWidth: 1.5

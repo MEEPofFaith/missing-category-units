@@ -20,7 +20,7 @@ const spearController = prov(() => {
 const SpAirT3 = extendContent(UnitType, "spear", {});
 SpAirT3.constructor = () => extend(BuilderUnit, {});
 SpAirT3.defaultController = spearController;
-SpAirT3.abilities.add(new MoveLightningAbility(20, 16, 0.2, 0.8, 4.333, Color.valueOf("#bf92f9")));
+SpAirT3.abilities.add(new MoveLightningAbility(20, 16, 0.2, 0.8, 4.333, Color.valueOf("#a9d8ff")));
 SpAirT3.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 5, 60 * 6, 48));
 SpAirT3.ammoType = AmmoTypes.power;
 

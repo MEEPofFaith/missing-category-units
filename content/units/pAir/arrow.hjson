@@ -32,8 +32,8 @@ weapons:[
     bullet:{
       type: LaserBoltBulletType
       damage: 19
-      backColor: 665C9F
-      frontColor: BF92F9
+      backColor: a9d8ff
+      frontColor: ffffff
       speed: 4
       lifetime: 40
     }
