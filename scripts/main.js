@@ -1,3 +1,5 @@
+require("mod-meta")
+
 require("units/pAir/dart")
 require("units/pAir/arrow")
 require("units/pAir/spear")
