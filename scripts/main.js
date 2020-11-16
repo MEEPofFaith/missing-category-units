@@ -1,10 +1,10 @@
 require("mod-meta")
 
-require("units/pAir/dart")
-require("units/pAir/arrow")
-require("units/pAir/spear")
-require("units/pAir/javelin")
-require("units/pAir/harpoon")
+require("units/blAir/dart")
+require("units/blAir/arrow")
+require("units/blAir/spear")
+require("units/blAir/javelin")
+require("units/blAir/harpoon")
 
-require("units/sNaval/rana")
-require("units/sNaval/renidae")
+require("units/greNaval/rana")
+require("units/greNaval/renidae")
