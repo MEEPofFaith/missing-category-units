@@ -15,13 +15,13 @@ const spearController = prov(() => {
     }
   });
   return sAI;
-});//Custom AI needed because no weapons
+});//Custom AI for flare AI
 
 const SpAirT3 = extendContent(UnitType, "spear", {});
 SpAirT3.constructor = () => extend(BuilderUnit, {});
 SpAirT3.defaultController = spearController;
-SpAirT3.abilities.add(new MoveLightningAbility(20, 16, 0.2, 0.8, 4.333, Color.valueOf("#a9d8ff")));
-SpAirT3.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 5, 60 * 6, 48));
+SpAirT3.abilities.add(new MoveLightningAbility(20, 16, 0.12, 0.8, 4.1, Color.valueOf("#a9d8ff")));
+SpAirT3.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 2, 60 * 3.5, 32));
 SpAirT3.ammoType = AmmoTypes.power;
 
 var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-arrow"), Vars.content.getByName(ContentType.unit, "purple-air-spear")]);

@@ -4,8 +4,8 @@ health: 10500
 speed: 4.6
 accel: 0.02
 drag: 0.017
-engineOffset: 37
-engineSize: 9
+engineOffset: 36
+engineSize: 11
 range: 84
 flying: true
 itemCapacity: 50
@@ -19,50 +19,27 @@ rotateShooting: false
 
 weapons:[
   {
-    name: spear-laser
-    reload: 37.5
-    x: 8.75
-    y: -6
-    shootY: 8.25
-    recoil: 3
-    shake: 1
-    rotate: true
-    shootSound: laser
-    rotateSpeed: 5
-    bullet:{
-      type: LaserBulletType
-      recoil: 0.2
-      length: 127
-      width: 14
-      damage: 42
-      colors:[665C9F66, BF92F9, FFFFFF]
-      sideAngle: 45
-      sideLength: 62
-      sideWidth: 1
-    }
-  }
-  {
-    name: javelin-laser
-    reload: 50
-    x: 0
-    y: -15
-    mirror: false
-    shootY: 8.25
+    name: harpoon-weapon
+    reload: 200
+    x: 20
+    y: -8
+    shootY: 7
     recoil: 4
-    shake: 3
     rotate: true
-    shootSound: laser
+    rotateShooting: 2
+    continuous: true
+    cooldownTime: 120
+    shootSound: beam
     rotateSpeed: 2
-    bullet:{
-      type: LaserBulletType
-      recoil: 0.4
-      length: 180
-      width: 22
-      damage: 53
-      colors:[665C9F66, BF92F9, FFFFFF]
-      sideAngle: 45
-      sideLength: 70
-      sideWidth: 1.5
+    bullet: {
+      type: ContinuousLaserBulletType
+      lifetime: 160
+      damage: 15
+      colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
+      lightColor: 8AA3F4
+      length: 72
+      width: 3
+      shake: 1.5
     }
   }
 ]

@@ -15,13 +15,13 @@ const javelinController = prov(() => {
     }
   });
   return jAI;
-});//Custom AI needed because no weapons
+});//Custom AI for flare AI
 
 const SpAirT4 = extendContent(UnitType, "javelin", {});
 SpAirT4.constructor = () => extend(BuilderUnit, {});
 SpAirT4.defaultController = javelinController;
 SpAirT4.abilities.add(new MoveLightningAbility(24, 20, 0.13, 0.7, 4.5, Color.valueOf("#a9d8ff")));
-SpAirT4.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 8, 60 * 8.75, 64));
+SpAirT4.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 3, 60 * 4.25, 48));
 SpAirT4.ammoType = AmmoTypes.powerHigh;
 
 var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-spear"), Vars.content.getByName(ContentType.unit, "purple-air-javelin")]);
