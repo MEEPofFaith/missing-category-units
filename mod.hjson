@@ -1,16 +1,3 @@
 name: purple-air
-displayName: "Missing Category Units"
-author: 
-  '''
-  Scripting: [#FCC21B]MEEP of Faith[]
-  Spriting: [#A200FF]A5TR0spud[]
-  '''
-description:
-  '''
-  Adds units for missing categories of units,
-  Special (Purple) Air, Support (Green) Naval, and Special (Purple) Naval.
-  
-  [black]Note: Android 7 or below will not be able to run this mod.
-  '''
 version: 0.1.7
 minGameVersion: 113
