@@ -16,4 +16,4 @@ Possibly snipers. T2, 4, and 5 will probably sap. Maybe a unit factory T3 that p
 
 
 ### Blue units?
-Notice how there's room for four types of units in each factory. I think possibly a blue unit. Not sure what the theme would be though. stealth? tank? melee?
+Notice how there's room for four types of units in each factory. I think possibly a blue unit. Not sure what the theme would be though. stealth? tank? melee? amphibian? multi-purpose? single-purpose? modular? 
