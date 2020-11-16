@@ -1,3 +1,17 @@
 name: purple-air
+displayName: "Missing Category Units"
+author:
+  '''
+  Scripting: MEEP of Faith
+  Spriting: A5TR0spud
+  '''
+description:
+  '''
+    Adds units for missing categories of units,
+    Purple Air, Green Naval, Purple Naval.
+    The fourth slot in the unit factories have blue units.
+    
+    Note: Android 7 and below will not be able to run this mod."
+  '''
 version: 0.1.9
 minGameVersion: 113
