@@ -1,7 +1,7 @@
 localizedName: Javelin
 description: Barrages enemies with laser bolts and piercing laser beams.
 health: 4250
-speed: 4.5
+speed: 4.4
 accel: 0.02
 drag: 0.017
 engineOffset: 23
