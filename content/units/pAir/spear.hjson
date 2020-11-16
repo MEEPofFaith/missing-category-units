@@ -36,7 +36,7 @@ weapons:[
       length: 72
       width: 10
       damage: 36
-      colors:[665C9F66, BF92F9, FFFFFF]
+      colors:[8aa3f466, a9d8ff, FFFFFF]
       sideAngle: 45
       sideLength: 32
       sideWidth: 1
