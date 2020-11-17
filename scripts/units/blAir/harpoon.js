@@ -20,7 +20,7 @@ const harpoonController = prov(() => {
 const SpAirT5 = extendContent(UnitType, "harpoon", {});
 SpAirT5.constructor = () => extend(BuilderUnit, {});
 SpAirT5.defaultController = harpoonController;
-SpAirT5.abilities.add(new MoveLightningAbility(29, 24, 0.14, 0.6, 4.6, Color.valueOf("#a9d8ff")));
+//SpAirT5.abilities.add(new MoveLightningAbility(29, 24, 0.14, 0.6, 4.6, Color.valueOf("#a9d8ff")));
 SpAirT5.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 4, 60 * 5, 64));
 SpAirT5.ammoType = AmmoTypes.powerHigh;
 

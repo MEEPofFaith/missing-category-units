@@ -1,7 +1,7 @@
 localizedName: Harpoon
 description: Barrages enemies with laser bolts and piercing laser beams.
 health: 10500
-speed: 4.6
+speed: 4.3
 accel: 0.02
 drag: 0.017
 engineOffset: 36
@@ -15,7 +15,8 @@ buildSpeed: 0.8
 lowAltitude: true
 hitSize: 55
 armor: 20
-rotateShooting: false
+rotateShooting: true
+rotateSpeed: 0.75
 
 weapons:[
   {
@@ -34,11 +35,11 @@ weapons:[
     bullet: {
       type: ContinuousLaserBulletType
       lifetime: 80
-      damage: 15
+      damage: 20
       colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
       lightColor: 8AA3F4
-      length: 72
-      width: 3
+      length: 168
+      width: 4
       shake: 1.5
     }
   }
