@@ -20,7 +20,7 @@ rotateShooting: false
 weapons:[
   {
     name: harpoon-weapon
-    reload: 200
+    reload: 135
     x: 20
     y: -8
     shootY: 7
@@ -33,7 +33,7 @@ weapons:[
     rotateSpeed: 2
     bullet: {
       type: ContinuousLaserBulletType
-      lifetime: 160
+      lifetime: 80
       damage: 15
       colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
       lightColor: 8AA3F4
