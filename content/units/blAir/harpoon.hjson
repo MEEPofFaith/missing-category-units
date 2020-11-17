@@ -164,7 +164,7 @@ weapons:[
   }
   {
     name: harpoon-beam
-    reload: 204
+    reload: 260
     x: 0
     y: -10
     shootY: 7
