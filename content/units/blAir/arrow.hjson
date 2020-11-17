@@ -16,7 +16,8 @@ lowAltitude: true
 hitSize: 7
 targetGround: true
 targetAir: true
-armor: 1
+armor: 2
+rotateSpeed: 4
 
 weapons:[
   {

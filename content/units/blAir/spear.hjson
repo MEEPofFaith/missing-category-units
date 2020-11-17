@@ -14,8 +14,9 @@ mineSpeed: 1.5
 buildSpeed: 0.5
 lowAltitude: true
 hitSize: 13
-armor: 2
+armor: 5
 rotateShooting: false
+rotateSpeed: 3
 
 weapons:[
   {
