@@ -33,7 +33,6 @@ weapons:[
     rotateSpeed: 5
     bullet:{
       type: LaserBulletType
-      recoil: 0.25
       length: 72
       width: 10
       damage: 36
