@@ -159,7 +159,7 @@ weapons:[
       lightColor: 8AA3F4
       length: 128
       width: 3.5
-      shake: 0.5
+      shake: 0.25
     }
   }
   {
@@ -183,7 +183,7 @@ weapons:[
       lightColor: 8AA3F4
       length: 156
       width: 5
-      shake: 1.25
+      shake: 0.75
     }
   }
 ]
