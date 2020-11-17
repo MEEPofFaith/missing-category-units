@@ -124,7 +124,7 @@ weapons:[
     y: -3.5
     shootY: 8.25
     recoil: 4
-    shake: 3
+    shake: 1.75
     rotate: true
     shootSound: laser
     rotateSpeed: 2
@@ -140,7 +140,7 @@ weapons:[
     }
   }
   {
-    name: harpoon-weapon
+    name: harpoon-beam
     reload: 135
     x: 19.25
     y: -17.25
@@ -157,13 +157,13 @@ weapons:[
       damage: 20
       colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
       lightColor: 8AA3F4
-      length: 168
-      width: 4
-      shake: 1
+      length: 128
+      width: 3.5
+      shake: 0.5
     }
   }
   {
-    name: harpoon-weapon
+    name: harpoon-beam
     reload: 204
     x: 0
     y: -10
@@ -177,13 +177,13 @@ weapons:[
     rotateSpeed: 2
     bullet: {
       type: ContinuousLaserBulletType
-      lifetime: 110
-      damage: 26
+      lifetime: 90
+      damage: 30
       colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
       lightColor: 8AA3F4
-      length: 200
-      width: 4
-      shake: 2.5
+      length: 156
+      width: 5
+      shake: 1.25
     }
   }
 ]

@@ -103,7 +103,7 @@ weapons:[
     mirror: false
     shootY: 8.25
     recoil: 4
-    shake: 3
+    shake: 1.75
     rotate: true
     shootSound: laser
     rotateSpeed: 2
