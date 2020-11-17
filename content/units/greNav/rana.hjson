@@ -6,7 +6,7 @@ drag: 0.13
 accel: 0.4
 rotateSpeed: 3.5
 health: 260
-sheild: 20
+armor: 5
 range: 200
 itemCapacity: 30
 hitSize: 9
