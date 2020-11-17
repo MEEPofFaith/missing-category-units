@@ -24,5 +24,5 @@ SpAirT3.abilities.add(new MoveLightningAbility(18, 14, 0.1, 1.2, 3.9, Color.valu
 SpAirT3.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 2, 60 * 3.5, 32));
 SpAirT3.ammoType = AmmoTypes.power;
 
-var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-arrow"), Vars.content.getByName(ContentType.unit, "purple-air-spear")]);
+var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-dart"), Vars.content.getByName(ContentType.unit, "purple-air-spear")]);
 Blocks.multiplicativeReconstructor.upgrades.add(upgrade.toArray(UnitType));
