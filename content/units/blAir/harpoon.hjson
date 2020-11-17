@@ -9,8 +9,6 @@ engineSize: 11
 range: 110
 flying: true
 itemCapacity: 50
-mineTier: 2
-mineSpeed: 2
 buildSpeed: 0.8
 lowAltitude: true
 hitSize: 55
