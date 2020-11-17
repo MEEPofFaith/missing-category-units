@@ -1,6 +1,6 @@
 localizedName: Harpoon
 description: Barrages enemies with laser bolts and piercing laser beams.
-health: 9000
+health: 8750
 speed: 4.3
 accel: 0.02
 drag: 0.017
