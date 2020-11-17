@@ -20,7 +20,7 @@ const javelinController = prov(() => {
 const SpAirT4 = extendContent(UnitType, "javelin", {});
 SpAirT4.constructor = () => extend(BuilderUnit, {});
 SpAirT4.defaultController = javelinController;
-SpAirT4.abilities.add(new MoveLightningAbility(24, 20, 0.13, 0.7, 4.5, Color.valueOf("#a9d8ff")));
+SpAirT4.abilities.add(new MoveLightningAbility(21, 17, 0.1, 1.3, 4.2, Color.valueOf("#a9d8ff")));
 SpAirT4.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 3, 60 * 4.25, 48));
 SpAirT4.ammoType = AmmoTypes.powerHigh;
 

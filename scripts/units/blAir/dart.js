@@ -1,34 +1,7 @@
-const dartController = prov(() => {
-  var dAI = extend(FlyingAI, {
-    updateTargeting(){
-      var ret = this.retarget();
-      if(ret){
-        this.target = this.findTarget(this.unit.x, this.unit.y, this.unit.range(), this.unit.type.targetAir, this.unit.type.targetGround);
-      }
-      if(this.invalid(this.target)){
-        this.target = null;
-      }
-    },
-    updateMovement(){
-      if(this.target != null && this.command() == UnitCommand.attack){
-        this.attack(120);
-      }
+const SpAirT2 = extendContent(UnitType, "dart", {});
+SpAirT2.constructor = () => extend(BuilderUnit, {});
+SpAirT2.abilities.add(new MoveLightningAbility(16, 11, 0.1, 1.1, 3.3, Color.valueOf("#a9d8ff")));
+SpAirT2.ammoType = AmmoTypes.powerLow;
 
-      if(this.target == null && this.command() == UnitCommand.attack && Vars.state.rules.waves && this.unit.team == Vars.state.rules.defaultTeam){
-        this.moveTo(this.getClosestSpawner(), Vars.state.rules.dropZoneRadius + 120);
-      }
-
-      if(this.command() == UnitCommand.rally){
-        this.moveTo(this.targetFlag(this.unit.x, this.unit.y, BlockFlag.rally, false), 60);
-      }
-    }
-  });
-  return dAI;
-});//Custom AI needed because no weapons
-
-const SpAirT1 = extendContent(UnitType, "dart", {});
-SpAirT1.constructor = () => extend(UnitEntity, {});
-SpAirT1.defaultController = dartController;
-SpAirT1.abilities.add(new MoveLightningAbility(15, 8, 0.1, 1, 3.2, Color.valueOf("#a9d8ff")));
-
-Blocks.airFactory.plans.add(new UnitFactory.UnitPlan(SpAirT1, 60 * 25, ItemStack.with(Items.silicon, 45, Items.copper, 20, Items.lead, 25)));
+var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-needle"), Vars.content.getByName(ContentType.unit, "purple-air-dart")]);
+Blocks.additiveReconstructor.upgrades.add(upgrade.toArray(UnitType));
