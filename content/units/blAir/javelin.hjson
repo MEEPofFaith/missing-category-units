@@ -6,7 +6,7 @@ accel: 0.02
 drag: 0.017
 engineOffset: 23
 engineSize: 7
-range: 84
+range: 86
 flying: true
 itemCapacity: 50
 mineTier: 2
@@ -20,7 +20,7 @@ rotateSpeed: 2
 
 weapons:[
   {
-    name: arrow-weapon
+    name: dart-weapon
     reload: 15
     x: 4.5
     y: 11
@@ -38,7 +38,7 @@ weapons:[
     }
   }
   {
-    name: arrow-weapon
+    name: dart-weapon
     reload: 19
     x: 8.5
     y: 6.75
@@ -48,7 +48,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
-      damage: 19
+      damage: 20
       backColor: a9d8ff
       frontColor: ffffff
       speed: 4
@@ -56,7 +56,7 @@ weapons:[
     }
   }
   {
-    name: arrow-weapon
+    name: dart-weapon
     reload: 23
     x: 16
     y: -7
@@ -66,7 +66,7 @@ weapons:[
     shootSound: lasershoot
     bullet:{
       type: LaserBoltBulletType
-      damage: 19
+      damage: 21
       backColor: a9d8ff
       frontColor: ffffff
       speed: 4
@@ -78,7 +78,7 @@ weapons:[
     reload: 37.5
     x: 8.75
     y: -6
-    shootY: 8.25
+    shootY: 3.75
     recoil: 3
     shake: 1
     rotate: true
@@ -91,7 +91,7 @@ weapons:[
       width: 14
       damage: 42
       colors:[8aa3f466, a9d8ff, FFFFFF]
-      sideAngle: 45
+      sideAngle: 25
       sideLength: 62
       sideWidth: 1
     }
@@ -115,7 +115,7 @@ weapons:[
       width: 22
       damage: 53
       colors:[8aa3f466, a9d8ff, FFFFFF]
-      sideAngle: 45
+      sideAngle: 35
       sideLength: 70
       sideWidth: 1.5
     }

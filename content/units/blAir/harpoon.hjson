@@ -1,12 +1,12 @@
 localizedName: Harpoon
 description: Barrages enemies with laser bolts and piercing laser beams.
-health: 10500
+health: 9000
 speed: 4.3
 accel: 0.02
 drag: 0.017
 engineOffset: 35
 engineSize: 11
-range: 84
+range: 110
 flying: true
 itemCapacity: 50
 mineTier: 2
@@ -20,18 +20,137 @@ rotateSpeed: 1
 
 weapons:[
   {
+    name: dart-weapon
+    reload: 15
+    x: 11.5
+    y: 33.5
+    shootY: 1
+    recoil: 1
+    shootSound: lasershoot
+    bullet:{
+      type: LaserBoltBulletType
+      damage: 19
+      backColor: a9d8ff
+      frontColor: ffffff
+      speed: 4
+      lifetime: 40
+    }
+  }
+  {
+    name: dart-weapon
+    reload: 19
+    x: 14.75
+    y: 21.5
+    shootY: 1
+    recoil: 1
+    shootSound: lasershoot
+    bullet:{
+      type: LaserBoltBulletType
+      damage: 20
+      backColor: a9d8ff
+      frontColor: ffffff
+      speed: 4
+      lifetime: 40
+    }
+  }
+  {
+    name: dart-weapon
+    reload: 23
+    x: 10
+    y: -2
+    shootY: 1
+    recoil: 1
+    shootSound: lasershoot
+    bullet:{
+      type: LaserBoltBulletType
+      damage: 21
+      backColor: a9d8ff
+      frontColor: ffffff
+      speed: 4
+      lifetime: 40
+    }
+  }
+  {
+    name: spear-laser
+    reload: 30
+    x: 8
+    y: 13.5
+    shootY: 3.75
+    recoil: 3
+    shake: 1
+    rotate: true
+    shootSound: laser
+    rotateSpeed: 5
+    bullet:{
+      type: LaserBulletType
+      recoil: 0.1
+      length: 88
+      width: 12
+      damage: 38
+      colors:[8aa3f466, a9d8ff, FFFFFF]
+      sideAngle: 25
+      sideLength: 44
+      sideWidth: 1
+    }
+  }
+  {
+    name: spear-laser
+    reload: 45
+    x: 5
+    y: 25.75
+    shootY: 3.75
+    recoil: 3
+    shake: 1
+    rotate: true
+    shootSound: laser
+    rotateSpeed: 5
+    bullet:{
+      type: LaserBulletType
+      recoil: 0.1
+      length: 100
+      width: 13
+      damage: 46
+      colors:[8aa3f466, a9d8ff, FFFFFF]
+      sideAngle: 25
+      sideLength: 56
+      sideWidth: 1
+    }
+  }
+  {
+    name: javelin-laser
+    reload: 75
+    x: 20.75
+    y: -3.5
+    shootY: 8.25
+    recoil: 4
+    shake: 3
+    rotate: true
+    shootSound: laser
+    rotateSpeed: 2
+    bullet:{
+      type: LaserBulletType
+      recoil: 0.2
+      length: 136
+      width: 22
+      damage: 65
+      colors:[8aa3f466, a9d8ff, FFFFFF]
+      sideAngle: 35
+      sideLength: 64
+      sideWidth: 1.5
+    }
+  }
+  {
     name: harpoon-weapon
     reload: 135
-    x: 20
-    y: -8
+    x: 19.25
+    y: -17.25
     shootY: 7
     recoil: 4
     rotate: true
-    rotateShooting: 2
     continuous: true
     cooldownTime: 120
     shootSound: beam
-    rotateSpeed: 2
+    rotateSpeed: 1.25
     bullet: {
       type: ContinuousLaserBulletType
       lifetime: 80
@@ -40,7 +159,31 @@ weapons:[
       lightColor: 8AA3F4
       length: 168
       width: 4
-      shake: 1.5
+      shake: 1
+    }
+  }
+  {
+    name: harpoon-weapon
+    reload: 204
+    x: 0
+    y: -10
+    shootY: 7
+    recoil: 4
+    mirror: false
+    rotate: true
+    continuous: true
+    cooldownTime: 120
+    shootSound: beam
+    rotateSpeed: 2
+    bullet: {
+      type: ContinuousLaserBulletType
+      lifetime: 110
+      damage: 26
+      colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
+      lightColor: 8AA3F4
+      length: 200
+      width: 4
+      shake: 2.5
     }
   }
 ]

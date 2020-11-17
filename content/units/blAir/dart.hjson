@@ -21,7 +21,7 @@ rotateSpeed: 4
 
 weapons:[
   {
-    name: arrow-weapon
+    name: dart-weapon
     reload: 15
     x: 3
     y: -1
