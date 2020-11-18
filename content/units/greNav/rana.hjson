@@ -31,7 +31,7 @@ weapons:[
       type: LiquidBulletType
       liquid: water
       damage: 1
-      healPercent: 1
+      healPercent: 0.5
       collidesTeam: true
       lifetime: 60
     }

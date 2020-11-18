@@ -33,7 +33,7 @@ weapons:[
     bullet:{
       type: LaserBoltBulletType
       damage: 7
-      healPercent: 1
+      healPercent: 1.5
       collidesTeam: true
       backColor: 98ffa9
       frontColor: ffffff
@@ -51,22 +51,22 @@ weapons:[
     rotate: true
     rotateSpeed: 6
     shots: 3
-    inaccuracy: 20
+    inaccuracy: 10
     shootCone: 10
     velocityRnd: 0.1
     soundPitchMin: 0.5
     soundPitchMax: 0.7
     top: true
-    shootSound: laser
+    shootSound: missile
+    shootEffect: shootHeal
     shake: 1
-    inaccuracy: 1
     bullet:{
       type: MissileBulletType
       homingPower: 0.08
       weaveMag: 4
       weaveScale: 4
       damage: 19
-      healPercent: 2
+      healPercent: 4
       collidesTeam: true
       backColor: 98ffa9
       frontColor: ffffff
