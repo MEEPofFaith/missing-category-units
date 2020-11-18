@@ -63,7 +63,7 @@ weapons:[
     inaccuracy: 1
     bullet:{
       type: LaserBoltBulletType
-      damage: 7
+      damage: 21
       healPercent: 1
       collidesTeam: true
       backColor: 98ffa9
