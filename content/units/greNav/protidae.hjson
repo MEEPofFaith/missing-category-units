@@ -1,21 +1,21 @@
 localizedName: Protidae
 description: Fires laser bolts that damage enemies and heals blocks. Stops to heal damaged blocks. Constructs mono units.
 commandLimit: 8
-speed: 0.9
+speed: 0.85
 drag: 0.13
 accel: 0.4
-rotateSpeed: 3.5
-health: 640
-armor: 8
+rotateSpeed: 2.5
+health: 860
+armor: 20
 range: 200
-itemCapacity: 40
-hitSize: 11
+itemCapacity: 50
+hitSize: 18
 rotateShooting: false
-trailLength: 20
-trailX: 5.375
-trailY: -10.5
-trailScl: 1.6
-rippleScale: 1.5
+trailLength: 30
+trailX: 9.5
+trailY: -13
+trailScl: 1.7
+rippleScale: 1.75
 
 weapons:[
   {
