@@ -4,7 +4,7 @@ This mod aims to fill in the gaps of the categories not covered by the vanilla u
 ### Sap Air
 
 ### Support Naval
-Specialize in healing and unit factories. (T2 produces monos, T5 might produce polys, T4 might make a flare, T3 might also produce monos.)
+Specialize in healing and unit factories. (T2 produces monos, T3 produces monos, T4 produces polys/flares, T5 produces flares/polys)
 
 Rana -> Renidae -> Protidae -> Renigata -> Tempolax
 
