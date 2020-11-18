@@ -8,3 +8,4 @@ require("units/blAir/harpoon")
 
 require("units/greNaval/rana")
 require("units/greNaval/renidae")
+require("units/greNaval/protidae")
