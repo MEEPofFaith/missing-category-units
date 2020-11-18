@@ -29,6 +29,7 @@ weapons:[
     rotate: true
     top: true
     shootSound: lasershoot
+    shootEffect: shootHeal
     inaccuracy: 1
     bullet:{
       type: LaserBoltBulletType
