@@ -1,0 +1,21 @@
+localizedName: Renigata
+description: Fires... stuff. Dunno what yet. Constructs poly and flare units.
+commandLimit: 12
+speed: 0.7
+drag: 0.16
+accel: 0.25
+rotateSpeed: 2
+health: 860
+armor: 20
+range: 200
+itemCapacity: 50
+hitSize: 32
+rotateShooting: false
+trailLength: 50
+trailX: 12.5
+trailY: -24.75
+trailScl: 2
+
+research: {
+  parent: protidae
+}

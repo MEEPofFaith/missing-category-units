@@ -1,6 +1,6 @@
 localizedName: Protidae
 description: Fires laser bolts that damage enemies and heals blocks. Stops to heal damaged blocks. Constructs mono units.
-commandLimit: 8
+commandLimit: 10
 speed: 0.85
 drag: 0.13
 accel: 0.4
@@ -15,7 +15,6 @@ trailLength: 30
 trailX: 9.5
 trailY: -13
 trailScl: 1.7
-rippleScale: 1.75
 
 weapons:[
   {
@@ -54,7 +53,6 @@ weapons:[
     shots: 3
     inaccuracy: 20
     shootCone: 10
-    spacing: 6
     velocityRnd: 0.1
     soundPitchMin: 0.5
     soundPitchMax: 0.7
@@ -63,19 +61,25 @@ weapons:[
     shake: 1
     inaccuracy: 1
     bullet:{
-      type: LaserBoltBulletType
-      damage: 21
-      healPercent: 1
+      type: MissileBulletType
+      homingPower: 0.08
+      weaveMag: 4
+      weaveScale: 4
+      damage: 19
+      healPercent: 2
       collidesTeam: true
       backColor: 98ffa9
       frontColor: ffffff
+      trailColor: 98ffa9
       speed: 5.5
-      hitEffect: blastExplosion
+      hitEffect: hitLaser
+      despawnEffect: hitLaser
+      hitSound: none
       lifetime: 55
     }
   }
 ]
 
 research: {
-  parent: rana
+  parent: renidae
 }

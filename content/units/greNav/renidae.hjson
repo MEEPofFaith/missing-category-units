@@ -1,6 +1,5 @@
 localizedName: Renidae
 description: Fires laser bolts that damage enemies and heals blocks. Stops to heal damaged blocks. Constructs mono units.
-commandLimit: 8
 speed: 0.9
 drag: 0.13
 accel: 0.4
@@ -15,7 +14,6 @@ trailLength: 20
 trailX: 5.375
 trailY: -10.5
 trailScl: 1.6
-rippleScale: 1.5
 
 weapons:[
   {
