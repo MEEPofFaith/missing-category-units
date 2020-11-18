@@ -21,8 +21,8 @@ weapons:[
   {
     name: renidae-weapon
     reload: 11
-    x: 6.75
-    y: 1.625
+    x: 7
+    y: -7.375
     shootX: -0.625
     shootY: 2.75
     recoil: 1
@@ -42,16 +42,24 @@ weapons:[
     }
   }
   {
-    name: renidae-weapon
-    reload: 11
-    x: 5.5
-    y: -7.375
-    shootX: -0.625
+    name: protidae-ripple
+    reload: 33
+    x: 6.75
+    y: 1.625
     shootY: 2.75
-    recoil: 1
+    recoil: 2
     rotate: true
+    rotateSpeed: 6
+    shots: 3
+    inaccuracy: 20
+    shootCone: 10
+    spacing: 6
+    velocityRnd: 0.1
+    soundPitchMin: 0.5
+    soundPitchMax: 0.7
     top: true
-    shootSound: lasershoot
+    shootSound: laser
+    shake: 1
     inaccuracy: 1
     bullet:{
       type: LaserBoltBulletType
@@ -61,6 +69,7 @@ weapons:[
       backColor: 98ffa9
       frontColor: ffffff
       speed: 5.5
+      hitEffect: blastExplosion
       lifetime: 40
     }
   }
