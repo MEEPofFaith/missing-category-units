@@ -14,4 +14,4 @@ description:
     Note: Android 7 and below will not be able to run this mod."
   '''
 version: 0.2.0
-minGameVersion: 113
+minGameVersion: 115
