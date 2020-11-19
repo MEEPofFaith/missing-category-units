@@ -87,6 +87,7 @@ weapons:[
       length: 88
       width: 12
       damage: 38
+      hitColor: a9d8ff
       colors:[8aa3f466, a9d8ff, FFFFFF]
       sideAngle: 25
       sideLength: 44
@@ -109,6 +110,7 @@ weapons:[
       length: 100
       width: 13
       damage: 46
+      hitColor: a9d8ff
       colors:[8aa3f466, a9d8ff, FFFFFF]
       sideAngle: 25
       sideLength: 56
@@ -131,6 +133,7 @@ weapons:[
       length: 136
       width: 22
       damage: 65
+      hitColor: a9d8ff
       colors:[8aa3f466, a9d8ff, FFFFFF]
       sideAngle: 35
       sideLength: 64
@@ -153,6 +156,7 @@ weapons:[
       type: ContinuousLaserBulletType
       lifetime: 80
       damage: 20
+      hitColor: 8AA3F4
       colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
       lightColor: 8AA3F4
       length: 128
@@ -177,6 +181,7 @@ weapons:[
       type: ContinuousLaserBulletType
       lifetime: 90
       damage: 30
+      hitColor: 8AA3F4
       colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
       lightColor: 8AA3F4
       length: 156
