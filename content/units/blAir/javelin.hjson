@@ -95,7 +95,7 @@ weapons:[
   }
   {
     name: javelin-laser
-    reload: 50
+    reload: 35
     x: 0
     y: -15
     mirror: false
@@ -103,17 +103,27 @@ weapons:[
     recoil: 4
     shake: 1.75
     rotate: true
-    shootSound: laser
+    shootSound: railgun
     rotateSpeed: 2
     bullet:{
-      type: LaserBulletType
-      length: 180
-      width: 22
-      damage: 53
-      colors:[8aa3f466, a9d8ff, FFFFFF]
-      sideAngle: 35
-      sideLength: 70
-      sideWidth: 1.5
+      type: ContinuousLaserBulletType
+      absorbable: true
+      keepVelocity: true
+      length: 12
+      width: 4
+      damage: 15
+      colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
+      speed: 5
+      lifetime: 90
+      drag: 0.04
+      shake: 0
+      oscScl: 0.5
+      oscMag: 1
+      fadeTime: 30
+      makeFire: false
+      incendAmount: 2
+      incendChance: 0.05
+      lenscales: [1, 1.2, 1.275, 1.325]
     }
   }
 ]
