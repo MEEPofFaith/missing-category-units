@@ -18,7 +18,7 @@ const javelinController = prov(() => {
 });//Custom AI for flare AI
 
 const SpAirT4 = extendContent(UnitType, "javelin", {});
-SpAirT4.constructor = () => extend(BuilderUnit, {});
+SpAirT4.constructor = () => extend(UnitEntity, {});
 SpAirT4.defaultController = javelinController;
 SpAirT4.abilities.add(new MoveLightningAbility(21, 17, 0.1, 1.3, 4.2, Color.valueOf("#a9d8ff")));
 SpAirT4.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 3, 60 * 4.25, 48));

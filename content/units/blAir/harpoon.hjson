@@ -9,7 +9,7 @@ engineSize: 11
 range: 110
 flying: true
 itemCapacity: 50
-buildSpeed: 0.8
+buildSpeed: 0.9
 lowAltitude: true
 hitSize: 55
 armor: 20
@@ -139,7 +139,7 @@ weapons:[
   }
   {
     name: harpoon-beam
-    reload: 135
+    reload: 57
     x: 19.25
     y: -17.25
     shootY: 7
@@ -162,7 +162,7 @@ weapons:[
   }
   {
     name: harpoon-beam
-    reload: 260
+    reload: 71
     x: 0
     y: -10
     shootY: 7

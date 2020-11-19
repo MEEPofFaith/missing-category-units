@@ -15,6 +15,7 @@ trailLength: 50
 trailX: 12.5
 trailY: -24.75
 trailScl: 2
+buildSpeed: 1.75
 
 research: {
   parent: protidae

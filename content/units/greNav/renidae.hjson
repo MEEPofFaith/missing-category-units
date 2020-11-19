@@ -14,6 +14,7 @@ trailLength: 20
 trailX: 5.375
 trailY: -10.5
 trailScl: 1.6
+buildSpeed: 1.25
 
 weapons:[
   {

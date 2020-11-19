@@ -18,7 +18,7 @@ const harpoonController = prov(() => {
 });//Custom AI for flare AI
 
 const SpAirT5 = extendContent(UnitType, "harpoon", {});
-SpAirT5.constructor = () => extend(BuilderUnit, {});
+SpAirT5.constructor = () => extend(UnitEntity, {});
 SpAirT5.defaultController = harpoonController;
 SpAirT5.abilities.add(new MoveLightningAbility(25, 20, 0.1, 1.4, 4.3, Color.valueOf("#a9d8ff")));
 SpAirT5.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60 * 4, 60 * 5, 64));

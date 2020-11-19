@@ -14,6 +14,7 @@ rotateShooting: false
 trailLength: 20
 trailX: 3.5
 trailY: -8
+buildSpeed: 1
 
 weapons:[
   {

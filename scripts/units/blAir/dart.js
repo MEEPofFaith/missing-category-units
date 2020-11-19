@@ -1,5 +1,5 @@
 const SpAirT2 = extendContent(UnitType, "dart", {});
-SpAirT2.constructor = () => extend(BuilderUnit, {});
+SpAirT2.constructor = () => extend(UnitEntity, {});
 SpAirT2.abilities.add(new MoveLightningAbility(16, 11, 0.1, 1.1, 3.3, Color.valueOf("#a9d8ff")));
 SpAirT2.ammoType = AmmoTypes.powerLow;
 
