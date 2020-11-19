@@ -54,8 +54,6 @@ weapons:[
     inaccuracy: 10
     shootCone: 10
     velocityRnd: 0.1
-    soundPitchMin: 0.5
-    soundPitchMax: 0.7
     top: true
     shootSound: missile
     shootEffect: shootHeal
