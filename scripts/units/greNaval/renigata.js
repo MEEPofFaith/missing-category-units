@@ -4,8 +4,8 @@ const SuNavT4 = extendContent(UnitType, "renigata", {});
 SuNavT4.constructor = () => extend(UnitWaterMove, {});
 SuNavT4.defaultController = ais.groundRepairAI;
 
-var flareSpawnSeconds = 20;
-var polySpawnSeconds = 25;
+var flareSpawnSeconds = 25;
+var polySpawnSeconds = 45;
 
 SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySpawnSeconds * 60, 34/4, -68/4));
 SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySpawnSeconds * 60, -34/4, -68/4));

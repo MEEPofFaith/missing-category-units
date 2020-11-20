@@ -12,9 +12,9 @@ itemCapacity: 50
 hitSize: 32
 rotateShooting: false
 trailLength: 50
-trailX: 12.5
-trailY: -24.75
-trailScl: 2
+trailX: 11.25
+trailY: -27
+trailScl: 2.25
 buildSpeed: 1.75
 
 research: {
