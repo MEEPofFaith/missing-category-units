@@ -44,22 +44,11 @@ const script = [
     childs: [
       {
         name: "blAir",
-        childs: [
-          "needle",
-          "dart",
-          "spear",
-          "javelin",
-          "harpoon"
-        ]
+        childs: ["needle", "dart", "spear", "javelin", "harpoon"]
       },
       {
         name: "greNaval",
-        childs: [
-          "rana",
-          "renidae",
-          "protidae",
-          "renigata"
-        ]
+        childs: ["rana", "renidae", "protidae", "renigata"]
       }
     ]
   }
