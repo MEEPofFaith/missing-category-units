@@ -29,10 +29,10 @@ weapons:[
     rotate: true
     top: true
     shootSound: lasershoot
-    shootEffect: shootHeal
     inaccuracy: 1
     bullet:{
       type: LaserBoltBulletType
+      shootEffect: shootHeal
       damage: 7
       healPercent: 1.5
       collidesTeam: true
@@ -57,10 +57,10 @@ weapons:[
     velocityRnd: 0.1
     top: true
     shootSound: missile
-    shootEffect: shootHeal
     shake: 1
     bullet:{
       type: MissileBulletType
+      shootEffect: shootHeal
       homingPower: 0.08
       weaveMag: 4
       weaveScale: 4
