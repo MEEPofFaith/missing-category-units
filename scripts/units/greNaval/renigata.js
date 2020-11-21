@@ -1,45 +1,10 @@
-const radius = 3;
-const lifetime = 3;
+const bullets = this.global.mcu.bullets;
 
-const endPoint = new Effect(lifetime, e => {
-  Draw.color(Pal.heal);
-  Fill.circle(e.x, e.y, radius * 2);
-  Draw.color(Color.white);
-  Fill.circle(e.x, e.y, radius * 1.25);
-});
-endPoint.layer = Layer.bullet;
-
-const colors = [Pal.heal, Color.white];
-const widths = [1.75, 1];
-const widthsScl = [1, 0.5, 0.2];
-const length = 4;
-const lengths = [1, 1.3, 1.6];
-
-const tractorLaser = new Effect(lifetime, e => {
-  for(var c = 0; c < colors.length; c++){
-    Draw.color(colors[c]);
-    for(var l = 0; l < lengths.length; l++){
-      Lines.stroke(radius * widths[c] * widthsScl[l]);
-      Lines.lineAngle(e.x, e.y, e.rotation, length * lengths[l], false);
-      Lines.lineAngle(e.x, e.y, e.rotation + 180, length * lengths[l], false);
-    }
-    Draw.reset();
-  }
-});
-tractorLaser.layer = Layer.bullet;
-
-const tractorBeam = extend(PointBulletType, {});
-tractorBeam.speed = 100;
-tractorBeam.damage = 1;
-tractorBeam.knockback = -4;
-tractorBeam.collidesGround = false;
-tractorBeam.collidesTiles = false;
-tractorBeam.shootEffect = endPoint;
-tractorBeam.despawnEffect = endPoint;
-tractorBeam.smokeEffect = Fx.none;
-tractorBeam.hitEffect = Fx.none;
-tractorBeam.trailEffect = tractorLaser;
-tractorBeam.trailSpacing = 20;
+const tractorBeam = bullets.newTractorBeam();
+var range = 128;
+tractorBeam.length = range;
+tractorBeam.range = range;
+tractorBeam.lifetime = 120;
 
 const tractorBeamWeapon = extendContent(Weapon, "purple-air-renigata-parallax", {});
 tractorBeamWeapon.mirror = false;
@@ -47,9 +12,10 @@ tractorBeamWeapon.x = 0;
 tractorBeamWeapon.y = -9.5;
 tractorBeamWeapon.shootY = 6;
 tractorBeamWeapon.recoil = 0;
-tractorBeamWeapon.reload = 1;
+tractorBeamWeapon.reload = 30;
 tractorBeamWeapon.rotate = true;
-tractorBeamWeapon.shootSound = Sounds.none;
+tractorBeamWeapon.continuous = true;
+tractorBeamWeapon.shootSound = Sounds.tractorbeam;
 tractorBeamWeapon.bullet = tractorBeam;
 tractorBeamWeapon.recoil = 0;
 
