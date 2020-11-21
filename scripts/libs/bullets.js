@@ -1,5 +1,5 @@
 module.exports = {
-  newTractorBeam(){
+  newTractorBeam(force, scaledForce){
     var tractorBeam = extend(BulletType, {
       collision(other, x, y){
         this.hit(this.base(), x, y);
@@ -9,9 +9,7 @@ module.exports = {
         }
         if(other instanceof Unit){
           var unit = other;
-          //unit.impulse(Tmp.v3.set(unit).sub(this).limit((this.force + (1 - unit.dst(this) / this.range()) * this.scaledForce) * 80));
-          //Custom stats, like "this.force" and "this.scaledForce" don't work here for some reason.
-          unit.impulse(Tmp.v3.set(unit).sub(this).limit(this.knockback));
+          unit.impulse(Tmp.v3.set(unit).sub(this).limit((force + (1 - unit.dst(this) / this.range()) * scaledForce) * 80));
           unit.apply(this.status, this.statusDuration);
         }
         if(!this.pierce){
@@ -77,15 +75,12 @@ module.exports = {
     tractorBeam.speed = 0.0001;
     tractorBeam.damage = 3; // * 12 = dps
     tractorBeam.knockback = -0.5;
-    /*tractorBeam.force = 8;
-    tractorBeam.scaledForce = 7;
-    Really wish these worked*/
     tractorBeam.colors = [Pal.heal, Color.white];
     tractorBeam.length = 160;
     tractorBeam.width = 2;
     tractorBeam.range = 160;
     tractorBeam.absorbable = false;
-    tractorBeam.collidesGround = false;
+    tractorBeam.collidesTiles = false;
     tractorBeam.hittable = false;
     tractorBeam.keepVelocity = false;
     tractorBeam.pierce = true;
