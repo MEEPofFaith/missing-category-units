@@ -1,1 +1,3 @@
-const tractorBeamWeapon = extendContent(Weapon, "none", {});
+const tractorBeamWeapon = extendContent(Weapon, "none", {
+  
+});
