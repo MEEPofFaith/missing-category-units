@@ -39,6 +39,7 @@ weapons:[
         lifetime: 40
         speed: 4
         damage: 500
+        knockback: 0.8
     }
   }
 ]
