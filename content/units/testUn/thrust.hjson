@@ -1,0 +1,41 @@
+localizedName: thrust
+description: a unit testing a thruster
+commandLimit: 6
+health: 250
+speed: 3.3
+accel: 0.015
+drag: 0.0075
+engineOffset: 6
+range: 64
+flying: true
+itemCapacity: 35
+mineTier: 1
+mineSpeed: 1.25
+buildSpeed: 0.5
+lowAltitude: true
+hitSize: 7
+targetGround: true
+targetAir: true
+armor: 2
+rotateSpeed: 2
+
+weapons:[
+  {
+    name: thruster
+    top: false
+    shootSound: flame
+    x: 0
+    y: -1
+    shootY: -1
+    reload: 2
+    recoil: -3
+    mirror: false
+    ejectEffect: none
+    bullet:
+    {
+        type: LaserBoltBulletType
+        lifetime: 12
+        speed: -1
+    }
+  }
+]
