@@ -24,6 +24,8 @@ weapons:[
     name: thruster
     top: false
     shootSound: flame
+    soundPitchMin: 1.2
+    soundPitchMax: 1.4
     x: 0
     y: -1
     shootY: -1

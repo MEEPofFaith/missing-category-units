@@ -17,15 +17,16 @@ hitSize: 7
 targetGround: true
 targetAir: true
 armor: 2
-rotateSpeed: 2
+rotateSpeed: 10
+rotateShooting: false
 
 weapons:[
   {
     name: playerunit-weapon
     top: true
     shootSound: lasershoot
-    x: 4
-    y: -1
+    x: 4.25
+    y: -0.25
     shootY: 1
     reload: 4
     recoil: 1
@@ -40,6 +41,35 @@ weapons:[
         speed: 4
         damage: 500
         knockback: 0.8
+    }
+  },
+
+  {
+    name: playerunit-weapon
+    top: true
+    x: 0
+    y: -2
+    shootY: 5
+    recoil: 1
+    rotate: true
+    reload: 0.01
+    continuous: true
+    cooldownTime: 0
+    shootSound: beam
+    rotateSpeed: 1.25
+    mirror: false
+    rotateSpeed: 10
+    bullet: {
+      type: ContinuousLaserBulletType
+      lifetime: 128
+      damage: 2
+      hitColor: 8AA3F4
+      colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
+      lightColor: 8AA3F4
+      length: 256
+      width: 10
+      shake: 0.25
+      knockback: -5
     }
   }
 ]
