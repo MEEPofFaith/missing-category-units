@@ -2,9 +2,9 @@ localizedName: playerunit
 description: a unit for control by players
 commandLimit: 6
 health: 99999
-speed: 2.5
-accel: 0.75
-drag: 0.85
+speed: 4
+accel: 0.5
+drag: 1
 engineOffset: 6
 range: 64
 flying: true
