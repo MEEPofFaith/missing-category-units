@@ -4,7 +4,7 @@ commandLimit: 6
 health: 99999
 speed: 4
 accel: 0.5
-drag: 1
+drag: 0.25
 engineOffset: 6
 range: 64
 flying: true
