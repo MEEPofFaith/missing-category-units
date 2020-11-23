@@ -1,0 +1,44 @@
+localizedName: playerunit
+description: a unit for control by players
+commandLimit: 6
+health: 99999
+speed: 2.5
+accel: 0.75
+drag: 0.85
+engineOffset: 6
+range: 64
+flying: true
+itemCapacity: 35
+mineTier: 1
+mineSpeed: 1.25
+buildSpeed: 0.5
+lowAltitude: true
+hitSize: 7
+targetGround: true
+targetAir: true
+armor: 2
+rotateSpeed: 2
+
+weapons:[
+  {
+    name: playerunit-weapon
+    top: true
+    shootSound: lasershoot
+    x: 1.65
+    y: -1
+    shootY: 1
+    reload: 4
+    recoil: 1
+    alternate: true
+    ejectEffect: none
+    rotate: true
+    rotateSpeed: 3
+    bullet:
+    {
+        type: LaserBoltBulletType
+        lifetime: 40
+        speed: 4
+        damage: 500
+    }
+  }
+]

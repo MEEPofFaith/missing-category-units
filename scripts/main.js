@@ -50,7 +50,7 @@ const script = [
       },
       {
         name: "testUn",
-        childs: ["thrust"]
+        childs: ["thrust", "playerunit"]
       }
     ]
   }
