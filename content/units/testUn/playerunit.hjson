@@ -24,7 +24,7 @@ weapons:[
     name: playerunit-weapon
     top: true
     shootSound: lasershoot
-    x: 1.65
+    x: 4
     y: -1
     shootY: 1
     reload: 4
