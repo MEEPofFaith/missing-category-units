@@ -36,11 +36,11 @@ weapons:[
     rotateSpeed: 3
     bullet:
     {
-        type: LaserBoltBulletType
-        lifetime: 40
-        speed: 4
-        damage: 500
-        knockback: 0.8
+      type: LaserBoltBulletType
+      lifetime: 40
+      speed: 4
+      damage: 500
+      knockback: 0.8
     }
   },
 

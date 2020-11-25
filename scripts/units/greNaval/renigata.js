@@ -3,7 +3,7 @@ const bullets = this.global.mcu.bullets;
 const tractorBeam = bullets.newTractorBeam(8, 7);
 var range = 128;
 tractorBeam.length = range;
-tractorBeam.range = range;
+tractorBeam.maxRange = range;
 tractorBeam.lifetime = 120;
 
 const tractorBeamWeapon = extendContent(Weapon, "purple-air-renigata-parallax", {});

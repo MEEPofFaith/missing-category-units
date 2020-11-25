@@ -35,9 +35,9 @@ weapons:[
     ejectEffect: none
     bullet:
     {
-        type: LaserBoltBulletType
-        lifetime: 12
-        speed: -1
+      type: LaserBoltBulletType
+      lifetime: 12
+      speed: -1
     }
   }
 ]
