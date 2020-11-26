@@ -1,5 +1,38 @@
 const bullets = this.global.mcu.bullets;
 
+const healArtillery = extend(ArtilleryBulletType, {});
+healArtillery.shootEffect = Fx.shootHeal;
+healArtillery.damage = 5;
+healArtillery.width = 11;
+healArtillery.height = 11;
+healArtillery.splashDamage = 24;
+healArtillery.splashDamageRadius = 8;
+healArtillery.healPercent = 8;
+healArtillery.scaleVelocity = true;
+healArtillery.frontColor = Color.valueOf("84F491");
+healArtillery.backColor = Color.valueOf("62AE7F");
+healArtillery.speed = 3;
+healArtillery.hitEffect = Fx.hitLaser;
+healArtillery.despawnEffect = Fx.hitLaser;
+healArtillery.hitSound = Sounds.none;
+healArtillery.lifetime = 80;
+
+const healRipple = extendContent(Weapon, "purple-air-protidae-ripple", {});
+healRipple.reload = 50;
+healRipple.x = 6.25;
+healRipple.y = 9;
+healRipple.shootY = 2.75;
+healRipple.recoil = 2;
+healRipple.rotate = true;
+healRipple.rotateSpeed = 6;
+healRipple.shots = 3;
+healRipple.inaccuracy = 10;
+healRipple.shootCone = 10;
+healRipple.velocityRnd = 0.3;
+healRipple.shootSound = Sounds.bang;
+healRipple.shake = 2;
+healRipple.bullet = healArtillery;
+
 const tractorBeam = bullets.newTractorBeam(8, 7);
 var range = 128;
 tractorBeam.length = range;
@@ -34,6 +67,7 @@ SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSpawnSeconds * 
 SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSpawnSeconds * 60, -32/4, -6/4));
 SuNavT4.abilities.add(new ShieldRegenFieldAbility(40, 120, 60 * 16, 32));
 SuNavT4.ammoType = AmmoTypes.power;
+SuNavT4.weapons.add(healRipple);
 SuNavT4.weapons.add(tractorBeamWeapon);
 
 var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-protidae"), Vars.content.getByName(ContentType.unit, "purple-air-renigata")]);

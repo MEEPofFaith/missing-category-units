@@ -81,6 +81,7 @@ module.exports = {
     tractorBeam.maxRange = 160;
     tractorBeam.absorbable = false;
     tractorBeam.collidesTiles = false;
+    tractorBeam.collidesGround = false;
     tractorBeam.hittable = false;
     tractorBeam.keepVelocity = false;
     tractorBeam.pierce = true;
