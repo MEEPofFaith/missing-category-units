@@ -1,5 +1,8 @@
 const bullets = this.global.mcu.bullets;
 
+const SuNavT4 = extendContent(UnitType, "renigata", {});
+SuNavT4.constructor = () => extend(UnitWaterMove, {});
+
 const healArtillery = extend(ArtilleryBulletType, {});
 healArtillery.shootEffect = Fx.shootHeal;
 healArtillery.damage = 5;
@@ -7,7 +10,7 @@ healArtillery.width = 11;
 healArtillery.height = 11;
 healArtillery.splashDamage = 24;
 healArtillery.splashDamageRadius = 8;
-healArtillery.healPercent = 8;
+healArtillery.healPercent = 4;
 healArtillery.scaleVelocity = true;
 healArtillery.frontColor = Color.valueOf("84F491");
 healArtillery.backColor = Color.valueOf("62AE7F");
@@ -19,8 +22,8 @@ healArtillery.lifetime = 80;
 
 const healRipple = extendContent(Weapon, "purple-air-protidae-ripple", {});
 healRipple.reload = 50;
-healRipple.x = 6.25;
-healRipple.y = 9;
+healRipple.x = 7.5;
+healRipple.y = 9.5;
 healRipple.shootY = 2.75;
 healRipple.recoil = 2;
 healRipple.rotate = true;
@@ -32,6 +35,40 @@ healRipple.velocityRnd = 0.3;
 healRipple.shootSound = Sounds.bang;
 healRipple.shake = 2;
 healRipple.bullet = healArtillery;
+
+const healArtilleryMid = extend(ArtilleryBulletType, {});
+healArtilleryMid.shootEffect = Fx.shootHeal;
+healArtilleryMid.damage = 3;
+healArtilleryMid.width = 11;
+healArtilleryMid.height = 11;
+healArtilleryMid.splashDamage = 17;
+healArtilleryMid.splashDamageRadius = 5;
+healArtilleryMid.healPercent = 2;
+healArtilleryMid.scaleVelocity = true;
+healArtilleryMid.frontColor = Color.valueOf("84F491");
+healArtilleryMid.backColor = Color.valueOf("62AE7F");
+healArtilleryMid.speed = 3;
+healArtilleryMid.hitEffect = Fx.hitLaser;
+healArtilleryMid.despawnEffect = Fx.hitLaser;
+healArtilleryMid.hitSound = Sounds.none;
+healArtilleryMid.lifetime = 70;
+
+const healRippleMid = extendContent(Weapon, "purple-air-protidae-ripple", {});
+healRippleMid.reload = 35;
+healRippleMid.x = 0;
+healRippleMid.y = 16;
+healRippleMid.mirror = false;
+healRippleMid.shootY = 2.75;
+healRippleMid.recoil = 2;
+healRippleMid.rotate = true;
+healRippleMid.rotateSpeed = 6;
+healRippleMid.shots = 3;
+healRippleMid.inaccuracy = 10;
+healRippleMid.shootCone = 10;
+healRippleMid.velocityRnd = 0.3;
+healRippleMid.shootSound = Sounds.bang;
+healRippleMid.shake = 2;
+healRippleMid.bullet = healArtilleryMid;
 
 const tractorBeam = bullets.newTractorBeam(8, 7);
 var range = 128;
@@ -52,12 +89,6 @@ tractorBeamWeapon.shootSound = Sounds.tractorbeam;
 tractorBeamWeapon.bullet = tractorBeam;
 tractorBeamWeapon.recoil = 0;
 
-//const ais = this.global.mcu.ai;
-
-const SuNavT4 = extendContent(UnitType, "renigata", {});
-SuNavT4.constructor = () => extend(UnitWaterMove, {});
-//SuNavT4.defaultController = ais.groundRepairAI;
-
 var flareSpawnSeconds = 25;
 var polySpawnSeconds = 45;
 
@@ -68,6 +99,7 @@ SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSpawnSeconds * 
 SuNavT4.abilities.add(new ShieldRegenFieldAbility(40, 120, 60 * 16, 32));
 SuNavT4.ammoType = AmmoTypes.power;
 SuNavT4.weapons.add(healRipple);
+SuNavT4.weapons.add(healRippleMid);
 SuNavT4.weapons.add(tractorBeamWeapon);
 
 var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-protidae"), Vars.content.getByName(ContentType.unit, "purple-air-renigata")]);

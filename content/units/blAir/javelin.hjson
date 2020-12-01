@@ -21,7 +21,7 @@ weapons:[
     name: dart-weapon
     reload: 15
     x: 4.5
-    y: 11
+    y: 10
     shootY: 1
     rotate: true
     recoil: 1
@@ -39,7 +39,7 @@ weapons:[
     name: dart-weapon
     reload: 19
     x: 8.5
-    y: 6.75
+    y: 5.75
     shootY: 1
     rotate: true
     recoil: 1
@@ -73,41 +73,19 @@ weapons:[
   }
   {
     name: spear-laser
-    reload: 37.5
+    reload: 30
     x: 8.75
     y: -6
-    shootY: 3.75
-    recoil: 3
+    shootY: 12
+    recoil: 1.5
     shake: 1
     rotate: true
     shootSound: laser
     rotateSpeed: 5
     bullet:{
-      type: LaserBulletType
-      length: 127
-      width: 14
-      damage: 42
-      hitColor: a9d8ff
-      colors:[8aa3f466, a9d8ff, FFFFFF]
-      sideAngle: 25
-      sideLength: 62
-      sideWidth: 1
-    }
-  }
-  {
-    name: javelin-laser
-    reload: 35
-    x: 0
-    y: -15
-    mirror: false
-    shootY: 8.25
-    recoil: 4
-    shake: 1.75
-    rotate: true
-    shootSound: railgun
-    rotateSpeed: 2
-    bullet:{
       type: ContinuousLaserBulletType
+      shootEffect: none
+      smokeEffect: none
       absorbable: true
       keepVelocity: true
       length: 12
@@ -126,6 +104,30 @@ weapons:[
       incendAmount: 2
       incendChance: 0.05
       lenscales: [1, 1.2, 1.275, 1.325]
+    }
+  }
+  {
+    name: javelin-laser
+    reload: 60
+    x: 0
+    y: -14
+    mirror: false
+    shootY: 7.5
+    recoil: 4
+    shake: 1.75
+    rotate: true
+    shootSound: railgun
+    rotateSpeed: 2
+    bullet:{
+      type: LaserBulletType
+      length: 142
+      width: 14
+      damage: 56
+      hitColor: a9d8ff
+      colors:[8aa3f466, a9d8ff, FFFFFF]
+      sideAngle: 25
+      sideLength: 70
+      sideWidth: 1
     }
   }
 ]

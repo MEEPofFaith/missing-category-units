@@ -25,8 +25,8 @@ weapons:[
     mirror: false
     x: 0
     y: -1
-    shootY: 3.75
-    recoil: 3
+    shootY: 3
+    recoil: 1.5
     shake: 1
     rotate: true
     shootSound: laser

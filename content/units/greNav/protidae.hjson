@@ -21,8 +21,8 @@ weapons:[
   {
     name: renidae-weapon
     reload: 11
-    x: 7
-    y: -7.375
+    x: 5
+    y: 7
     shootX: -0.625
     shootY: 2.75
     recoil: 1
@@ -45,8 +45,8 @@ weapons:[
   {
     name: protidae-ripple
     reload: 33
-    x: 6.75
-    y: 1.625
+    x: 7
+    y: -1
     shootY: 2.75
     recoil: 2
     rotate: true

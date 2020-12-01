@@ -20,8 +20,8 @@ weapons:[
   {
     name: renidae-weapon
     reload: 11
-    x: 6.75
-    y: 1.625
+    x: 4.5
+    y: 2
     shootX: -0.625
     shootY: 2.75
     recoil: 1
@@ -44,8 +44,8 @@ weapons:[
   {
     name: renidae-weapon
     reload: 11
-    x: 5.5
-    y: -7.375
+    x: 5.75
+    y: -8
     shootX: -0.625
     shootY: 2.75
     recoil: 1
