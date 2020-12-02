@@ -70,7 +70,7 @@ healRippleMid.shootSound = Sounds.bang;
 healRippleMid.shake = 2;
 healRippleMid.bullet = healArtilleryMid;
 
-const tractorBeam = bullets.newTractorBeam(8, 7);
+const tractorBeam = bullets.newTractorBeam(8, 560);
 var range = 128;
 tractorBeam.length = range;
 tractorBeam.maxRange = range;

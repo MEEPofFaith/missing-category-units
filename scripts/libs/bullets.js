@@ -9,7 +9,7 @@ module.exports = {
         }
         if(other instanceof Unit){
           var unit = other;
-          unit.impulse(Tmp.v3.set(unit).sub(this).limit((force + (1 - unit.dst(this) / this.range()) * scaledForce) * 80));
+          unit.impulse(Tmp.v3.set(unit).sub(this).limit((force + (1 - unit.dst(this) / this.range()) * scaledForce)));
           unit.apply(this.status, this.statusDuration);
         }
         if(!this.pierce){
