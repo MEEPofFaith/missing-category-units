@@ -6,7 +6,7 @@ This mod aims to fill in the gaps of the categories not covered by the vanilla u
 ### Support Naval
 Specialize in healing and unit factories. (T2 produces monos, T3 produces monos, T4 produces polys/flares, T5 produces flares/polys)
 
-Rana -> Renidae -> Protidae -> Renigata -> Tempolax
+Rana -> Renidae -> Protidae -> Renigata -> Urodela
 
 ### Sap Naval
 Possibly snipers. T2, 4, and 5 will sap. Maybe a unit factory T3 that produces needle. T5 will definetely produce needle. 
