@@ -46,7 +46,7 @@ const script = [
       },
       {
         name: "greNaval",
-        childs: ["rana", "renidae", "protidae", "renigata"]
+        childs: ["rana", "renidae", "protidae", "renigata", "urodela"]
       },
       {
         name: "testUn",
