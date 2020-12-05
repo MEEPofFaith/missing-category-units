@@ -103,4 +103,4 @@ SuNavT5.weapons.add(healRippleMid);
 SuNavT5.weapons.add(tractorBeamWeapon);
 
 var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-renigata"), Vars.content.getByName(ContentType.unit, "purple-air-urodela")]);
-Blocks.exponentialReconstructor.upgrades.add(upgrade.toArray(UnitType));
+Blocks.tetrativeReconstructor.upgrades.add(upgrade.toArray(UnitType));
