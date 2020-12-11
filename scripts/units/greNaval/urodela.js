@@ -63,8 +63,8 @@ var polySec = 75;
 */
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.mono, monoSec * 60, 58 / 4, 54 / 4));
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.mono, monoSec * 60, -58 / 4, 54 / 4));
-SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSec * 60,68 / 4, -34 / 4));
-SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSec * 60, -68 / 4, -34 / 4));
+SuNavT5.abilities.add(new UnitSpawnAbility(Vars.content.getByName(ContentType.unit, "purple-air-dart"), flareSec * 60,68 / 4, -34 / 4));
+SuNavT5.abilities.add(new UnitSpawnAbility(Vars.content.getByName(ContentType.unit, "purple-air-dart"), flareSec * 60, -68 / 4, -34 / 4));
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, 52 / 4, -109 / 4));
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, -52 / 4, -109 / 4));
 SuNavT5.abilities.add(new ForceFieldAbility(80, 5, 10000, 60 * 20));
