@@ -77,6 +77,10 @@ var range = 128;
 tractorBeam.length = range;
 tractorBeam.maxRange = range;
 tractorBeam.lifetime = 120;
+//Doesn't work due to how the code works in BulletComp.java
+/*tractorBeam.collidesTiles = true;
+tractorBeam.collidesTeam = true;
+tractorBeam.healPercent = 3;*/
 
 const tractorBeamWeapon = extendContent(Weapon, "purple-air-renigata-parallax", {});
 tractorBeamWeapon.mirror = false;
