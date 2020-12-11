@@ -72,7 +72,7 @@ SuNavT5.abilities.add(new ForceFieldAbility(80, 5, 10000, 60 * 20));
 SuNavT5.ammoType = AmmoTypes.powerHigh;
 
 SuNavT5.weapons.add(ffTBDouble);
-SuNavT5.weapons.add(ftBDouble);
+SuNavT5.weapons.add(fTBDouble);
 SuNavT5.weapons.add(tBDouble);
 
 var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-renigata"), Vars.content.getByName(ContentType.unit, "purple-air-urodela")]);
