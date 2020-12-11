@@ -73,50 +73,14 @@ weapons:[
   }
   {
     name: spear-laser
-    reload: 30
+    reload: 60
     x: 8.75
     y: -6
-    shootY: 12
-    recoil: 1.5
-    shake: 1
+    shootY: 6
+    recoil: 2.5
+    shake: 1.5
     rotate: true
     shootSound: laser
-    rotateSpeed: 5
-    bullet:{
-      type: ContinuousLaserBulletType
-      shootEffect: none
-      smokeEffect: none
-      absorbable: true
-      keepVelocity: true
-      length: 12
-      width: 4
-      damage: 15
-      hitColor: 8AA3F4
-      colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
-      speed: 5
-      lifetime: 90
-      drag: 0.04
-      shake: 0
-      oscScl: 0.5
-      oscMag: 1
-      fadeTime: 30
-      makeFire: false
-      incendAmount: 2
-      incendChance: 0.05
-      lenscales: [1, 1.2, 1.275, 1.325]
-    }
-  }
-  {
-    name: javelin-laser
-    reload: 60
-    x: 0
-    y: -14
-    mirror: false
-    shootY: 7.5
-    recoil: 4
-    shake: 1.75
-    rotate: true
-    shootSound: railgun
     rotateSpeed: 2
     bullet:{
       type: LaserBulletType
@@ -128,6 +92,43 @@ weapons:[
       sideAngle: 25
       sideLength: 70
       sideWidth: 1
+    }
+  }
+  {
+    name: javelin-laser
+    reload: 30
+    x: 0
+    y: -14
+    mirror: false
+    shootY: 7.5
+    recoil: 2
+    shake: 0.75
+    rotate: true
+    shootSound: railgun
+    shootEffect: hitLancer
+    smokeEffect: none
+    rotateSpeed: 5
+    bullet:{
+      type: ContinuousLaserBulletType
+      absorbable: true
+      keepVelocity: true
+      length: 18
+      width: 3
+      damage: 15
+      hitColor: 8AA3F4
+      colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
+      speed: 7
+      lifetime: 90
+      drag: 0.045
+      shake: 0
+      oscScl: 0.5
+      oscMag: 1
+      fadeTime: 30
+      makeFire: false
+      incendAmount: 2
+      incendChance: 0.05
+      tscales: [1, 0.75, 0.55, 0.4]
+      lenscales: [0.75, 0.85, 0.925, 1]
     }
   }
 ]

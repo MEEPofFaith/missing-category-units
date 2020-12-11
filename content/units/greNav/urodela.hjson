@@ -14,7 +14,7 @@ rotateShooting: false
 trailLength: 67
 trailX: 15
 trailY: -38.5
-trailScl: 6
+trailScl: 4
 buildSpeed: 2.25
 
 research: {
