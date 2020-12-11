@@ -5,11 +5,57 @@ const SuNavT5 = extendContent(UnitType, "urodela", {});
 SuNavT5.constructor = () => extend(UnitWaterMove, {});
 SuNavT5.defaultController = ais.groundRepairAI;
 
+const AAbullet = extend(FlakBulletType, {});
+AAbullet.sprite = "missile";
+AAbullet.height = 8;
+AAbullet.explodeRange = 25;
+AAbullet.splashDamage = 20;
+AAbullet.splashDamgeRadius = 45;
+AAbullet.homingPower = 0.08;
+AAbullet.trailChance = 0.2;
+AAbullet.lifetime = 25;
+AAbullet.speed = 5;
+AAbullet.backColor = Pal.missileYellowBack;
+AAbullet.frontColor = Pal.missileYellow;
+AAbullet.hitSound = Sounds.explosion;
+
+const AA = extendContent(Weapon, "purple-air-renigata-aa", {});
+AA.bullet = AAbullet;
+AA.rotate = true;
+AA.rotateSpeed = 8;
+AA.reload = 5;
+AA.shootSound = Sounds.missile;
+AA.alternate = false;
+AA.x = 98 / 4;
+AA.y = 41 / 4;
+
+const AA2 = extendContent(Weapon, "purple-air-renigata-aa", {});
+AA2.bullet = AAbullet;
+AA2.rotate = true;
+AA2.rotateSpeed = 8;
+AA2.reload = 5;
+AA2.shootSound = Sounds.missile;
+AA2.alternate = false;
+AA2.x = 0;
+AA2.y = 55 / 4;
+AA2.mirror = false;
+
+const AA3 = extendContent(Weapon, "purple-air-renigata-aa", {});
+AA3.bullet = AAbullet;
+AA3.rotate = true;
+AA3.rotateSpeed = 8;
+AA3.reload = 5;
+AA3.shootSound = Sounds.missile;
+AA3.alternate = false;
+AA3.x = 0;
+AA3.y = 96 / 4;
+AA3.mirror = false;
+
 const tractorBeam = bullets.newTractorBeam(11, 720);
-var range = 135;
+var range = 142;
 tractorBeam.length = range;
 tractorBeam.maxRange = range;
-tractorBeam.lifetime = 30;
+tractorBeam.lifetime = 120;
 //Doesn't work due to how the code works in BulletComp.java
 /*tractorBeam.collidesTiles = true;
 tractorBeam.collidesTeam = true;
@@ -20,7 +66,7 @@ tBDouble.x = 94 / 4;
 tBDouble.y = -80 / 4;
 tBDouble.shootY = 6;
 tBDouble.recoil = 0;
-tBDouble.reload = 5;
+tBDouble.reload = 29;
 tBDouble.rotate = true;
 tBDouble.continuous = true;
 tBDouble.shootSound = Sounds.tractorbeam;
@@ -32,7 +78,7 @@ fTBDouble.x = 41 / 4;
 fTBDouble.y = 10 / 4;
 fTBDouble.shootY = 6;
 fTBDouble.recoil = 0;
-fTBDouble.reload = 6;
+fTBDouble.reload = 30;
 fTBDouble.rotate = true;
 fTBDouble.continuous = true;
 fTBDouble.shootSound = Sounds.tractorbeam;
@@ -45,7 +91,7 @@ ffTBDouble.x = 35 / 4;
 ffTBDouble.y = 122 / 4;
 ffTBDouble.shootY = 6;
 ffTBDouble.recoil = 0;
-ffTBDouble.reload = 7;
+ffTBDouble.reload = 31;
 ffTBDouble.rotate = true;
 ffTBDouble.continuous = true;
 ffTBDouble.shootSound = Sounds.tractorbeam;
@@ -139,7 +185,7 @@ shell.fragLifeMin = 0.3;
 shell.fragBullets = 20;
 shell.fragBullet = cluster;
 
-//Back center: (0, -116) TODO: Giant heal artillery (Base off Toxopid)
+//Back center: (0, -116) Done: Giant heal artillery (Base off Toxopid)
 const healxopid = extendContent(Weapon, "purple-air-urodela-cannon", {});
 healxopid.x = 0;
 healxopid.y = -116 / 4;
@@ -154,8 +200,8 @@ healxopid.ejectEffect = Fx.casing3;
 healxopid.rotate = true;
 healxopid.occlusion = 30;
 healxopid.bullet = shell;
-healxopid.inaccurcay = 5;
-healxopid.velocityRnd = 0.1;
+healxopid.inaccurcay = 10;
+healxopid.velocityRnd = 0.2;
 //Front center: (0, 56) TODO: ???
 
 var monoSec = 60;
@@ -169,14 +215,17 @@ var polySec = 75;
 */
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.mono, monoSec * 60, 58 / 4, 54 / 4));
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.mono, monoSec * 60, -58 / 4, 54 / 4));
-SuNavT5.abilities.add(new UnitSpawnAbility(Vars.content.getByName(ContentType.unit, "purple-air-dart"), flareSec * 60,68 / 4, -34 / 4));
-SuNavT5.abilities.add(new UnitSpawnAbility(Vars.content.getByName(ContentType.unit, "purple-air-dart"), flareSec * 60, -68 / 4, -34 / 4));
+SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSec * 60,68 / 4, -34 / 4));
+SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSec * 60, -68 / 4, -34 / 4));
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, 52 / 4, -109 / 4));
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, -52 / 4, -109 / 4));
 SuNavT5.abilities.add(new ForceFieldAbility(80, 5, 10000, 60 * 20));
 
 SuNavT5.ammoType = AmmoTypes.powerHigh;
 
+SuNavT5.weapons.add(AA);
+SuNavT5.weapons.add(AA2);
+SuNavT5.weapons.add(AA3);
 SuNavT5.weapons.add(ffTBDouble);
 SuNavT5.weapons.add(fTBDouble);
 SuNavT5.weapons.add(tBDouble);

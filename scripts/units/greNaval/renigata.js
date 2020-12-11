@@ -5,6 +5,30 @@ const SuNavT4 = extendContent(UnitType, "renigata", {});
 SuNavT4.constructor = () => extend(UnitWaterMove, {});
 SuNavT4.defaultController = ais.groundRepairAI;
 
+const AAbullet = extend(FlakBulletType, {});
+AAbullet.sprite = "missile";
+AAbullet.height = 8;
+AAbullet.explodeRange = 15;
+AAbullet.splashDamage = 15;
+AAbullet.splashDamgeRadius = 5;
+AAbullet.homingPower = 0.08;
+AAbullet.trailChance = 0.2;
+AAbullet.lifetime = 20;
+AAbullet.speed = 5;
+AAbullet.backColor = Pal.missileYellowBack;
+AAbullet.frontColor = Pal.missileYellow;
+AAbullet.hitSound = Sounds.explosion;
+
+const AA = extendContent(Weapon, "purple-air-renigata-aa", {});
+AA.bullet = AAbullet;
+AA.rotate = true;
+AA.rotateSpeed = 8;
+AA.reload = 5;
+AA.shootSound = Sounds.missile;
+AA.alternate = false;
+AA.x = 57 / 4;
+AA.y = -40 / 4;
+
 const healArtillery = extend(ArtilleryBulletType, {});
 healArtillery.shootEffect = Fx.shootHeal;
 healArtillery.damage = 5;
@@ -106,6 +130,7 @@ SuNavT4.abilities.add(new ShieldRegenFieldAbility(40, 120, 60 * 16, 32));
 
 SuNavT4.ammoType = AmmoTypes.powerHigh;
 
+SuNavT4.weapons.add(AA);
 SuNavT4.weapons.add(healRipple);
 SuNavT4.weapons.add(healRippleMid);
 SuNavT4.weapons.add(tractorBeamWeapon);
