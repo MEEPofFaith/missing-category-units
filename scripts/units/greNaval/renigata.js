@@ -89,15 +89,17 @@ tractorBeamWeapon.shootSound = Sounds.tractorbeam;
 tractorBeamWeapon.bullet = tractorBeam;
 tractorBeamWeapon.recoil = 0;
 
-var flareSpawnSeconds = 25;
-var polySpawnSeconds = 45;
+var flareSec = 40;
+var polySec = 80;
 
-SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySpawnSeconds * 60, 34/4, -68/4));
-SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySpawnSeconds * 60, -34/4, -68/4));
-SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSpawnSeconds * 60, 32/4, -6/4));
-SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSpawnSeconds * 60, -32/4, -6/4));
+SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, 34/4, -68/4));
+SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, -34/4, -68/4));
+SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSec * 60, 32/4, -6/4));
+SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSec * 60, -32/4, -6/4));
 SuNavT4.abilities.add(new ShieldRegenFieldAbility(40, 120, 60 * 16, 32));
-SuNavT4.ammoType = AmmoTypes.power;
+
+SuNavT4.ammoType = AmmoTypes.powerHigh;
+
 SuNavT4.weapons.add(healRipple);
 SuNavT4.weapons.add(healRippleMid);
 SuNavT4.weapons.add(tractorBeamWeapon);
