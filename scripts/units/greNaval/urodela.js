@@ -61,8 +61,8 @@ var polySec = 75;
 (68, -34)
 (52, -109)
 */
-SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.mono, monoSec * 60, 58 / 4, -6 / 4));
-SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.mono, monoSec * 60, -58 / 4, -6 / 4));
+SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.mono, monoSec * 60, 58 / 4, 54 / 4));
+SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.mono, monoSec * 60, -58 / 4, 54 / 4));
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSec * 60,68 / 4, -34 / 4));
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.flare, flareSec * 60, -68 / 4, -34 / 4));
 SuNavT5.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, 52 / 4, -109 / 4));
@@ -71,7 +71,7 @@ SuNavT5.abilities.add(new ForceFieldAbility(80, 5, 10000, 60 * 20));
 
 SuNavT5.ammoType = AmmoTypes.powerHigh;
 
-SuNavT5.weapons.add(fftBDouble);
+SuNavT5.weapons.add(ffTBDouble);
 SuNavT5.weapons.add(ftBDouble);
 SuNavT5.weapons.add(tBDouble);
 
