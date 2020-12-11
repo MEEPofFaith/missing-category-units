@@ -1,39 +1,39 @@
 const bullets = this.global.mcu.bullets;
+const ais = this.global.mcu.ai;
 
 const SuNavT5 = extendContent(UnitType, "urodela", {});
 SuNavT5.constructor = () => extend(UnitWaterMove, {});
+SuNavT5.defaultController = ais.groundRepairAI;
 
 const tractorBeam = bullets.newTractorBeam(11, 720);
-var range = 160;
+var range = 135;
 tractorBeam.length = range;
 tractorBeam.maxRange = range;
-tractorBeam.lifetime = 180;
+tractorBeam.lifetime = 20;
 
 const tBDouble = extendContent(Weapon, "purple-air-renigata-parallax", {});
 tBDouble.x = 94 / 4;
 tBDouble.y = -80 / 4;
 tBDouble.shootY = 6;
 tBDouble.recoil = 0;
-tBDouble.reload = 60;
+tBDouble.reload = 5;
 tBDouble.rotate = true;
 tBDouble.continuous = true;
 tBDouble.shootSound = Sounds.tractorbeam;
 tBDouble.bullet = tractorBeam;
 tBDouble.recoil = 0;
-tBDouble.alternate = false;
 
 const fTBDouble = extendContent(Weapon, "purple-air-renigata-parallax", {});
 fTBDouble.x = 41 / 4;
 fTBDouble.y = 10 / 4;
 fTBDouble.shootY = 6;
 fTBDouble.recoil = 0;
-fTBDouble.reload = 60;
+fTBDouble.reload = 10;
 fTBDouble.rotate = true;
 fTBDouble.continuous = true;
 fTBDouble.shootSound = Sounds.tractorbeam;
 fTBDouble.bullet = tractorBeam;
 fTBDouble.recoil = 0;
-fTBDouble.alternate = false;
 
 
 const ffTBDouble = extendContent(Weapon, "purple-air-renigata-parallax", {});
@@ -41,13 +41,12 @@ ffTBDouble.x = 35 / 4;
 ffTBDouble.y = 122 / 4;
 ffTBDouble.shootY = 6;
 ffTBDouble.recoil = 0;
-ffTBDouble.reload = 60;
+ffTBDouble.reload = 15;
 ffTBDouble.rotate = true;
 ffTBDouble.continuous = true;
 ffTBDouble.shootSound = Sounds.tractorbeam;
 ffTBDouble.bullet = tractorBeam;
 ffTBDouble.recoil = 0;
-ffTBDouble.alternate = false;
 
 //Fx.sapExplosion, but green
 const plasmaExplosion = new Effect(25, e => {

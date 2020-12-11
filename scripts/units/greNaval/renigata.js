@@ -1,7 +1,9 @@
 const bullets = this.global.mcu.bullets;
+const ais = this.global.mcu.ai;
 
 const SuNavT4 = extendContent(UnitType, "renigata", {});
 SuNavT4.constructor = () => extend(UnitWaterMove, {});
+SuNavT4.defaultController = ais.groundRepairAI;
 
 const healArtillery = extend(ArtilleryBulletType, {});
 healArtillery.shootEffect = Fx.shootHeal;
