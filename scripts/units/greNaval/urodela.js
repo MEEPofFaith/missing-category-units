@@ -154,6 +154,8 @@ healxopid.ejectEffect = Fx.casing3;
 healxopid.rotate = true;
 healxopid.occlusion = 30;
 healxopid.bullet = shell;
+healxopid.inaccurcay = 5;
+healxopid.velocityRnd = 0.1;
 //Front center: (0, 56) TODO: ???
 
 var monoSec = 60;
