@@ -24,7 +24,7 @@ tBDouble.alternate = false;
 
 const fTBDouble = extendContent(Weapon, "purple-air-renigata-parallax", {});
 fTBDouble.x = 41 / 4;
-fTBDouble.y = 16 / 4;
+fTBDouble.y = 10 / 4;
 fTBDouble.shootY = 6;
 fTBDouble.recoil = 0;
 fTBDouble.reload = 60;

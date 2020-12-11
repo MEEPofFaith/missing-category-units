@@ -1,21 +1,21 @@
 localizedName: Urodela
-description: Fires... stuff. Dunno what yet. Constructs poly and flare units.
+description: Fires large cluster-shells that damage ground units and repair blocks, and has tractor beams that pull in air units. Constructs mono, poly, and flare units.
 commandLimit: 12
-speed: 0.7
-drag: 0.16
-accel: 0.25
-rotateSpeed: 2
-health: 9500
-armor: 20
+speed: 0.5
+drag: 0.18
+accel: 0.2
+rotateSpeed: 1
+health: 24000
+armor: 25
 range: 200
-itemCapacity: 50
-hitSize: 32
+itemCapacity: 80
+hitSize: 45
 rotateShooting: false
-trailLength: 50
-trailX: 11.25
-trailY: -27
-trailScl: 2.25
-buildSpeed: 1.75
+trailLength: 67
+trailX: 15
+trailY: -38.5
+trailScl: 6
+buildSpeed: 2.25
 
 research: {
   parent: renigata

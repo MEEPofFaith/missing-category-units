@@ -1,5 +1,5 @@
 localizedName: Rana
-description: Sprays water that knocks back enemies and puts out fires.
+description: Sprays water that knocks back enemies and repair blocks. Stops to put out fires.
 commandLimit: 6
 speed: 1.1
 drag: 0.13
