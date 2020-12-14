@@ -169,7 +169,7 @@ weapons:[
     continuous: true
     cooldownTime: 120
     shootSound: beam
-    rotateSpeed: 10
+    rotateSpeed: 7
     shootCone: 180
     bullet: {
       type: ContinuousLaserBulletType
@@ -195,7 +195,7 @@ weapons:[
     continuous: true
     cooldownTime: 120
     shootSound: beam
-    rotateSpeed: 8
+    rotateSpeed: 5
     shootCone: 180
     bullet: {
       type: ContinuousLaserBulletType
