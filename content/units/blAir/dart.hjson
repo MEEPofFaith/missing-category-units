@@ -30,6 +30,7 @@ weapons:[
     recoil: 1
     top: false
     shootSound: lasershoot
+    shootCone: 45
     bullet:{
       type: LaserBoltBulletType
       damage: 19

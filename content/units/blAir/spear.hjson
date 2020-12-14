@@ -30,7 +30,8 @@ weapons:[
     shake: 1
     rotate: true
     shootSound: laser
-    rotateSpeed: 5
+    rotateSpeed: 10
+    shootCone: 45
     bullet:{
       type: LaserBulletType
       length: 72

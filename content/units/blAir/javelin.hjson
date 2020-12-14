@@ -26,6 +26,7 @@ weapons:[
     rotate: true
     recoil: 1
     shootSound: lasershoot
+    shootCone: 25
     bullet:{
       type: LaserBoltBulletType
       damage: 19
@@ -44,6 +45,7 @@ weapons:[
     rotate: true
     recoil: 1
     shootSound: lasershoot
+    shootCone: 25
     bullet:{
       type: LaserBoltBulletType
       damage: 20
@@ -62,6 +64,7 @@ weapons:[
     rotate: true
     recoil: 1
     shootSound: lasershoot
+    shootCone: 25
     bullet:{
       type: LaserBoltBulletType
       damage: 21
@@ -81,7 +84,8 @@ weapons:[
     shake: 1.5
     rotate: true
     shootSound: laser
-    rotateSpeed: 2
+    rotateSpeed: 10
+    shootCone: 45
     bullet:{
       type: LaserBulletType
       length: 142
@@ -105,9 +109,10 @@ weapons:[
     shake: 0.75
     rotate: true
     shootSound: railgun
+    rotateSpeed: 15
     shootEffect: hitLancer
     smokeEffect: none
-    rotateSpeed: 5
+    shootCone: 90
     bullet:{
       type: ContinuousLaserBulletType
       absorbable: true
