@@ -35,7 +35,7 @@ const loadFile = (prev, array) => {
 const script = [
   {
     name: "libs",
-    childs: ["ai", "bullets"]
+    childs: ["ai", "bullets" /*, "abilities"*/]
   },
   {
     name: "units",

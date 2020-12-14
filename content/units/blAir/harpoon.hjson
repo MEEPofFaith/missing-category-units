@@ -124,7 +124,7 @@ weapons:[
   }
   {
     name: javelin-laser
-    reload: 75
+    reload: 25
     alternate: false
     x: 20.75
     y: -3.5
