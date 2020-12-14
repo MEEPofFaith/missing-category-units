@@ -92,7 +92,7 @@ const groundRepairAIL = prov(() => {
 });
 
 module.exports = {
-	noWeaponFlareAI(d){
+	noWeaponFlareAI(d, flags){
     const noWeapflareAIL = prov(() => {
       var u = extend(FlyingAI, {
         updateTargeting(){
@@ -120,11 +120,10 @@ module.exports = {
         findTarget(x, y, range, air, ground){
           var result = null;
           
-          if(ground) result = this.targetFlag(x, y, BlockFlag.core, true);
-          if(result != null) return result;
-          
-          if(ground) result = this.targetFlag(x, y, BlockFlag.generator, true);
-          if(result != null) return result;
+          for(var i = 0; i < flags.length; i++){
+            if(ground) result = this.targetFlag(x, y, flags[i], true);
+            if(result != null) return result;
+          }
           
           result = this.findTarget(x, y, range, air, ground);
           if(result != null) return result;
@@ -137,7 +136,7 @@ module.exports = {
     
     return noWeapflareAIL;
   },
-	flareAI(d){
+	flareAI(d, flags){
     const flareAIL = prov(() => {
       var u = extend(FlyingAI, {
         updateMovement(){
@@ -154,11 +153,10 @@ module.exports = {
         findTarget(x, y, range, air, ground){
           var result = null;
           
-          if(ground) result = this.targetFlag(x, y, BlockFlag.core, true);
-          if(result != null) return result;
-          
-          if(ground) result = this.targetFlag(x, y, BlockFlag.generator, true);
-          if(result != null) return result;
+          for(var i = 0; i < flags.length; i++){
+            if(ground) result = this.targetFlag(x, y, flags[i], true);
+            if(result != null) return result;
+          }
           
           result = this.findTarget(x, y, range, air, ground);
           if(result != null) return result;
