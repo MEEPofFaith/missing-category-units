@@ -18,6 +18,7 @@ targetGround: true
 targetAir: true
 armor: 2
 rotateSpeed: 4
+targetFlag: core
 
 weapons:[
   {

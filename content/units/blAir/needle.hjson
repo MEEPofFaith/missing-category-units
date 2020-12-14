@@ -16,6 +16,7 @@ targetGround: true
 targetAir: true
 rotateShooting: false
 rotateSpeed: 5
+targetFlag: core
 
 research: {
   parent: flare

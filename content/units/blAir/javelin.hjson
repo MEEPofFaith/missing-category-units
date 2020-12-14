@@ -14,7 +14,8 @@ lowAltitude: true
 hitSize: 30
 armor: 14
 rotateShooting: false
-rotateSpeed: 2 
+rotateSpeed: 2
+targetFlag: core
 
 weapons:[
   {
