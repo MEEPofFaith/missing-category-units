@@ -126,7 +126,7 @@ module.exports = {
           if(ground) result = this.targetFlag(x, y, BlockFlag.generator, true);
           if(result != null) return result;
           
-          result = this.target(x, y, range, air, ground);
+          result = this.findTarget(x, y, range, air, ground);
           if(result != null) return result;
 
           return null;
@@ -160,7 +160,7 @@ module.exports = {
           if(ground) result = this.targetFlag(x, y, BlockFlag.generator, true);
           if(result != null) return result;
           
-          result = this.target(x, y, range, air, ground);
+          result = this.findTarget(x, y, range, air, ground);
           if(result != null) return result;
 
           return null;
