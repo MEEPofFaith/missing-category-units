@@ -124,7 +124,7 @@ weapons:[
   }
   {
     name: javelin-laser
-    reload: 25
+    reload: 17
     alternate: false
     x: 20.75
     y: -3.5
@@ -139,21 +139,21 @@ weapons:[
       type: ContinuousLaserBulletType
       absorbable: true
       keepVelocity: true
-      length: 27
-      width: 4
-      damage: 21
+      length: 38
+      width: 4.5
+      damage: 18
       hitColor: 8AA3F4
       colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
-      speed: 7
-      lifetime: 90
-      drag: 0.045
+      speed: 8
+      lifetime: 110
+      drag: 0.035
       shake: 0
       oscScl: 0.5
       oscMag: 1
       fadeTime: 30
       makeFire: false
-      incendAmount: 2
-      incendChance: 0.05
+      incendAmount: 1
+      incendChance: 0.01
       tscales: [1, 0.75, 0.55, 0.4]
       lenscales: [0.75, 0.85, 0.925, 1]
     }

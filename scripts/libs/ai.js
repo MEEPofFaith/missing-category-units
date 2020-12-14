@@ -120,9 +120,11 @@ module.exports = {
         findTarget(x, y, range, air, ground){
           var result = null;
           
-          for(var i = 0; i < flags.length; i++){
-            if(ground) result = this.targetFlag(x, y, flags[i], true);
-            if(result != null) return result;
+          if(ground){
+            for(var i = 0; i < flags.length; i++){
+              result = this.targetFlag(x, y, flags[i], true);
+              if(result != null) return result;
+            }
           }
           
           result = this.findTarget(x, y, range, air, ground);
@@ -153,9 +155,11 @@ module.exports = {
         findTarget(x, y, range, air, ground){
           var result = null;
           
-          for(var i = 0; i < flags.length; i++){
-            if(ground) result = this.targetFlag(x, y, flags[i], true);
-            if(result != null) return result;
+          if(ground){
+            for(var i = 0; i < flags.length; i++){
+              result = this.targetFlag(x, y, flags[i], true);
+              if(result != null) return result;
+            }
           }
           
           result = this.findTarget(x, y, range, air, ground);
