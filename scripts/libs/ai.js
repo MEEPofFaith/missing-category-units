@@ -1,48 +1,3 @@
-const noWeapflareAIL = prov(() => {
-  var u = extend(FlyingAI, {
-    updateTargeting(){
-      var ret = this.retarget();
-      if(ret){
-        this.target = this.findTarget(this.unit.x, this.unit.y, this.unit.range(), this.unit.type.targetAir, this.unit.type.targetGround);
-      }
-      if(this.invalid(this.target)){
-        this.target = null;
-      }
-    },
-    updateMovement(){
-      if(this.target != null && this.command() == UnitCommand.attack){
-        this.attack(120);
-      }
-
-      if(this.target == null && this.command() == UnitCommand.attack && Vars.state.rules.waves && this.unit.team == Vars.state.rules.defaultTeam){
-        this.moveTo(this.getClosestSpawner(), Vars.state.rules.dropZoneRadius + 120);
-      }
-
-      if(this.command() == UnitCommand.rally){
-        this.moveTo(this.targetFlag(this.unit.x, this.unit.y, BlockFlag.rally, false), 60);
-      }
-    }
-  });
-  return u;
-});
-
-const flareAIL = prov(() => {
-  var u = extend(FlyingAI, {
-    updateMovement(){
-      if(this.target != null && this.command() == UnitCommand.attack){
-        this.attack(120);
-      }
-      if(this.target == null && this.command() == UnitCommand.attack && Vars.state.rules.waves && this.unit.team == Vars.state.rules.defaultTeam){
-        this.moveTo(this.getClosestSpawner(), Vars.state.rules.dropZoneRadius + 120);
-      }
-      if(this.command() == UnitCommand.rally){
-        this.moveTo(this.targetFlag(this.unit.x, this.unit.y, BlockFlag.rally, false), 60);
-      }
-    }
-  });
-  return u;
-});
-
 const groundFireFighterAIL = prov(() => {
   var u = extend(GroundAI, {
     setEffectsC(){
@@ -137,8 +92,85 @@ const groundRepairAIL = prov(() => {
 });
 
 module.exports = {
-	noWeaponFlareAI: noWeapflareAIL,
-	flareAI: flareAIL,
+	noWeaponFlareAI(d){
+    const noWeapflareAIL = prov(() => {
+      var u = extend(FlyingAI, {
+        updateTargeting(){
+          var ret = this.retarget();
+          if(ret){
+            this.target = this.findTarget(this.unit.x, this.unit.y, this.unit.range(), this.unit.type.targetAir, this.unit.type.targetGround);
+          }
+          if(this.invalid(this.target)){
+            this.target = null;
+          }
+        },
+        updateMovement(){
+          if(this.target != null && this.command() == UnitCommand.attack){
+            this.attack(d);
+          }
+
+          if(this.target == null && this.command() == UnitCommand.attack && Vars.state.rules.waves && this.unit.team == Vars.state.rules.defaultTeam){
+            this.moveTo(this.getClosestSpawner(), Vars.state.rules.dropZoneRadius + 120);
+          }
+
+          if(this.command() == UnitCommand.rally){
+            this.moveTo(this.targetFlag(this.unit.x, this.unit.y, BlockFlag.rally, false), 60);
+          }
+        },
+        findTarget(x, y, range, air, ground){
+          var result = null;
+          
+          if(ground) result = this.targetFlag(x, y, BlockFlag.core, true);
+          if(result != null) return result;
+          
+          if(ground) result = this.targetFlag(x, y, BlockFlag.generator, true);
+          if(result != null) return result;
+          
+          result = this.target(x, y, range, air, ground);
+          if(result != null) return result;
+
+          return null;
+        }
+      });
+      return u;
+    });
+    
+    return noWeapflareAIL;
+  },
+	flareAI(d){
+    const flareAIL = prov(() => {
+      var u = extend(FlyingAI, {
+        updateMovement(){
+          if(this.target != null && this.command() == UnitCommand.attack){
+            this.attack(d);
+          }
+          if(this.target == null && this.command() == UnitCommand.attack && Vars.state.rules.waves && this.unit.team == Vars.state.rules.defaultTeam){
+            this.moveTo(this.getClosestSpawner(), Vars.state.rules.dropZoneRadius + 120);
+          }
+          if(this.command() == UnitCommand.rally){
+            this.moveTo(this.targetFlag(this.unit.x, this.unit.y, BlockFlag.rally, false), 60);
+          }
+        },
+        findTarget(x, y, range, air, ground){
+          var result = null;
+          
+          if(ground) result = this.targetFlag(x, y, BlockFlag.core, true);
+          if(result != null) return result;
+          
+          if(ground) result = this.targetFlag(x, y, BlockFlag.generator, true);
+          if(result != null) return result;
+          
+          result = this.target(x, y, range, air, ground);
+          if(result != null) return result;
+
+          return null;
+        }
+      });
+      return u;
+    });
+    
+    return flareAIL;
+  },
 	groundFireFighterAI: groundFireFighterAIL,
   groundRepairAI: groundRepairAIL
 };

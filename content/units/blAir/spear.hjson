@@ -17,7 +17,6 @@ hitSize: 13
 armor: 5
 rotateShooting: false
 rotateSpeed: 3
-targetFlag: core
 
 weapons:[
   {
