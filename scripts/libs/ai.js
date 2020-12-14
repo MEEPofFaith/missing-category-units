@@ -127,7 +127,7 @@ module.exports = {
             }
           }
           
-          result = this.findTarget(x, y, range, air, ground);
+          result = result = Units.closestTarget(unit.team, x, y, range, u => u.checkTarget(air, ground), t => ground);
           if(result != null) return result;
 
           return null;
@@ -162,7 +162,7 @@ module.exports = {
             }
           }
           
-          result = this.findTarget(x, y, range, air, ground);
+          result = Units.closestTarget(unit.team, x, y, range, u => u.checkTarget(air, ground), t => ground);
           if(result != null) return result;
 
           return null;
