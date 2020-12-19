@@ -45,7 +45,11 @@ const script = [
         childs: ["needle", "dart", "spear", "javelin", "harpoon"]
       },
       {
-        name: "greNaval",
+        name: "blNav",
+        childs: ["ricco"]
+      },
+      {
+        name: "greNav",
         childs: ["rana", "renidae", "protidae", "renigata", "urodela"]
       },
       {

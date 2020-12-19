@@ -1,0 +1,60 @@
+localizedName: Ricco
+description: Drops proximity mines behind it as it moves.
+commandLimit: 6
+health: 220
+speed: 1.4
+accel: 0.03
+drag: 0.013
+range: 64
+itemCapacity: 35
+hitSize: 9
+rotateSpeed: 3.6
+lowAltitude: false
+faceTarget: false
+rotateShooting: false
+weapons:[
+  {
+    name: none
+    reload: 25
+    x: 0
+    y: 0
+    shootY: -8
+    recoil: 0
+    shootCone: 360
+    ignoreRotation: true
+    minShootVelocity: 0.75
+    ejectEffect: none
+    shootSound: none
+    inaccuracy: 2
+    bullet:{
+      type: flakBulletType
+      sprite: shell
+      splashDamage: 54
+      splashDamageRadius: 67
+      backColor: a9d8ff
+      frontColor: ffffff
+      speed: 0
+      drag: 0.01
+      lifetime: 1800
+      keepVelocity: true
+      hittable: false
+      shrinkY: 0
+      collidesGround: true
+      collidesAir: false
+      collidesTiles: false
+      explodeRange: 40
+      shootEffect: none
+      smokeEffect: none
+      status: blasted
+      statusDuration: 60
+      hitSound: explosion
+      speed: -1.5
+      width: 10
+      height: 10
+    }
+  }
+]
+
+research: {
+  parent: risso
+}

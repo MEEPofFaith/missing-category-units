@@ -91,6 +91,70 @@ const groundRepairAIL = prov(() => {
   return u;
 });
 
+const constantFireGroundAIL = prov(() => {
+  var u = extend(GroundAI, {
+    updateWeapons(){ //Keeps shooting, even if it has no target.
+      if(this.targets.length != this.unit.mounts.length){
+        var temp = [];
+        for(var i = 0; i < this.unit.mounts.length; i++) temp[i] = null;
+        this.targets = temp;
+      }
+
+      var rotation = this.unit.rotation - 90;
+      var ret = this.retarget();
+
+      if(ret){
+        this.target = this.findTarget(this.unit.x, this.unit.y, this.unit.range(), this.unit.type.targetAir, this.unit.type.targetGround);
+      }
+
+      if(this.invalid(this.target)){
+        this.target = null;
+      }
+
+      this.unit.isShooting = false;
+
+      for(var i = 0; i < this.targets.length; i++){
+        var mount = this.unit.mounts[i];
+        var weapon = mount.weapon;
+
+        var mountX = this.unit.x + Angles.trnsx(rotation, weapon.x, weapon.y);
+        var mountY = this.unit.y + Angles.trnsy(rotation, weapon.x, weapon.y);
+
+        if(this.unit.type.singleTarget){
+          this.targets[i] = this.target;
+        }else{
+          if(ret){
+            this.targets[i] = this.findTarget(mountX, mountY, weapon.bullet.range(), weapon.bullet.collidesAir, weapon.bullet.collidesGround);
+          }
+
+          if(Units.invalidateTarget(this.targets[i], this.unit.team, mountX, mountY, weapon.bullet.range())){
+            this.targets[i] = null;
+          }
+        }
+        
+        var rotate = false;
+        if(this.targets[i] != null){
+          var to = Predict.intercept(this.unit, this.targets[i], weapon.bullet.speed);
+          mount.aimX = to.x;
+          mount.aimY = to.y;
+          rotate = true;
+        }
+
+        mount.shoot = true;
+        mount.rotate = rotate;
+        //print(mount.rotation);
+
+        this.unit.isShooting = true;
+        if(rotate){
+          this.unit.aimX = mount.aimX;
+          this.unit.aimY = mount.aimY;
+        }
+      }
+    }
+  });
+  return u;
+});
+
 module.exports = {
 	noWeaponFlareAI(d, flags){
     const noWeapflareAIL = prov(() => {
@@ -174,5 +238,6 @@ module.exports = {
     return flareAIL;
   },
 	groundFireFighterAI: groundFireFighterAIL,
-  groundRepairAI: groundRepairAIL
+  groundRepairAI: groundRepairAIL,
+  groundConstantFireAI: constantFireGroundAIL
 };
