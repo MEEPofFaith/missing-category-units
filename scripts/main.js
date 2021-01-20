@@ -35,7 +35,7 @@ const loadFile = (prev, array) => {
 const script = [
   {
     name: "libs",
-    childs: ["ai", "bullets" /*, "abilities"*/]
+    childs: ["ai", "bullets"]
   },
   {
     name: "units",
@@ -55,7 +55,8 @@ const script = [
       {
         name: "testUn",
         childs: ["thrust", "playerunit"]
-      }
+      },
+      "unitLoader"
     ]
   }
 ];

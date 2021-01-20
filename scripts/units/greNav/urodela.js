@@ -234,6 +234,3 @@ SuNavT5.weapons.add(ffTBDouble);
 SuNavT5.weapons.add(fTBDouble);
 SuNavT5.weapons.add(tBDouble);
 SuNavT5.weapons.add(healxopid);
-
-var upgrade = new Seq([Vars.content.getByName(ContentType.unit, "purple-air-renigata"), Vars.content.getByName(ContentType.unit, "purple-air-urodela")]);
-Blocks.tetrativeReconstructor.upgrades.add(upgrade.toArray(UnitType));
