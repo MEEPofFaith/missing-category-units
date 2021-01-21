@@ -1,5 +1,5 @@
 localizedName: Harpoon
-description: Barrages enemies with laser bolts and piercing laser beams.
+description: Barrages enemies with missiles and piercing laser beams.
 health: 8750
 speed: 4.3
 accel: 0.02
@@ -25,15 +25,21 @@ weapons:[
     shootY: 1
     recoil: 1
     rotate: true
-    shootSound: lasershoot
+    shootSound: missile
     shootCone: 25
     bullet:{
-      type: LaserBoltBulletType
+      type: MissileBulletType
       damage: 19
       backColor: a9d8ff
       frontColor: ffffff
       speed: 4
       lifetime: 40
+      weaveScale: 8
+      weaveMag: 2
+      hitEffect: blastExplosion
+      despawn: blastExplosion
+      trailColor: b6c6fd
+      drag: -0.003
     }
   }
   {
@@ -44,15 +50,21 @@ weapons:[
     shootY: 1
     recoil: 1
     rotate: true
-    shootSound: lasershoot
+    shootSound: missile
     shootCone: 25
     bullet:{
-      type: LaserBoltBulletType
+      type: MissileBulletType
       damage: 20
       backColor: a9d8ff
       frontColor: ffffff
       speed: 4
       lifetime: 40
+      weaveScale: 8
+      weaveMag: 2
+      hitEffect: blastExplosion
+      despawn: blastExplosion
+      trailColor: b6c6fd
+      drag: -0.003
     }
   }
   {
@@ -63,15 +75,21 @@ weapons:[
     shootY: 1
     recoil: 1
     rotate: true
-    shootSound: lasershoot
+    shootSound: missile
     shootCone: 25
     bullet:{
-      type: LaserBoltBulletType
+      type: MissileBulletType
       damage: 21
       backColor: a9d8ff
       frontColor: ffffff
       speed: 4
       lifetime: 40
+      weaveScale: 8
+      weaveMag: 2
+      hitEffect: blastExplosion
+      despawn: blastExplosion
+      trailColor: b6c6fd
+      drag: -0.003
     }
   }
   {
