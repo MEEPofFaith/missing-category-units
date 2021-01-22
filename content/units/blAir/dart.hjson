@@ -41,7 +41,7 @@ weapons:[
       weaveScale: 8
       weaveMag: 2
       hitEffect: blastExplosion
-      despawn: blastExplosion
+      despawnEffect: blastExplosion
       trailColor: b6c6fd
       drag: -0.003
     }
