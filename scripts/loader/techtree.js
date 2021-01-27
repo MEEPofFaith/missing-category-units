@@ -9,12 +9,14 @@
  * @property {Seq}                  objectives      - A sequence of Objectives required to unlock this node. Can be null.
  */
 const node = (parent, contentType, requirements, objectives) => {
-  const tnode = new TechTree.TechNode(TechTree.get(parent), contentType, requirements != null ? requirements : contentType.researchRequirements());
-  let used = new ObjectSet();
-  
-  if(objectives != null){
-    tnode.objectives.addAll(objectives);
-  };
+  if(parent != null && contentType != null){
+    const tnode = new TechTree.TechNode(TechTree.get(parent), contentType, requirements != null ? requirements : contentType.researchRequirements());
+    let used = new ObjectSet();
+    
+    if(objectives != null) tnode.objectives.addAll(objectives);
+  }else{
+    print(parent + " or " + contentType + " is null.");
+  }
 };
 const cunit = name => Vars.content.getByName(ContentType.unit, "purple-air-" + name);
 
@@ -48,3 +50,16 @@ node(cunit("javelin"), cunit("harpoon"), null, new Objectives.Research(Blocks.te
 
 // Blue Naval
 node(UnitTypes.risso, cunit("ricco"), null, null);
+
+/** Debug */
+// print(cunit("rana"));
+// print(cunit("renidae"));
+// print(cunit("protidae"));
+// print(cunit("renigata"));
+// print(cunit("urodela"));
+// print(cunit("needle"));
+// print(cunit("dart"));
+// print(cunit("spear"));
+// print(cunit("javelin"));
+// print(cunit("harpoon"));
+// print(cunit("ricco"));
