@@ -16,7 +16,3 @@ trailX: 15
 trailY: -38.5
 trailScl: 4
 buildSpeed: 2.25
-
-research: {
-  parent: renigata
-}

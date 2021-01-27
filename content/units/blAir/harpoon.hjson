@@ -228,7 +228,3 @@ weapons:[
     }
   }
 ]
-
-research: {
-  parent: javelin
-}

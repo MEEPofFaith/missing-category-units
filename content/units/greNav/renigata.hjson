@@ -16,7 +16,3 @@ trailX: 11.25
 trailY: -27
 trailScl: 2.25
 buildSpeed: 1.75
-
-research: {
-  parent: protidae
-}

@@ -34,6 +34,10 @@ const loadFile = (prev, array) => {
 //Basically just folders and the stuff inside those folders.
 const script = [
   {
+    name: "campaign",
+    childs: ["techtree"]
+  },
+  {
     name: "libs",
     childs: ["ai", "bullets"]
   },
@@ -51,10 +55,6 @@ const script = [
       {
         name: "greNav",
         childs: ["rana", "renidae", "protidae", "renigata", "urodela"]
-      },
-      {
-        name: "testUn",
-        childs: ["thrust", "playerunit"]
       },
       "unitLoader"
     ]

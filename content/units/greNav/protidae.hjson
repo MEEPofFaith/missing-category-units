@@ -78,7 +78,3 @@ weapons:[
     }
   }
 ]
-
-research: {
-  parent: renidae
-}

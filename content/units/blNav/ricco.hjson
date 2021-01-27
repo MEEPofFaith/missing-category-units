@@ -54,7 +54,3 @@ weapons:[
     }
   }
 ]
-
-research: {
-  parent: risso
-}

@@ -16,7 +16,3 @@ targetGround: true
 targetAir: true
 rotateShooting: false
 rotateSpeed: 5
-
-research: {
-  parent: flare
-}

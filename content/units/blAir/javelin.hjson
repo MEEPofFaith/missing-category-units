@@ -155,12 +155,3 @@ weapons:[
     }
   }
 ]
-
-research: {
-  parent: spear
-  requirements: [
-    silicon/83000
-    titanium/72000
-    plastanium/62000
-  ]
-}

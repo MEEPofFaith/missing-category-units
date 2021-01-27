@@ -40,7 +40,3 @@ weapons:[
     }
   }
 ]
-
-research: {
-  parent: risso
-}

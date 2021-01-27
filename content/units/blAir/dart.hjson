@@ -47,7 +47,3 @@ weapons:[
     }
   }
 ]
-
-research: {
-  parent: needle
-}
