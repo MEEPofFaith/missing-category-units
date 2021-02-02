@@ -13,8 +13,8 @@ const addPlan = (factory, plan) => {
   unitPlans.clear();
   var fac = factory;
 
-  unitPlans.add(plan);
   fac.plans.each(u => unitPlans.add(u));
+  unitPlans.add(plan);
 
   fac.plans = unitPlans.copy();
 
