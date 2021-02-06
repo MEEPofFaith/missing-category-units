@@ -1,3 +1,5 @@
+const loader = require("loader/loader");
+
 // Unit Loader made by EoD
 const unitPlans = new Seq(UnitFactory.UnitPlan);
 
@@ -6,25 +8,24 @@ const reconAdd = (recon, planArray) => {
   for(var i = 0; i < planArray.length; i++){
     var f = new Seq(planArray[i]);
     recon.upgrades.add(f.toArray(UnitType));
+    print("Upgrade " + planArray[i][0] + " to " + planArray[i][1] + " in " + recon + " added!")
+    print("");
   };
 };
 
-const addPlan = (factory, plan) => {
-  unitPlans.clear();
-  var fac = factory;
-
-  fac.plans.each(u => unitPlans.add(u));
-  unitPlans.add(plan);
-
-  fac.plans = unitPlans.copy();
-
+const addPlan = (fac, plan) => {
+  fac.plans.add(plan);
   fac.plans.each(uPlan => {
-    var stack = uPlan.requirements;
-    for(var j = 0; j < stack.length; j++){
-      fac.capacities[stack[j].item.id] = Math.max(fac.capacities[stack[j].item.id], stack[j].amount * 2);
-      fac.itemCapacity = Math.max(fac.itemCapacity, stack[j].amount * 2);
+    if(uPlan == plan){
+      var stack = uPlan.requirements;
+      for(var j = 0; j < stack.length; j++){
+        fac.capacities[stack[j].item.id] = Math.max(fac.capacities[stack[j].item.id], stack[j].amount * 2);
+        fac.itemCapacity = Math.max(fac.itemCapacity, stack[j].amount * 2);
+      }
     }
   });
+  print("Unit " + plan.unit + " added to " + fac);
+  print("");
 };
 
 const cunit = name => Vars.content.getByName(ContentType.unit, "purple-air-" + name);
@@ -123,35 +124,9 @@ const unitLoader = extend(ContentList, {
         cunit("urodela")
       ]
     ]);
+    
+    print("Units Loaded!\n----------------------------------");
   }
 });
 
-//Haha steal code go brrrr
-const toLoad = new Seq();
-toLoad.add(unitLoader);
-
-if(Vars.headless){
-	Events.on(ServerLoadEvent, e => {
-		Core.app.post(() => {
-			if(!toLoad.isEmpty()) toLoad.each(i => {
-				if(typeof(i.init) == "function"){
-					i.init();
-				}else if(i instanceof ContentList){
-					i.load();
-				};
-			});
-		});
-	});
-}else{
-	Events.on(ClientLoadEvent, e => {
-		Core.app.post(() => {
-			if(!toLoad.isEmpty()) toLoad.each(i => {
-				if(typeof(i.init) == "function"){
-					i.init();
-				}else if(i instanceof ContentList){
-					i.load();
-				};
-			});
-		});
-	});
-}
+loader.addInit(unitLoader);
