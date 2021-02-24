@@ -1,5 +1,3 @@
-const loader = require("loader/loader");
-
 //Casually steals from [MEEPofFaith/progressed-materials]'s techtree.js, which was stolen from [Gdeft/substructure]'s techtree.js
 
 /**
@@ -22,39 +20,34 @@ const node = (parent, contentType, requirements, objectives) => {
 };
 const cunit = name => Vars.content.getByName(ContentType.unit, "purple-air-" + name);
 
-const unitResearch = extend(ContentList, {
-  load(){
-    /** Green */
+/** Green */
 
-    // Green Naval
-    node(UnitTypes.risso, cunit("rana"), null, null);
-    node(cunit("rana"), cunit("renidae"), null, new Objectives.Research(Blocks.additiveReconstructor));
-    node(cunit("renidae"), cunit("protidae"), null, new Objectives.Research(Blocks.multiplicativeReconstructor));
-    node(cunit("protidae"), cunit("renigata"), null, new Objectives.Research(Blocks.exponentialReconstructor));
-    node(cunit("renigata"), cunit("urodela"), null, new Objectives.Research(Blocks.tetrativeReconstructor));
+// Green Naval
+node(UnitTypes.risso, cunit("rana"), null, null);
+node(cunit("rana"), cunit("renidae"), null, new Objectives.Research(Blocks.additiveReconstructor));
+node(cunit("renidae"), cunit("protidae"), null, new Objectives.Research(Blocks.multiplicativeReconstructor));
+node(cunit("protidae"), cunit("renigata"), null, new Objectives.Research(Blocks.exponentialReconstructor));
+node(cunit("renigata"), cunit("urodela"), null, new Objectives.Research(Blocks.tetrativeReconstructor));
 
 
-    /** Purple */
+/** Purple */
 
-    // Purple Air
+// Purple Air
 
-    // Purple Naval
+// Purple Naval
 
 
-    /** Blue */
+/** Blue */
 
-    // Blue Ground
+// Blue Ground
 
-    // Blue Air
-    node(UnitTypes.flare, cunit("needle"), null, null);
-    node(cunit("needle"), cunit("dart"), null, new Objectives.Research(Blocks.additiveReconstructor));
-    node(cunit("dart"), cunit("spear"), null, new Objectives.Research(Blocks.multiplicativeReconstructor));
-    node(cunit("spear"), cunit("javelin"), null, new Objectives.Research(Blocks.exponentialReconstructor));
-    node(cunit("javelin"), cunit("harpoon"), null, new Objectives.Research(Blocks.tetrativeReconstructor));
+// Blue Air
+node(UnitTypes.flare, cunit("needle"), null, null);
+node(cunit("needle"), cunit("dart"), null, new Objectives.Research(Blocks.additiveReconstructor));
+node(cunit("dart"), cunit("spear"), null, new Objectives.Research(Blocks.multiplicativeReconstructor));
+node(cunit("spear"), cunit("javelin"), null, new Objectives.Research(Blocks.exponentialReconstructor));
+node(cunit("javelin"), cunit("harpoon"), null, new Objectives.Research(Blocks.tetrativeReconstructor));
 
-    // Blue Naval
-    node(UnitTypes.risso, cunit("ricco"), null, null);
-  }
-});
+// Blue Naval
 
 loader.addInit(unitResearch);
