@@ -1,5 +1,3 @@
-localizedName: Ricco
-description: Drops proximity mines behind it as it moves.
 commandLimit: 6
 health: 220
 speed: 1.4

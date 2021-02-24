@@ -131,8 +131,8 @@ const tractorBeamWeapon = extendContent(Weapon, "purple-air-renigata-parallax", 
   bullet: tractorBeam
 });
 
-var flareSec = 40;
-var polySec = 80;
+var flareSec = 35;
+var polySec = 135;
 
 SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, 34/4, -68/4));
 SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, -34/4, -68/4));

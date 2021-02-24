@@ -215,9 +215,9 @@ const healxopid = extendContent(Weapon, "purple-air-urodela-cannon", {
 });
 //Front center: (0, 56) TODO: ???
 
-var monoSec = 60;
-var flareSec = 40;
-var polySec = 75;
+var monoSec = 90;
+var flareSec = 25;
+var polySec = 120;
 
 /*Spawn positions:
 (58, 54)

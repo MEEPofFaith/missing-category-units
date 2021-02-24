@@ -1,5 +1,3 @@
-localizedName: Harpoon
-description: Barrages enemies with missiles and piercing laser beams.
 health: 8750
 speed: 4.3
 accel: 0.02

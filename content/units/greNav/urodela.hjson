@@ -1,5 +1,3 @@
-localizedName: Urodela
-description: Fires large cluster-shells that damage ground targets and repair damaged structures, and has tractor beams that pull in air units. Stops to repair damaged structures. Constructs mono, poly, and flare units.
 commandLimit: 12
 speed: 0.5
 drag: 0.18

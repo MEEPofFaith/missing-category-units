@@ -1,5 +1,3 @@
-localizedName: Dart
-description: Fires missiles that damage enemies and fires lightning while moving.
 commandLimit: 6
 health: 250
 speed: 3.3

@@ -1,5 +1,3 @@
-localizedName: Javelin
-description: Barrages enemies with missile and piercing laser beams.
 health: 3750
 speed: 4.2
 accel: 0.02

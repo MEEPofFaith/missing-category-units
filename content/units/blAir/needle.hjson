@@ -1,5 +1,3 @@
-localizedName: Needle
-description: Fires lightning while moving.
 commandLimit: 4
 health: 50
 speed: 3.1

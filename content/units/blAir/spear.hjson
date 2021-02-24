@@ -1,5 +1,3 @@
-localizedName: Spear
-description: Fires piercing laser beams that damage enemies and fires lightning while moving.
 health: 450
 speed: 3.9
 accel: 0.0175

@@ -1,5 +1,3 @@
-localizedName: Renidae
-description: Fires laser bolts that damage enemies and repair damaged structures. Stops to repair damaged structures. Constructs mono units.
 speed: 0.9
 drag: 0.13
 accel: 0.4
