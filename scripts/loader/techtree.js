@@ -16,19 +16,6 @@ const node = (parent, contentType, requirements, objectives) => {
     let used = new ObjectSet();
     
     if(objectives != null) tnode.objectives.addAll(objectives);
-    
-    let req = contentType.researchRequirements();
-    print(contentType);
-    print(req);
-    for(let i = 0; i < req.length; i++){
-      print(req[i]);
-    }
-    
-    let fac = Vars.content.blocks().find(u => u instanceof UnitFactory && u.plans.contains(p => p.unit == contentType));
-    let rec = Vars.content.blocks().find(b => b instanceof Reconstructor && b.upgrades.contains(u => u[1] == contentType));
-    print(fac);
-    print(rec);
-    print("");
   }else{
     print(parent + " or " + contentType + " is null.");
   }
@@ -67,22 +54,7 @@ const unitResearch = extend(ContentList, {
 
     // Blue Naval
     node(UnitTypes.risso, cunit("ricco"), null, null);
-    
-    print("Techtree Loaded!\n----------------------------------");
   }
 });
 
 loader.addInit(unitResearch);
-
-/** Debug */
-// print(cunit("rana"));
-// print(cunit("renidae"));
-// print(cunit("protidae"));
-// print(cunit("renigata"));
-// print(cunit("urodela"));
-// print(cunit("needle"));
-// print(cunit("dart"));
-// print(cunit("spear"));
-// print(cunit("javelin"));
-// print(cunit("harpoon"));
-// print(cunit("ricco"));

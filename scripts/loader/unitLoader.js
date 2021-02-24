@@ -8,8 +8,6 @@ const reconAdd = (recon, planArray) => {
   for(var i = 0; i < planArray.length; i++){
     var f = new Seq(planArray[i]);
     recon.upgrades.add(f.toArray(UnitType));
-    print("Upgrade " + planArray[i][0] + " to " + planArray[i][1] + " in " + recon + " added!")
-    print("");
   };
 };
 
@@ -24,8 +22,6 @@ const addPlan = (fac, plan) => {
       }
     }
   });
-  print("Unit " + plan.unit + " added to " + fac);
-  print("");
 };
 
 const cunit = name => Vars.content.getByName(ContentType.unit, "purple-air-" + name);
@@ -124,8 +120,6 @@ const unitLoader = extend(ContentList, {
         cunit("urodela")
       ]
     ]);
-    
-    print("Units Loaded!\n----------------------------------");
   }
 });
 
