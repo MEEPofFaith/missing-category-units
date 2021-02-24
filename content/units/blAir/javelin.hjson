@@ -110,7 +110,7 @@ weapons:[
       width: 14
       damage: 56
       hitColor: a9d8ff
-      colors:[8aa3f466, a9d8ff, FFFFFF]
+      colors: [8aa3f466, a9d8ff, FFFFFF]
       sideAngle: 25
       sideLength: 70
       sideWidth: 1
@@ -139,7 +139,7 @@ weapons:[
       width: 3
       damage: 15
       hitColor: 8AA3F4
-      colors:[5757C155, 6974C4aa, 8AA3F4, ffffff]
+      colors: [5757C155, 6974C4aa, 8AA3F4, ffffff]
       speed: 7
       lifetime: 90
       drag: 0.045

@@ -33,7 +33,6 @@ weapons:[
       splashDamageRadius: 67
       backColor: a9d8ff
       frontColor: ffffff
-      speed: 0
       drag: 0.01
       lifetime: 1800
       keepVelocity: true

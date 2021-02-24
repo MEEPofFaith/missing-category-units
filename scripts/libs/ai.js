@@ -1,52 +1,3 @@
-const groundFireFighterAIL = prov(() => {
-  var u = extend(GroundAI, {
-    setEffectsC(){
-      this._fireFound = false;
-      this._fireLoc = null;
-    },
-    updateMovement(){
-      if(this._fireFound){
-        var shoot = false;
-        
-        if(this.unit.inRange(this._fireLoc)){
-          this.unit.aim(this._fireLoc);
-          shoot = true;
-        }
-        
-        this.unit.controlWeapons(shoot);
-      }else if(!this._fireFound){
-        this.super$updateMovement();
-      }
-    },
-    updateTargeting(){
-      if(this.timer.get(this.timerTarget2, 40)){
-        for(var x = -this.unit.type.fireRange; x <= this.unit.type.fireRange; x++){
-          for(var y = -this.unit.type.fireRange; y <= this.unit.type.fireRange; y++){
-            var xLoc = x + Mathf.round(this.unit.x / Vars.tilesize);
-            var yLoc = y + Mathf.round(this.unit.y / Vars.tilesize);
-            var other = Vars.world.tileWorld(xLoc, yLoc);
-            
-            if(other != null && Fires.has(xLoc, yLoc) && (other.build == null || other.team() == this.unit.team)){
-              this._fireLoc = Fires.get(xLoc, yLoc);
-              this._fireFound = true;
-              return;
-            }else{
-              this._fireFound = false;
-            }
-          }
-        }
-      }
-      
-      if(!this._fireFound){
-        this.super$updateTargeting();
-      }
-    }
-  });
-  u.setEffectsC();
-  
-  return u;
-});
-
 const groundRepairAIL = prov(() => {
   var u = extend(GroundAI, {
     setEffectsC(){
@@ -237,7 +188,70 @@ module.exports = {
     
     return flareAIL;
   },
-	groundFireFighterAI: groundFireFighterAIL,
+	groundFireFighterAI(detectRange){ //Range is in tiles, not tilesize
+    const groundFireFighterAIL = prov(() => {
+      var u = extend(GroundAI, {
+        setEffectsC(){
+          this._fireFound = false;
+          this._fireLoc = null;
+          this._fires = new Seq();
+        },
+        updateMovement(){
+          if(this._fireFound && this._fireLoc != null){
+            var shoot = false;
+            
+            if(this.unit.inRange(this._fireLoc)){
+              this.unit.aim(this._fireLoc);
+              shoot = true;
+            }
+            
+            this.unit.controlWeapons(shoot);
+          }else{
+            this.super$updateMovement();
+          }
+        },
+        updateTargeting(){
+          if(this.timer.get(this.timerTarget2, this.target == null ? 40 : 90)){
+            this._fires.clear();
+            for(var x = -detectRange; x <= detectRange; x++){
+              for(var y = -detectRange; y <= detectRange; y++){
+                var xLoc = x + this.unit.tileX();
+                var yLoc = y + this.unit.tileY();
+                var other = Vars.world.tile(xLoc, yLoc);
+                
+                if(other != null && Fires.has(xLoc, yLoc) && (other.build == null || other.team() == this.unit.team)){
+                  this._fires.add(other);
+                }
+              }
+            }
+            
+            if(this._fires.size > 0){
+              var cdist = Infinity;
+              this._fires.each(other => {
+                let dist = this.unit.dst2(other.worldx(), other.worldy());
+                if(dist < cdist){
+                  cdist = dist;
+                  this._fireLoc = Fires.get(other.x, other.y);
+                }
+              });
+              
+              this._fireFound = true;
+            }else{
+              this._fireFound = false;
+            }
+          }
+          
+          if(!this._fireFound){
+            this.super$updateTargeting();
+          }
+        }
+      });
+      u.setEffectsC();
+      
+      return u;
+    });
+    return groundFireFighterAIL;
+  },
   groundRepairAI: groundRepairAIL,
   groundConstantFireAI: constantFireGroundAIL
 };

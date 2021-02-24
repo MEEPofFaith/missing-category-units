@@ -38,7 +38,7 @@ weapons:[
       width: 10
       damage: 36
       hitColor: a9d8ff
-      colors:[8aa3f466, a9d8ff, FFFFFF]
+      colors: [8aa3f466, a9d8ff, FFFFFF]
       sideAngle: 25
       sideLength: 32
       sideWidth: 1
