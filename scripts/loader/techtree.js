@@ -49,5 +49,4 @@ node(cunit("spear"), cunit("javelin"), null, new Objectives.Research(Blocks.expo
 node(cunit("javelin"), cunit("harpoon"), null, new Objectives.Research(Blocks.tetrativeReconstructor));
 
 // Blue Naval
-
-loader.addInit(unitResearch);
+node(UnitTypes.risso, cunit("ricco"), null, null);

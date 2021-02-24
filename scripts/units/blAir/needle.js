@@ -1,9 +1,8 @@
-const ais = this.global.mcu.ai;
+const ais = require("libs/ai");
 
 var minSpd = 1;
 var maxSpd = 3.1;
 var col = Color.valueOf("#a9d8ff");
-//mmm yes code I am steal.
 const SpAirT1 = extendContent(UnitType, "needle", {});
 
 SpAirT1.constructor = () => extend(UnitEntity, {});

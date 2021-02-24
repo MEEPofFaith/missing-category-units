@@ -34,10 +34,6 @@ const loadFile = (prev, array) => {
 //Basically just folders and the stuff inside those folders.
 const script = [
   {
-    name: "libs",
-    childs: ["ai", "bullets"]
-  },
-  {
     name: "units",
     childs: [
       {
