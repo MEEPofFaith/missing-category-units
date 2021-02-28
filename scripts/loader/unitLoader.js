@@ -4,8 +4,7 @@ const unitPlans = new Seq(UnitFactory.UnitPlan);
 //Seq in an array
 const reconAdd = (recon, planArray) => {
   for(var i = 0; i < planArray.length; i++){
-    var f = new Seq(planArray[i]);
-    recon.upgrades.add(f.toArray(UnitType));
+    recon.upgrades.add(Seq(planArray[i]).toArray(UnitType));
   };
 };
 
