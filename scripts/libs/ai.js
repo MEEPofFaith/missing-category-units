@@ -2,39 +2,59 @@ const groundRepairAIL = prov(() => {
   var u = extend(GroundAI, {
     setEffectsC(){
       this._damagedFound = false;
+      this._healTarget = null;
     },
     updateMovement(){
-      if(this._damagedFound && this.target != null){
-        var shoot = false;
-        
-        if(this.unit.inRange(this.target)){
-          this.unit.aim(this.target);
-          shoot = true;
-        }
-        
-        this.unit.controlWeapons(shoot);
-      }else if(!this._damagedFound){
+      if(!this._damagedFound){
         this.super$updateMovement();
       }
     },
-    updateTargeting(){
-      if(this.timer.get(this.timerTarget2, 40)){
-      var target = Units.findDamagedTile(this.unit.team, this.unit.x, this.unit.y);
-        if(target != null){
-          if(target instanceof ConstructBlock.ConstructBuild || !this.unit.inRange(target)){
-            this._damagedFound = false;
-          }else if(this.unit.inRange(target)){
-            this.target = target;
-            this._damagedFound = true;
+    updateWeapons(){
+      this.super$updateWeapons(); //Have normal weapons aim normally
+
+      let hRet = this.healRetarget; //Override the aim of weapons that can heal
+      let mounts = this.unit.mounts;
+      for(let i = 0; i < mounts.length; i++){
+        let mount = mounts[i];
+        let weapon = mount.weapon;
+        let rotation = this.unit.rotation - 90;
+        if(weapon.bullet.healPercent > 0){
+          let mountX = this.unit.x + Angles.trnsx(rotation, weapon.x, weapon.y);
+          let mountY = this.unit.y + Angles.trnsy(rotation, weapon.x, weapon.y);
+
+          if(hRet){
+            let target = Units.findDamagedTile(this.unit.team, mountX, mountY);
+            if(target != null){
+              if(target instanceof ConstructBlock.ConstructBuild || !this.unit.inRange(target)){
+                this._damagedFound = false;
+
+                this.targets[i] = null;
+              }else if(this.unit.inRange(target)){
+                this._damagedFound = true;
+
+                this.targets[i] = target;
+              }else{
+                this._damagedFound = false;
+
+                this.targets[i] = null;
+              }
+            }else{
+              this._damagedFound = false;
+            }
           }
-        }else{
-          this._damagedFound = false;
+          
+          if(this.targets[i] != null){
+            mount.aimX = this.targets[i].x;
+            mount.aimY = this.targets[i].y;
+            let hShoot = this.targets[i].within(mountX, mountY, weapon.bullet.range()) && this.shouldShoot();
+            mount.shoot = hShoot;
+            mount.rotate = hShoot;
+          }
         }
       }
-      
-      if(!this._damagedFound){
-        this.super$updateTargeting();
-      }
+    },
+    healRetarget(){
+      return this.timer.get(this.timerTarget2, !this._damagedFound ? 40 : 90);
     }
   });
   u.setEffectsC();
@@ -93,7 +113,6 @@ const constantFireGroundAIL = prov(() => {
 
         mount.shoot = true;
         mount.rotate = rotate;
-        //print(mount.rotation);
 
         this.unit.isShooting = true;
         if(rotate){
@@ -193,57 +212,77 @@ module.exports = {
       var u = extend(GroundAI, {
         setEffectsC(){
           this._fireFound = false;
-          this._fireLoc = null;
-          this._fires = new Seq();
+          this._fires = [];
         },
         updateMovement(){
-          if(this._fireFound && this._fireLoc != null){
-            var shoot = false;
-            
-            if(this.unit.inRange(this._fireLoc)){
-              this.unit.aim(this._fireLoc);
-              shoot = true;
-            }
-            
-            this.unit.controlWeapons(shoot);
-          }else{
+          if(!this._fireFound){
             this.super$updateMovement();
           }
         },
-        updateTargeting(){
-          if(this.timer.get(this.timerTarget2, this.target == null ? 40 : 90)){
-            this._fires.clear();
-            for(var x = -detectRange; x <= detectRange; x++){
-              for(var y = -detectRange; y <= detectRange; y++){
-                var xLoc = x + this.unit.tileX();
-                var yLoc = y + this.unit.tileY();
-                var other = Vars.world.tile(xLoc, yLoc);
-                
-                if(other != null && Fires.has(xLoc, yLoc) && (other.build == null || other.team() == this.unit.team)){
-                  this._fires.add(other);
+        updateWeapons(){
+          this.super$updateWeapons(); //Have normal weapons aim normally
+
+          if(this._fires.length != this.unit.mounts.length){
+            for(let i = 0; i < this.unit.mounts.length; i++){
+              this._fires[i] = new Seq();
+            }
+          }
+
+          let fRet = this.fireRetarget(); //Override aim of weapons that can extinguish
+          let mounts = this.unit.mounts;
+          for(let i = 0; i < mounts.length; i++){
+            let mount = mounts[i];
+            let weapon = mount.weapon;
+            let rotation = this.unit.rotation - 90;
+            if(weapon.bullet instanceof LiquidBulletType && weapon.bullet.liquid.canExtinguish()){
+              let mountX = this.unit.x + Angles.trnsx(rotation, weapon.x, weapon.y);
+              let mountY = this.unit.y + Angles.trnsy(rotation, weapon.x, weapon.y);
+
+              if(fRet){
+                this._fires[i].clear();
+                for(let x = -detectRange; x <= detectRange; x++){
+                  for(let y = -detectRange; y <= detectRange; y++){
+                    var xLoc = x + Vars.world.toTile(mountX);
+                    var yLoc = y + Vars.world.toTile(mountY);
+                    var other = Vars.world.tile(xLoc, yLoc);
+                    
+                    if(other != null && Fires.has(xLoc, yLoc) && (other.build == null || other.team() == this.unit.team)){
+                      this._fires[i].add(other);
+                    }
+                  }
                 }
               }
-            }
-            
-            if(this._fires.size > 0){
-              var cdist = Infinity;
-              this._fires.each(other => {
-                let dist = this.unit.dst2(other.worldx(), other.worldy());
-                if(dist < cdist){
-                  cdist = dist;
-                  this._fireLoc = Fires.get(other.x, other.y);
-                }
-              });
               
-              this._fireFound = true;
-            }else{
-              this._fireFound = false;
+              if(this._fires[i].size > 0){
+                let cdist = Infinity;
+                let target = null;
+                this._fires[i].each(other => {
+                  let dist = this.unit.dst2(other.worldx(), other.worldy());
+                  if(dist < cdist){
+                    cdist = dist;
+                    target = Fires.get(other.x, other.y);
+                  }
+                });
+
+                let f = target;
+                if(f != null){
+                  this._fireFound = true;
+
+                  mount.aimX = f.getX();
+                  mount.aimY = f.getY();
+
+                  let fShoot = Mathf.within(f.getX(), f.getY(), mountX, mountY, weapon.bullet.range()) && this.shouldShoot();
+                  mount.shoot = fShoot;
+                  mount.rotate = fShoot;
+                }
+              }else{
+                this._fireFound = false;
+              }
             }
           }
-          
-          if(!this._fireFound){
-            this.super$updateTargeting();
-          }
+        },
+        fireRetarget(){
+          return this.timer.get(this.timerTarget2, !this._fireFound ? 40 : 90);
         }
       });
       u.setEffectsC();

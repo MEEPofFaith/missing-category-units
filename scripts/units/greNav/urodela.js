@@ -22,7 +22,8 @@ const AAbullet = extend(FlakBulletType, {
   frontColor: Pal.missileYellow,
   hitSound: Sounds.explosion,
   weaveMag: 6,
-  weaveScale: 6
+  weaveScale: 3,
+  collidesTiles: false
 });
 
 const AA = extendContent(Weapon, "purple-air-renigata-aa", {

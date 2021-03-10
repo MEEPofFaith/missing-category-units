@@ -70,29 +70,31 @@ module.exports = {
 
           Drawf.light(Team.derelict, b.x, b.y, Tmp.v1.x, Tmp.v1.y, 15 * fin * fout + 5, this.colors[1], 0.6);
         }
-      }
+      },
+
+      speed: 0.0001,
+      damage: 3, // * 12 = dps
+      knockback: -0.5,
+      colors: [Pal.heal, Color.white],
+      length: 160,
+      width: 2,
+      maxRange: 160,
+      absorbable: false,
+      collidesTiles: false,
+      collidesGround: false,
+      hittable: false,
+      keepVelocity: false,
+      pierce: true,
+      hitSize: 0,
+      lifetime: 45,
+      fadeTime: 10,
+      growTime: 10,
+      smokeEffect: Fx.none,
+      shootEffect: Fx.none,
+      hitEffect: Fx.none,
+      despawnEffect: Fx.none
     });
-    tractorBeam.speed = 0.0001;
-    tractorBeam.damage = 3; // * 12 = dps
-    tractorBeam.knockback = -0.5;
-    tractorBeam.colors = [Pal.heal, Color.white];
-    tractorBeam.length = 160;
-    tractorBeam.width = 2;
-    tractorBeam.maxRange = 160;
-    tractorBeam.absorbable = false;
-    tractorBeam.collidesTiles = false;
-    tractorBeam.collidesGround = false;
-    tractorBeam.hittable = false;
-    tractorBeam.keepVelocity = false;
-    tractorBeam.pierce = true;
-    tractorBeam.hitSize = 0;
-    tractorBeam.lifetime = 45;
-    tractorBeam.fadeTime = 10;
-    tractorBeam.growTime = 10;
-    tractorBeam.smokeEffect = Fx.none;
-    tractorBeam.shootEffect = Fx.none;
-    tractorBeam.hitEffect = Fx.none;
-    tractorBeam.despawnEffect = Fx.none;
+
     return tractorBeam;
   }
 }
