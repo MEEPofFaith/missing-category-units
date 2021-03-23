@@ -1,10 +1,10 @@
 const ais = require("libs/ai");
 
-var minSpd = 1.4;
-var maxSpd = 4.3;
-var col = Color.valueOf("#a9d8ff");
+let minSpd = 1.4;
+let maxSpd = 4.3;
+let col = Color.valueOf("#a9d8ff");
 //mmm yes code I am steal.
-const SpAirT5 = extendContent(UnitType, "harpoon", {
+const SpAirT5 = extend(UnitType, "harpoon", {
   ammoType: AmmoTypes.powerHigh
 });
 

@@ -1,9 +1,9 @@
 const ais = require("libs/ai");
 
-var minSpd = 1.2;
-var maxSpd = 3.9;
-var col = Color.valueOf("#a9d8ff");
-const SpAirT3 = extendContent(UnitType, "spear", {
+let minSpd = 1.2;
+let maxSpd = 3.9;
+let col = Color.valueOf("#a9d8ff");
+const SpAirT3 = extend(UnitType, "spear", {
   ammoType: AmmoTypes.power
 });
 

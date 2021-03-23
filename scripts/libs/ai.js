@@ -1,5 +1,5 @@
 const groundRepairAIL = prov(() => {
-  var u = extend(GroundAI, {
+  let u = extend(GroundAI, {
     setEffectsC(){
       this._damagedFound = false;
       this._healTarget = null;
@@ -63,16 +63,16 @@ const groundRepairAIL = prov(() => {
 });
 
 const constantFireGroundAIL = prov(() => {
-  var u = extend(GroundAI, {
+  let u = extend(GroundAI, {
     updateWeapons(){ //Keeps shooting, even if it has no target.
       if(this.targets.length != this.unit.mounts.length){
-        var temp = [];
-        for(var i = 0; i < this.unit.mounts.length; i++) temp[i] = null;
+        let temp = [];
+        for(let i = 0; i < this.unit.mounts.length; i++) temp[i] = null;
         this.targets = temp;
       }
 
-      var rotation = this.unit.rotation - 90;
-      var ret = this.retarget();
+      let rotation = this.unit.rotation - 90;
+      let ret = this.retarget();
 
       if(ret){
         this.target = this.findTarget(this.unit.x, this.unit.y, this.unit.range(), this.unit.type.targetAir, this.unit.type.targetGround);
@@ -84,12 +84,12 @@ const constantFireGroundAIL = prov(() => {
 
       this.unit.isShooting = false;
 
-      for(var i = 0; i < this.targets.length; i++){
-        var mount = this.unit.mounts[i];
-        var weapon = mount.weapon;
+      for(let i = 0; i < this.targets.length; i++){
+        let mount = this.unit.mounts[i];
+        let weapon = mount.weapon;
 
-        var mountX = this.unit.x + Angles.trnsx(rotation, weapon.x, weapon.y);
-        var mountY = this.unit.y + Angles.trnsy(rotation, weapon.x, weapon.y);
+        let mountX = this.unit.x + Angles.trnsx(rotation, weapon.x, weapon.y);
+        let mountY = this.unit.y + Angles.trnsy(rotation, weapon.x, weapon.y);
 
         if(this.unit.type.singleTarget){
           this.targets[i] = this.target;
@@ -103,9 +103,9 @@ const constantFireGroundAIL = prov(() => {
           }
         }
         
-        var rotate = false;
+        let rotate = false;
         if(this.targets[i] != null){
-          var to = Predict.intercept(this.unit, this.targets[i], weapon.bullet.speed);
+          let to = Predict.intercept(this.unit, this.targets[i], weapon.bullet.speed);
           mount.aimX = to.x;
           mount.aimY = to.y;
           rotate = true;
@@ -128,9 +128,9 @@ const constantFireGroundAIL = prov(() => {
 module.exports = {
 	noWeaponFlareAI(d, flags){
     const noWeapflareAIL = prov(() => {
-      var u = extend(FlyingAI, {
+      let u = extend(FlyingAI, {
         updateTargeting(){
-          var ret = this.retarget();
+          let ret = this.retarget();
           if(ret){
             this.target = this.findTarget(this.unit.x, this.unit.y, this.unit.range(), this.unit.type.targetAir, this.unit.type.targetGround);
           }
@@ -152,10 +152,10 @@ module.exports = {
           }
         },
         findTarget(x, y, range, air, ground){
-          var result = null;
+          let result = null;
           
           if(ground){
-            for(var i = 0; i < flags.length; i++){
+            for(let i = 0; i < flags.length; i++){
               result = this.targetFlag(x, y, flags[i], true);
               if(result != null) return result;
             }
@@ -174,7 +174,7 @@ module.exports = {
   },
 	flareAI(d, flags){
     const flareAIL = prov(() => {
-      var u = extend(FlyingAI, {
+      let u = extend(FlyingAI, {
         updateMovement(){
           if(this.target != null && this.command() == UnitCommand.attack){
             this.attack(d);
@@ -187,10 +187,10 @@ module.exports = {
           }
         },
         findTarget(x, y, range, air, ground){
-          var result = null;
+          let result = null;
           
           if(ground){
-            for(var i = 0; i < flags.length; i++){
+            for(let i = 0; i < flags.length; i++){
               result = this.targetFlag(x, y, flags[i], true);
               if(result != null) return result;
             }
@@ -209,7 +209,7 @@ module.exports = {
   },
 	groundFireFighterAI(detectRange){ //Range is in tiles, not tilesize
     const groundFireFighterAIL = prov(() => {
-      var u = extend(GroundAI, {
+      let u = extend(GroundAI, {
         setEffectsC(){
           this._fireFound = false;
           this._fires = [];
@@ -242,9 +242,9 @@ module.exports = {
                 this._fires[i].clear();
                 for(let x = -detectRange; x <= detectRange; x++){
                   for(let y = -detectRange; y <= detectRange; y++){
-                    var xLoc = x + Vars.world.toTile(mountX);
-                    var yLoc = y + Vars.world.toTile(mountY);
-                    var other = Vars.world.tile(xLoc, yLoc);
+                    let xLoc = x + Vars.world.toTile(mountX);
+                    let yLoc = y + Vars.world.toTile(mountY);
+                    let other = Vars.world.tile(xLoc, yLoc);
                     
                     if(other != null && Fires.has(xLoc, yLoc) && (other.build == null || other.team() == this.unit.team)){
                       this._fires[i].add(other);

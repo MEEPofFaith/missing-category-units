@@ -1,6 +1,6 @@
 const ais = require("libs/ai");
 
-const SuNavT3 = extendContent(UnitType, "protidae", {
+const SuNavT3 = extend(UnitType, "protidae", {
   ammoType: AmmoTypes.power
 });
 SuNavT3.constructor = () => extend(UnitWaterMove, {});

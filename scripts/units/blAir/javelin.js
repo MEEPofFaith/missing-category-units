@@ -1,9 +1,9 @@
 const ais = require("libs/ai");
 
-var minSpd = 1.3;
-var maxSpd = 4.2;
-var col = Color.valueOf("#a9d8ff");
-const SpAirT4 = extendContent(UnitType, "javelin", {
+let minSpd = 1.3;
+let maxSpd = 4.2;
+let col = Color.valueOf("#a9d8ff");
+const SpAirT4 = extend(UnitType, "javelin", {
   ammoType: AmmoTypes.powerHigh
 });
 

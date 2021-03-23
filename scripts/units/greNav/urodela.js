@@ -1,7 +1,7 @@
 const bullets = require("libs/bullets");
 const ais = require("libs/ai");
 
-const SuNavT5 = extendContent(UnitType, "urodela", {
+const SuNavT5 = extend(UnitType, "urodela", {
   ammoType: AmmoTypes.powerHigh
 });
 SuNavT5.constructor = () => extend(UnitWaterMove, {});
@@ -26,7 +26,7 @@ const AAbullet = extend(FlakBulletType, {
   collidesTiles: false
 });
 
-const AA = extendContent(Weapon, "purple-air-renigata-aa", {
+const AA = extend(Weapon, "purple-air-renigata-aa", {
   bullet: AAbullet,
   rotate: true,
   rotateSpeed: 8,
@@ -38,7 +38,7 @@ const AA = extendContent(Weapon, "purple-air-renigata-aa", {
   y: 41 / 4
 });
 
-const AA2 = extendContent(Weapon, "purple-air-renigata-aa", {
+const AA2 = extend(Weapon, "purple-air-renigata-aa", {
   bullet: AAbullet,
   rotate: true,
   rotateSpeed: 8,
@@ -50,7 +50,7 @@ const AA2 = extendContent(Weapon, "purple-air-renigata-aa", {
   mirror: false
 });
 
-const AA3 = extendContent(Weapon, "purple-air-renigata-aa", {
+const AA3 = extend(Weapon, "purple-air-renigata-aa", {
   bullet: AAbullet,
   rotate: true,
   rotateSpeed: 8,
@@ -63,7 +63,7 @@ const AA3 = extendContent(Weapon, "purple-air-renigata-aa", {
 });
 
 const tractorBeam = bullets.newTractorBeam(11, 720);
-var range = 142;
+let range = 142;
 tractorBeam.length = range;
 tractorBeam.maxRange = range;
 tractorBeam.lifetime = 120;
@@ -72,7 +72,7 @@ tractorBeam.lifetime = 120;
 tractorBeam.collidesTeam = true;
 tractorBeam.healPercent = 4;*/
 
-const tBDouble = extendContent(Weapon, "purple-air-renigata-parallax", {
+const tBDouble = extend(Weapon, "purple-air-renigata-parallax", {
   x: 94 / 4,
   y: -80 / 4,
   shootY: 6,
@@ -84,7 +84,7 @@ const tBDouble = extendContent(Weapon, "purple-air-renigata-parallax", {
   bullet: tractorBeam
 });
 
-const fTBDouble = extendContent(Weapon, "purple-air-renigata-parallax", {
+const fTBDouble = extend(Weapon, "purple-air-renigata-parallax", {
   x: 41 / 4,
   y: 10 / 4,
   shootY: 6,
@@ -96,7 +96,7 @@ const fTBDouble = extendContent(Weapon, "purple-air-renigata-parallax", {
   bullet: tractorBeam
 });
 
-const ffTBDouble = extendContent(Weapon, "purple-air-renigata-parallax", {
+const ffTBDouble = extend(Weapon, "purple-air-renigata-parallax", {
   x: 35 / 4,
   y: 122 / 4,
   shootY: 6,
@@ -197,7 +197,7 @@ const shell = extend(BasicBulletType, {
 });
 
 //Back center: (0, -116) Done: Giant heal artillery (Base off Toxopid)
-const healxopid = extendContent(Weapon, "purple-air-urodela-cannon", {
+const healxopid = extend(Weapon, "purple-air-urodela-cannon", {
   x: 0,
   y: -116 / 4,
   shootY: 22,
@@ -216,9 +216,9 @@ const healxopid = extendContent(Weapon, "purple-air-urodela-cannon", {
 });
 //Front center: (0, 56) TODO: ???
 
-var monoSec = 90;
-var flareSec = 25;
-var polySec = 120;
+let monoSec = 90;
+let flareSec = 25;
+let polySec = 120;
 
 /*Spawn positions:
 (58, 54)

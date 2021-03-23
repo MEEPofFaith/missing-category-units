@@ -1,9 +1,9 @@
 const ais = require("libs/ai");
 
-var minSpd = 1.1;
-var maxSpd = 3.3;
-var col = Color.valueOf("#a9d8ff");
-const SpAirT2 = extendContent(UnitType, "dart", {
+let minSpd = 1.1;
+let maxSpd = 3.3;
+let col = Color.valueOf("#a9d8ff");
+const SpAirT2 = extend(UnitType, "dart", {
   ammoType: AmmoTypes.powerLow
 });
 

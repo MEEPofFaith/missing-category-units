@@ -1,7 +1,7 @@
 const bullets = require("libs/bullets");
 const ais = require("libs/ai");
 
-const SuNavT4 = extendContent(UnitType, "renigata", {
+const SuNavT4 = extend(UnitType, "renigata", {
   ammoType: AmmoTypes.powerHigh
 });
 SuNavT4.constructor = () => extend(UnitWaterMove, {});
@@ -26,7 +26,7 @@ const AAbullet = extend(FlakBulletType, {
   collidesTiles: false
 });
 
-const AA = extendContent(Weapon, "purple-air-renigata-aa", {
+const AA = extend(Weapon, "purple-air-renigata-aa", {
   bullet: AAbullet,
   rotate: true,
   rotateSpeed: 8,
@@ -56,7 +56,7 @@ const healArtillery = extend(ArtilleryBulletType, {
   lifetime: 80
 });
 
-const healRipple = extendContent(Weapon, "purple-air-protidae-ripple", {
+const healRipple = extend(Weapon, "purple-air-protidae-ripple", {
   reload: 50,
   x: 7.5,
   y: 9.5,
@@ -91,7 +91,7 @@ const healArtilleryMid = extend(ArtilleryBulletType, {
   lifetime: 70
 });
 
-const healRippleMid = extendContent(Weapon, "purple-air-protidae-ripple", {
+const healRippleMid = extend(Weapon, "purple-air-protidae-ripple", {
   reload: 35,
   x: 0,
   y: 16,
@@ -110,7 +110,7 @@ const healRippleMid = extendContent(Weapon, "purple-air-protidae-ripple", {
 });
 
 const tractorBeam = bullets.newTractorBeam(8, 560);
-var range = 128;
+let range = 128;
 tractorBeam.length = range;
 tractorBeam.maxRange = range;
 tractorBeam.lifetime = 120;
@@ -119,7 +119,7 @@ tractorBeam.lifetime = 120;
 tractorBeam.collidesTeam = true;
 tractorBeam.healPercent = 3;*/
 
-const tractorBeamWeapon = extendContent(Weapon, "purple-air-renigata-parallax", {
+const tractorBeamWeapon = extend(Weapon, "purple-air-renigata-parallax", {
   mirror: false,
   x: 0,
   y: -9.5,
@@ -132,8 +132,8 @@ const tractorBeamWeapon = extendContent(Weapon, "purple-air-renigata-parallax", 
   bullet: tractorBeam
 });
 
-var flareSec = 35;
-var polySec = 135;
+let flareSec = 35;
+let polySec = 135;
 
 SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, 34/4, -68/4));
 SuNavT4.abilities.add(new UnitSpawnAbility(UnitTypes.poly, polySec * 60, -34/4, -68/4));

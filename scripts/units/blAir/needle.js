@@ -1,9 +1,9 @@
 const ais = require("libs/ai");
 
-var minSpd = 1;
-var maxSpd = 3.1;
-var col = Color.valueOf("#a9d8ff");
-const SpAirT1 = extendContent(UnitType, "needle", {});
+let minSpd = 1;
+let maxSpd = 3.1;
+let col = Color.valueOf("#a9d8ff");
+const SpAirT1 = extend(UnitType, "needle", {});
 
 SpAirT1.constructor = () => extend(UnitEntity, {});
 SpAirT1.defaultController = ais.noWeaponFlareAI(70, [BlockFlag.factory, BlockFlag.battery, BlockFlag.generator, BlockFlag.core]);
