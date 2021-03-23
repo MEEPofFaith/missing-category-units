@@ -7,9 +7,9 @@ const addPlan = (fac, plan) => {
 
 //Seq in an array
 const reconAdd = (recon, planArray) => {
-  for(let i = 0; i < planArray.length; i++){
-    recon.upgrades.add(Seq(planArray[i]).toArray(UnitType));
-  };
+  planArray.forEach(e => {
+    recon.upgrades.add(e.toArray(UnitType));
+  });
 };
 
 const cunit = name => Vars.content.getByName(ContentType.unit, "purple-air-" + name);
@@ -57,52 +57,48 @@ addPlan(Blocks.navalFactory, ricco);
 //Reconstructors
 //1 -> 2
 reconAdd(Blocks.additiveReconstructor, [
-  [
+  Seq.with(
     cunit("needle"),
     cunit("dart")
-  ],
-  
-  [
+  ),
+  Seq.with(
     cunit("rana"),
     cunit("renidae")
-  ]
+  )
 ]);
 
 //2 -> 3
 reconAdd(Blocks.multiplicativeReconstructor, [
-  [
+  Seq.with(
     cunit("dart"),
     cunit("spear")
-  ],
-  
-  [
+  ),
+  Seq.with(
     cunit("renidae"),
     cunit("protidae")
-  ]
+  )
 ]);
 
 //3 -> 4
 reconAdd(Blocks.exponentialReconstructor, [
-  [
+  Seq.with(
     cunit("spear"),
     cunit("javelin")
-  ],
-  
-  [
+  ),
+  Seq.with(
     cunit("protidae"),
     cunit("renigata")
-  ]
+  )
 ]);
 
 //4 -> 5
 reconAdd(Blocks.tetrativeReconstructor, [
-  [
+  Seq.with(
     cunit("javelin"),
     cunit("harpoon")
-  ],
-  
-  [
+  ),
+  Seq.with(
     cunit("renigata"),
     cunit("urodela")
-  ]
+  )
 ]);
