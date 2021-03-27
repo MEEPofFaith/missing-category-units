@@ -155,6 +155,8 @@ weapons:[
       type: ContinuousLaserBulletType
       absorbable: true
       keepVelocity: true
+      shootEffect: hitLancer
+      smokeEffect: none
       length: 38
       width: 4.5
       damage: 18

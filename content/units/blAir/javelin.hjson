@@ -126,13 +126,13 @@ weapons:[
     rotate: true
     shootSound: railgun
     rotateSpeed: 15
-    shootEffect: hitLancer
-    smokeEffect: none
     shootCone: 90
     bullet:{
       type: ContinuousLaserBulletType
       absorbable: true
       keepVelocity: true
+      shootEffect: hitLancer
+      smokeEffect: none
       length: 18
       width: 3
       damage: 15
