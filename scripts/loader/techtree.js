@@ -23,11 +23,11 @@ const cunit = name => Vars.content.getByName(ContentType.unit, "purple-air-" + n
 /** Green */
 
 // Green Naval
-node(UnitTypes.risso, cunit("rana"), null, null);
+/*node(UnitTypes.risso, cunit("rana"), null, null);
 node(cunit("rana"), cunit("renidae"), null, new Objectives.Research(Blocks.additiveReconstructor));
 node(cunit("renidae"), cunit("protidae"), null, new Objectives.Research(Blocks.multiplicativeReconstructor));
 node(cunit("protidae"), cunit("renigata"), null, new Objectives.Research(Blocks.exponentialReconstructor));
-node(cunit("renigata"), cunit("urodela"), null, new Objectives.Research(Blocks.tetrativeReconstructor));
+node(cunit("renigata"), cunit("urodela"), null, new Objectives.Research(Blocks.tetrativeReconstructor));*/
 
 
 /** Purple */

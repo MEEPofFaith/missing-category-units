@@ -31,7 +31,7 @@ const needle = new UnitFactory.UnitPlan(
 addPlan(Blocks.airFactory, needle);
 
 //Naval
-const rana = new UnitFactory.UnitPlan(
+/*const rana = new UnitFactory.UnitPlan(
   cunit("rana"),
   60 * 45,
   ItemStack.with(
@@ -40,7 +40,7 @@ const rana = new UnitFactory.UnitPlan(
     Items.titanium, 20
   )
 );
-addPlan(Blocks.navalFactory, rana);
+addPlan(Blocks.navalFactory, rana);*/
 
 const ricco = new UnitFactory.UnitPlan(
   cunit("ricco"),
@@ -61,10 +61,10 @@ reconAdd(Blocks.additiveReconstructor, [
     cunit("needle"),
     cunit("dart")
   ),
-  Seq.with(
+  /*Seq.with(
     cunit("rana"),
     cunit("renidae")
-  )
+  )*/
 ]);
 
 //2 -> 3
@@ -73,10 +73,10 @@ reconAdd(Blocks.multiplicativeReconstructor, [
     cunit("dart"),
     cunit("spear")
   ),
-  Seq.with(
+  /*Seq.with(
     cunit("renidae"),
     cunit("protidae")
-  )
+  )*/
 ]);
 
 //3 -> 4
@@ -85,10 +85,10 @@ reconAdd(Blocks.exponentialReconstructor, [
     cunit("spear"),
     cunit("javelin")
   ),
-  Seq.with(
+  /*Seq.with(
     cunit("protidae"),
     cunit("renigata")
-  )
+  )*/
 ]);
 
 //4 -> 5
@@ -97,8 +97,8 @@ reconAdd(Blocks.tetrativeReconstructor, [
     cunit("javelin"),
     cunit("harpoon")
   ),
-  Seq.with(
+  /*Seq.with(
     cunit("renigata"),
     cunit("urodela")
-  )
+  )*/
 ]);
