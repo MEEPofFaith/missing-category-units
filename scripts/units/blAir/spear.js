@@ -4,7 +4,7 @@ let minSpd = 1.2;
 let maxSpd = 3.9;
 let col = Color.valueOf("#a9d8ff");
 const SpAirT3 = extend(UnitType, "spear", {
-  ammoType: AmmoTypes.power
+  ammoType: new PowerAmmoType(1000)
 });
 
 SpAirT3.constructor = () => extend(UnitEntity, {});

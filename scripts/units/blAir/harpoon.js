@@ -5,7 +5,7 @@ let maxSpd = 4.3;
 let col = Color.valueOf("#a9d8ff");
 //mmm yes code I am steal.
 const SpAirT5 = extend(UnitType, "harpoon", {
-  ammoType: AmmoTypes.powerHigh
+  ammoType: new PowerAmmoType(2000)
 });
 
 SpAirT5.constructor = () => extend(UnitEntity, {});

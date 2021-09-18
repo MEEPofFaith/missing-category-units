@@ -4,7 +4,7 @@ let minSpd = 1.1;
 let maxSpd = 3.3;
 let col = Color.valueOf("#a9d8ff");
 const SpAirT2 = extend(UnitType, "dart", {
-  ammoType: AmmoTypes.powerLow
+  ammoType: new PowerAmmoType(500)
 });
 
 SpAirT2.constructor = () => extend(UnitEntity, {});
