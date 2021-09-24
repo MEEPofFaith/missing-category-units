@@ -19,4 +19,4 @@ Speed.
 ### Speed Air
 Specialize in speed and energy.
 
-Needle -> Dart -> Spear -> Javelin -> Harpoon
+Needle -> Dart -> Spear -> Javelin -> Trident
